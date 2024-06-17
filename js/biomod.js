@@ -25,3 +25,17 @@ window.addEventListener('DOMContentLoaded', function() {
         console.log('scrollToTopBtnが見つかりませんでした。');
     }
 });
+
+// jQueryによるナビゲーションパネルの制御
+$(function() {
+    $(".menu li").hover(
+      function() {
+        //クラス名「open」を付与する
+        $(this).children(".menuSub").addClass("open");
+        //hoverが外れた場合
+      }, function() {
+        //クラス名「open」を取り除く
+        $(this).children(".menuSub").removeClass("open");
+      }
+    );
+  });

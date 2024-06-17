@@ -7,15 +7,15 @@
   フォントに一貫性がない。
   構造上Ctrl+Fが使えない。
   各項目内に書かれている内容が読みづらい、単調。
-  てかヘッダーを回す必要性がない、ストーリー性がない、つながりがない。-->
+  ヘッダーを回す必要性がない、ストーリー性がない、つながりがない。-->
   
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
-	<meta name="description" content="BIOMOD Team Sendai">
+	<meta name="description" content="BIOMOD Team Noko">
 	<title>BIOMOD Team Noko 2024</title>
-	<link rel="stylesheet" type="text/css" media="all" href="css/biomod.css">
+	<link rel="stylesheet" type="text/css" media="all" href="biomod.css">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
   <link rel="shortcut icon" href="img/favicon.ico">
@@ -38,49 +38,81 @@
 </head>
 
 <body>
-<header id="header" class="header">
-  <img src="img/Logo.png" class="Logo">
-	<h1><a href="biomod.html">BIOMOD NOKO 2024</a></h1>
-    <nav class="gnav">
-    <ul class="menu">
-      <li><a href="html/project.html">Project</a></li>
-      <li><a href="html/Design.html">Design</a></li>
-      <li><a href="html/Experiment.html">Experiment</a></li>
-      <li><a href="html/Future.html">Future</a></li>
-      <li><a href="html/Team.html">Team</a></li>
-    </ul>
-  </nav>
-  </header>
+	<header id="header" role="banner">
+			  <img src="img/Logo.png" class="Logo">
+			  <h1><a href="biomod.html">BIOMOD NOKO 2024</a></h1>
+			</a>
+			<nav id="mainNav">
+			  <div>
+				<ul class="menu">
+				  <li><a href="html/project.html">Project</a>
+					<ul class="menuSub">
+					  <li><a href="#">BACKGROUND</a></li>
+					  <li><a href="#">PROBLEM</a></li>
+					  <li><a href="#">CHALLENGES</a></li>
+					  <li><a href="#">SOLUTION</a></li>
+					  <li><a href="#">GOALS</a></li>
+					  <li><a href="#">FEASIBILITY</a></li>
+					</ul>
+				  </li>
+				  <li><a href="html/Experiment.html">Experiment</a>
+					<ul class="menuSub">
+					  <li><a href="#">SUMMARY</a></li>
+					  <li><a href="#">STRUCTURE</a></li>
+					  <li><a href="#">STACKING</a></li>
+					  <li><a href="#">MECHANISM</a></li>
+					  <li><a href="#">CHOLESTEROL</a></li>
+					  <li><a href="#">BUBBLE</a></li>
+					</ul>
+				  </li>
+				  <li><a href="html/Future.html">Future</a>
+				  </li>
+				  <li><a href="html/Team.html">Team</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+		</div>
+	</header>
     
   <main>
     <section id="area-1">
-      <h2>SynthePHERE</h2>
-	  <h3>Abstract</h3>
-    <p>Under appropriate temperature and ionic environments, DNA spontaneously forms a double helix structure based on base complementarity. In recent years, by taking advantage of this property and folding long circular single-stranded DNA (scaffold) into hundreds of short single-stranded DNA (staples), two-dimensional nanoscale structures or three-dimensional nanoscale structures with a size of approximately 100 nm have been created. A technology called DNA origami to create structures is attracting attention (1)(2). Furthermore, by linking multiple DNA origami to form a multimer, complex and functional larger-scale structures can be created (3) (4). Among the DNA origami multimers obtained in this way, this research focuses on two-dimensional arrays that combine multiple two-dimensional structures.
-      Two-dimensional arrays using DNA origami have various applications. For example, by taking advantage of the property that DNA can be modified with nanostructures, we have prepared a sample in which proteins called ion channels are arranged at high density on the surface of a two-dimensional array, and applied it to X-ray single molecule measurement (56) to detect ion channels. If dynamic observation is performed, statistical evaluation under the same conditions becomes possible. Similarly, gold nanoparticle dimers used in surface-enhanced Raman scattering (SERS) (7) can be arranged with high precision and high density. Furthermore, it can also be used as a mask for nanolithography (8)-(11). However, currently, the size of two-dimensional DNA origami arrays is only a few micrometers square, and there are also local defects and deformations, so they cannot be used in applications that require geometric precision. In particular, in order to ensure the mechanical rigidity of the two-dimensional array structure and to bond between DNA origami with high precision without any gaps, single-stranded DNA is used to cross-link the double helix structures that make up each of the two DNA origami. A method called crossover is suitable (12)(13). Single-stranded DNA used for this purpose is called a linker. However, this method has not yet yielded two-dimensional arrays of sufficient size and yield, which remains a problem to be solved. In this study, we focused on a system in which equilateral triangular DNA origami (hereinafter referred to as triangular DNA origami) are connected with linkers to form a two-dimensional array. The triangular DNA origami was designed to be suitable for two-dimensional array formation, and the length of one side is approximately 114 mm (Figure 1). For adjacent triangular DNA origami, connect the same sides A, B, and C, which are distinguished by markers, with the linker corresponding to that side. Therefore, it is possible to selectively form dimers in which two triangular DNA origami are linked, multimers linked in one dimension, and multimers in the form of a two-dimensional array (Figure 2). As shown in Figure 3, there are four types of linkers each corresponding to the A, B, and C sides, and a total of eight linkers, two of each type, bridge the double helices of the two triangular DNA origami. For cross-linking, we used a crossover method that uses two linkers at one location.
-      In the dimer production of triangular DNA origami performed in our laboratory, the dimer formation rate on two of the three sides was significantly lower (Figure 4(a)). In DNA base pairs, the binding strength of C(Cytosine)-G(Guanine) is greater than that of A(Adenine)-T(Thymine), and the correlation with dimer formation rate Focusing on this, we redesigned a triangular DNA origami that increased the number of C and G in the linker base sequence. This triangular DNA origami is the second design origami, and the one before the redesign is the first design origami. However, in the dimer production experiment of the second designed origami, the proportion of dimer formation on one of the three sides was significantly lower (Figure 4(b)). This factor could not be explained by the presence of staples with sequences identical or complementary to the linker, or the influence of secondary structure. Therefore, in this study, we aimed to elucidate the governing factors in the dimer formation of triangular DNA origami using linkers using an approach different from the method described above. First, we focused on the shape of the triangular DNA origami and analyzed it using the structural analysis tool "CanDo" (2). By comparing this with the results of dimer production experiments, we hypothesized the factors governing the dimer formation rate. We also conducted dimer production experiments using newly designed triangular DNA origami and linkers to verify the validity of our assumptions.</p>
+		<div class="inner">
+		<h2>Elucidation of the controlling factors in the formation of triangular DNA oligaminimers by linkers</h2>
+		<h3>Abstract</h3>
+			<p>DNA origami is a method of creating nanostructures with high precision using DNA strands as building blocks. By linking multiple DNA origami to form a multimer, it is possible to create complex and functional larger-scale structures. Taking advantage of the stronger bonding strength between cytosine and guanine than between adenine and thymine, it was possible to design a triangular dimeric DNA origami with an increased number of cytosine and guanine in the linker base sequence. Here, toward the realization of large-scale 2D- arrays of DNA origami, which can be widely applicable to various applications, we investigated the dimerization of triangular DNA origami linked by linkers ssDNA that differ from the above-mentioned approach. The dimerization is strongly influenced by the deformation of a side of a triangle, which enables the dimerization rate of triangular DNA origami to increase. We demonstrate that the shape of the outermost helix has a large effect on the dimer formation rate and that introducing a spacer into the linker can significantly improve dimer formation in triangular DNA origami.</p>
+		</div>
+    </section>
+	<!--/area1-->
 
-    <!--/area1--></section>
-      <section id="area-2">
-      <h2>WE ARE A TEAM OF SIX UNDERGRADUATES FROM TOHOKU UNIVERSITY, GIVING OUR BEST FOR BIOMOD 2023</h2>
-      <p>Hi! We are Team Sendai! This is our YouTube video, through which you will have the chance to get up to speed about our project, not only the technicalities but also regarding the `why'! During summer, we have spent hours in thinking up ideas, designing, and planning our experiments, all while revising multiple times for each of them. In addition, running gels, pipetting, and microscope-ing have been the most of our life during this summer, apart from the occasional meal run to the convenience store (duh!). In addition to the video, this website is dedicated to elaborating our project, the culmination of all of our ideas and hard work. Feel free to surf around and immerse yourself in understanding our project! We hope you sincerely enjoy your time here and we hope we have succeeded in justifying our passion!
-      </p>
-         <!--/area2--></section>
-<section>
-  <h2>CONCEPT VIDEO</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/drkWTxfZ9OQ" title="YouTube video player" style="display: block; margin: 0 auto;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</section>
+	<section id="area-2">
+		<div class="inner"> 
+		<h2>ここに何を書くべきか非常に困っているスペース</h2>
+			<p>Hi! We are Team Sendai! This is our YouTube video, through which you will have the chance to get up to speed about our project, not only the technicalities but also regarding the `why'! During summer, we have spent hours in thinking up ideas, designing, and planning our experiments, all while revising multiple times for each of them. In addition, running gels, pipetting, and microscope-ing have been the most of our life during this summer, apart from the occasional meal run to the convenience store (duh!). In addition to the video, this website is dedicated to elaborating our project, the culmination of all of our ideas and hard work. Feel free to surf around and immerse yourself in understanding our project! We hope you sincerely enjoy your time here and we hope we have succeeded in justifying our passion!
+			</p>
+		</div>
+	</section>
+	<!--/area2-->
+
+		 
+	<section>
+		<div class="inner">
+		<h2>CONCEPT VIDEO</h2>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/drkWTxfZ9OQ" title="YouTube video player" style="display: block; margin: 0 auto;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+	</section>
  
 
-  <!--/main--></main>
+</main>
+<!--/main-->
 
   <footer id="footer" class="footer">
     <small>&copy; copyright.</small>  
   </footer>
    
 <button id="scrollToTopBtn">Top</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script src="js/biomod.js"></script>
-
 </body>
 
 </html>
