@@ -1,7 +1,111 @@
 @charset "utf-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+  background-color: #fff;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+   font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+/*========= ここまでリセットCSS ===============*/
+
 body{
-  padding: 0px;
-  margin: 0px;
+    font:18px "Sylfaen","ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
 }
 
 /*========= 上部固定させるためのCSS ===============*/
@@ -73,8 +177,7 @@ main{
 }
 
 h2{
-  font-size:1.2rem;
-  text-align: center;
+  font-size:1.4rem;
   margin: 0 0 30px 0;
 }
 
@@ -83,13 +186,12 @@ h3{
   margin: 0 100px;
 }
 
-p{
-  padding:0 100px;
-  margin-top:20px;  
-}
-
 /* 勝手に変えました！！！！！！！！！！
- small{
+/* 
+p{
+  padding:0 50px;
+}
+small{
   background:#333;
   color:#fff;
   display: block;
@@ -111,6 +213,9 @@ nav ul{
   display: flex;
   justify-content: center;
 }
+.inner {
+  margin: 0 15%;
+}
 
 /* 勝手に変えました！！！！！！！！！！
 a{
@@ -121,12 +226,11 @@ a{
   transition:all 0.3s;
 } */
 
-.header a {
-  display: block;
+.inner a{
   text-decoration: none;
   color: #fff;
-  padding: 10px;
-  transition: all 0.3s;
+  padding:10px;
+  transition:all 0.3s;
 }
 
 
@@ -142,6 +246,10 @@ section{
 
 section:nth-child(2n){
   background:#f3f3f3; 
+}
+/* referのcss保留 */
+#Reference {
+  display: block;
 }
 
 
@@ -263,3 +371,89 @@ section:nth-child(2n){
 }
 
 /*  ここまでオープニングアニメーションのCSS*/
+#header h1{
+  font-size: 6vh;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  color: #fff;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+  width: 140px;
+  height: 70px;
+  background: #11086c;
+  font-size: large;
+}
+
+.menu li a {
+  display: block;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  line-height: 70px;
+  font-size: 4vh;
+}
+
+.menuSub {
+  position: absolute;
+  display: none;
+}
+
+#header a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition:all 0.3s;
+}
+.container {
+  display: inline-block;
+}
+.container-img {
+  display: inline-block;
+}
+figure {
+  width: 100%;
+  display: inline-block; /* 必要に応じて調整 */
+  text-align: center;
+}
+
+figcaption {
+  width: 100%; /* キャプションの幅を画像に合わせる */
+  text-align: left;
+  word-wrap: break-word; /* 長い単語を折り返す */
+  overflow-wrap: break-word; /* 長い単語を折り返す */
+  margin-top: 8px;
+  font: italic sans-serif;
+}
+
+img {
+  display: inline-flex;
+}
+
+
+
+/*.openが付与された時、表示の設定*/
+.menuSub.open {
+  display: block;
+}
+.menuSub li{
+  height: 40px;
+}
+
+.menuSub li a {
+  display: block;
+  color: #fff;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: medium;
+}
+
+.menuSub li a:hover {
+  background: #FFCA7B;
+}
