@@ -42,380 +42,166 @@
 		</div>
 	</header>
 
-  <main>
-    <section id="main">
-			<section class="content">
-				<h3 class="heading">EXPERIMENT</h3>
-				<article class="post">
-
-					<h3>Data Availability and Supplementary Information</h3>
-					<p>To access any information that is not directly available on this page, please see our
-						documentation in this link.
-					</p>
-					<p><a
-							href="https://drive.google.com/drive/folders/1z2q6jGJqtsB5Y4DcNg-WxfeQ6oy32bo3?usp=drive_link">
-							Google Drive</a>
-					</p>
-
-					<h3 id="summary">SUMMARY OF KEY RESULTS</h3>
-					<p>The main focus of this project is on testing out each functional component of the NanoStoma,
-						therefore proving the feasibility of our mechanism of action (MoA).
-					</p>
-					<p>First, we annealed and imaged the NanoStoma DNA origami structure and confirmed that folding
-						occurred as designed (see <a href="experiment.html#structure"> Assembly and Confirmation, and
-							DNA Origami Purification</a>).
-					</p>
-					<p>Next, we characterized the degree of stacking of the NanoStoma in different conditions
-						(see <a href="experiment.html#stacking">Stacking Characterization</a>).
-					</p>
-					<p>After that, we tested the mechanism of our locking system by using toehold-mediated strand
-						displacement first instead of the azobenzene-based system
-						(see <a href="experiment.html#locking">Locking Mechanism</a>)
-					</p>
-					<p>Finally, we inserted cholesterol-modified DNA into our DNA origami structure and confirmed the
-						formation of a hydrophobic local environment around the slit
-						(see <a href="experiment.html#cholesterol">Integration of Cholesterol</a>).
-					</p>
-					<p>To validate feasibility in the context of application in a soap bubble’s membrane, we designed a
-						simple experiment to prove that DNA origami may in fact be efficiently inserted into the
-						membrane without much compromise to the membrane’s integrity
-						(see <a href="experiment.html#soap">Integration of DNA into Soap Bubble</a>).</p>
-
-
-
-					<h3 id="structure">STRUCTURE ASSEMBLY AND CONFIRMATION</h3>
-					<h4>Background:</h4>
-					<p>In folding DNA origami, each structure has its own optimum conditions that have to be determined
-						empirically. The conditions usually involve two major factors: salt conditions and temperature
-						ramps. Salt conditions, specifically cation concentrations, determine the degree of cancellation
-						of DNA’s innate negative charge, which allows more DNA to properly anneal due to the lower
-						resulting negative-negative repulsion between the strands. Temperature ramps, on the other hand,
-						regulate the degree of hybridization temporally, as DNA will naturally anneal starting from the
-						longer complementary segment—which possess higher melting temperatures (Tm). Proper time control
-						of annealing is necessary for all complementary segments to form double helices. In other words,
-						each temperature threshold must be passed through with sufficient time so that the long
-						complementary segments hybridize successfully before the short complementary segments hybridize.
-					</p>
-
-
-					<h4>Materials and Methods:</h4>
-					<p>This section describes the details of the DNA origami folding.
-						<br />Staple strands were mixed and separated into two staple mixes: Staple A and B
-					</p>
-					<figure class="table">
-						<figcaption>Table 1. Details of staple mixes</figcaption>
-						<img src="images/experiment/table/table1.png" width="600" alt="table1">
+	<main>
+		<section id="area-1">
+		  <div class="inner">
+			<h2>1. Analysis and Experimental Methods</h2>
+			<h3>1-1. Structural analysis method using CanDo</h3>
+			<p> CanDo (Computer-Aided Engineering for DNA Origami) is a method for predicting the three-dimensional shape of DNA origami, including its bends and twists, from its design. Each base pair of the double helix is treated as a finite element, and the average position coordinates and RMSF (RMSF) for each base pair are calculated. Position coordinates and RMSF (Root-Mean-Square Fluctuation) values for each base pair. The following six states of triangular DNA origami were subject to structural analysis to verify the correlation between the shape of triangular DNA origami and the dimer formation rate.</p>
+			<p>(State 1) Only one of the three sides contains a linker.</p>
+			<p>(State 2) Containing linkers on only two of the four linkers on any one of the three sides, either the inner or outer two.</p>
+			<p>State 1 is the analysis to verify the correlation between the state of the triangular DNA origami at the time of dimer formation and the dimer formation rate. This was done for the first and second design origami. State 2 is the analysis of the correlation between the dimer formation experiment of the second design origami by selective linker (which will be described in Section 4) and the dimer formation rate.</p>
+			<h3>1-2. Methods for the preparation of triangular DNA origami</h3>
+			<div class="container">
+				<p>The method for the preparation of triangular DNA origami is described. After mixing the solutions according to Table 1, a thermal cycler (Program Temp Control System PC-350, ASTEC) was used to anneal it at a constant rate (-1°C/min) from 90°C to 20°C for 70 min. After annealing, the solution was stored at 4°C.</p>
+				<figure>
+				  <figcaption class="table center">Table 1. Mixing Ratio for Triangular DNA Origami</figcaption>
+				  <img src="../img/Table 1. Mixing Ratio for Triangular DNA Origami.png" class="Fig1" style="width: 60%;">
+				</figure>
+			</div>
+			<h3>1-3. Dimer preparation method</h3>
+			<p>This section describes the dimer preparation method for triangular DNA origami. The method of dimer production of triangular DNA oligomers is described. Four linkers corresponding to each side were mixed in equal quantities, then diluted further 100-fold with ultrapure water to prepare a linker solution for each side. The linker solution corresponding to the side to be bound was added to the triangular DNA origami solution (concentration of M13mp18): (concentration of each linker) = 1:4. The solution was then annealed in a thermal cycler from 60°C to 20°C at a constant rate (-0.02°C/min) for 2000 min. After annealing, the solution was stored at 4°C.</p>
+			<h3>1-4. Methods for dimer formation by selective linker</h3>
+			<p>In order to verify the contribution of edge deformation and linker binding position to the dimer formation rate, the dimer formation was carried out by two linkers out of four on each side. Two of the four linkers were selected, as shown in Fig. 3. The red and blue linkers are used for the outer side, and the green and black linkers are used for the inner side. The mixing and annealing were the same as for the case with four linkers.</p>
+			<h3>1-5.  Evaluation of dimer formation</h3>
+				<figure style="margin: 20px 0;">
+				  <img src="../img/Fomula1.png" class="Fomula1" style="width: 80%;">
+				</figure>
+			<p>Triangular DNA origami and its dimer formation were assessed by atomic force microscopy (AFM) observation. The AFM procedure is described below.</p>
+			<p>(1) Mix 10 X TAE buffer (0.4 M Tris-HCl buffer, 0.4 M acetic acid, and 0.01 M EDTA) and MgCl₂ solution to concentration</p>s of 1X and 25 mM, respectively.
+			<p>(2) Drop 30 µL of the solution of step (1) onto the cleaved mica, followed by 10 µL of the sample solution, and wait for 10 minutes.</p>
+			<p>(3) Remove the solution from the mica using a micropipette and wash the sample with ultra-pure water. The sample is washed by dropping 30 µL of ultrapure water onto the micropipette, waiting for 10 seconds, and then removing the solution.</p>
+			<p>Repeat this three times.</p>
+			<p>(4) Dry the sample for 2 minutes using an N₂ gun.</p>
+			<p>(5) Observe the sample with an AFM (MultiMode 8, BRUKER).</p>
+			<p>The BRUKER is equipped with a cantilever (Tap300AI-G, Budget Sensors) with a resonance frequency of 300 kHz. The dimer formation rate (unit: %) was calculated according to formula (1) below.</p>
+		</div>
+		</section>
+		<section id="area-2">
+		  <div class="inner">
+			<h2>2. Results and Correlation</h2>
+			<h3>2-1. Correlation between analysis results and dimer formation rate</h3>
+			<p>The correlation between the results of the structural analysis by CanDo and the dimer formation rate is described below.The correlation between the results of the structural analysis by CanDo and the dimer formation rate is described below. The graphs in Figures 2 to 5 (a) to (c) show the outermost double helix (hereafter referred to as the outermost helix) of the triangular DNA origami.The horizontal axis indicated the 336 base pairs belonging to the double helix, and the vertical axis indicated the two-dimensional distance in the graph. The 2D distance was calculated using only the coordinates parallel to the plane containing the triangular DNA origami, which were the average position coordinates of the base pairs outputted by CanDo.The distance between the base pairs at the two ends of the outermost helix and the average positional coordinates of the base pairs. The deformation toward the inside of the triangular DNA origami is negative (concave), while the deformation toward the outside is positive (concave) (Fig 1).</p>
+			<figure>
+				<img src="../img/Fig 1. Schematic of Deformation of Triangular DNA Origami.png" class="Fig1" style="width: 60%;">
+				<figcaption class="center">Fig 1. Schematic of Deformation of Triangular DNA Origami</figcaption>
+			</figure>
+				<p>Below are the analytical results and the dimer formation rate.(State 1) For the first designed origami, the outermost helix of the B edge was convex (Fig 2(b)).The outermost helix was concave when the linker on side A or C was included (Fig 2(a), (c)). For the second origami design, the outermost helix of the A or B edge was convex when the linker of the A or B edge was included (Fig 2(a), (c)). On the other hand, the outermost helix of the C edge was concave in the state containing the C edge linker (Figure 3(c)).Comparing this analysis with the dimer formation rates (Fig 2(d) and 3(d)), the dimer formation rate at the edge where the outermost helix is convex with the linker is higher than that at the edge where the outermost helix is convex with the linker.</p>
+			<div class="container">
+				<div class="container-img" style="width: 49.5%; margin-right:auto; margin-left:auto;">
+					<figure class="left">
+						<img src="../img/Fig 2. Comparison between 2D and Dimer Rates of 1st Design Origami.png"class="Fig2">
+						<figcaption>Fig 2. Comparison between 2D and Dimer Rates of 1st Design Origami</figcaption>
 					</figure>
-
-					<p>Eight different salt conditions and six different temperature ramps were performed, resulting in
-						a total number of 48 samples. 25μL reactions were set up for each sample with a scaffold
-						concentration of 10nM and total staple concentration of 50nM. Temperature ramps were set up as a
-						decrease of 0.2°C with different intervals according to the ramp. Annealed samples were kept at
-						4°C until further processing.
-					</p>
-					<figure class="table">
-						<figcaption>Table 2. Details of folding reactions</figcaption>
-						<img src="images/experiment/table/table2.png" width="600" alt="table1">
+				</div>
+				<div class="container-img" style="width: 49.5%; margin-right:auto; margin-left:auto;">
+					<figure class="right">
+						<img src="../img/Fig 3. Comparison between 2D and Dimer Rates of 2nd Design Origami.png" class="Fig3">
+						<figcaption>Fig 3. Comparison between 2D and Dimer Rates of 2nd Design Origami</figcaption>
 					</figure>
-					<figure class="table">
-						<figcaption>Table 3. Summary of all DNA origami samples</figcaption>
-						<img src="images/experiment/table/table3.png" width="350" alt="table1">
+				</div>
+			</div>
+			<div class="container">
+				<p>(State 2) In the state containing the Outside linker on any one of the three edges, the outermost helix was convex as for the A and B edges, and the helix was concave as for the C edge (Fig 4(a), 4(b), and 4(c)). Based on the correlation between the unevenness of the outermost helix and the dimer formation rateAs described in State 1, it was predicted that the dimer formation rate by the Outside linker would be higher on the A or B edge and lower on the C edge. The experimental results were in agreement with this prediction (Fig 4(d)). The double helix was convex between the Outside linker positions on side A or B, while the Inside linker position is concave on all sides (Fig 5 (a), (b)).On the other hand, edge C was almost straight (Fig 5 (c)). In the dimer formation experiment, the dimer formation rate was relatively high for the A and B edges and low for the C edge (Fig 5 (d)). From these results, it can be inferred that the dominant factor in dimer formation is not the concave shape of the outermost helix as a whole but rather the partial shape of the linker at the position where the linker of the inside joins. The dimer formation rate was higher for the partially convex A and B edges and lower for the partially non-convex C edge on the linear chain.</p>
+				<div class="container">
+					<div class="container-img" style="width: 49.5%; margin-right:auto; margin-left:auto;">
+						<figure class="left">
+							<img src="../img/Fig 4. Comparison between 2D and Dimer Rates of Outside.png"class="Fig4">
+						<figcaption>Fig 4. Comparison between 2D and Dimer Rates of Outside</figcaption>
+						</figure>
+						</div>
+						<div class="container-img" style="width: 49.5%; margin-right:auto; margin-left:auto; ">
+						<figure class="right">
+							<img src="../img/Fig 5. Comparison between 2D and Dimer Rates of Inside.png" class="Fig5">
+							<figcaption>Fig 5. Comparison between 2D and Dimer Rates of Inside</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<h3>2-2. Inferences from results on dimer formation experiments with selective linkers</h3>
+			<div class="container">
+				<div class="right" style="width: 40%;">
+					<div class="container-img">
+					<figure class="right">
+						<img src="../img/Fig 6. AFM Images of Dimers on Side A.png"class="Fig6">
+						<figcaption>Fig 6. AFM Images of Dimers on Side A</figcaption>
 					</figure>
-					<p>Confirmation of successful annealing and optimal annealing conditions were done using agarose gel
-						electrophoresis and atomic force microscopy (AFM). Agarose gel electrophoresis was performed
-						using 1% agarose gel with 1X TAE + Mg as the running buffer, done at 50V at 4°C. Gels are then
-						imaged through SYBR Gold staining and UV transillumination. AFM was performed using 1nM samples
-						under the indicated imaging buffer conditions.
-					</p>
-
-					<figure class="table">
-						<figcaption>Table 4. Agarose gel recipe</figcaption>
-						<img src="images/experiment/table/table4.png" width="600" alt="table1">
+					</div>
+					<div class="container-img">
+					<figure class="right">
+						<img src="../img/Fig 7. Schematic of Bonding on Outside or Inside.png" class="Fig7">
+						<figcaption>Fig 7. Schematic of Bonding on Outside/Inside</figcaption>
 					</figure>
-
-					<figure class="table">
-						<figcaption>Table 5.Details of agarose gel electrophoresis loaded samples</figcaption>
-						<img src="images/experiment/table/table5.png" width="400" alt="table1">
-					</figure>
-
-
-
-
-
-
-					<h4>Results and Discussion:</h4>
-					<figure class="table">
-						<img src="images/experiment/figure/fig1.png" width="500" alt="fig1">
-						<figcaption>Fig 1. Agarose gel electrophoresis results of the 50-hour annealing.</figcaption>
-					</figure>
-					<p>From Figure 1, we can see that in general all of the magnesium concentration options were in fact
-						capable of allowing the formation of some sort of origami structure. In particular interest, the
-						ones that were annealed in 15mM and 20mM of magnesium seemed to
-						indicate good results, the 15mM one showed a very intense band. Meanwhile, the 20mM showed some
-						smearing to the heavier molecular weight side that is not visible in any other lanes, indicating
-						that some stacking possibly occurred.
-					</p>
-					<figure class="table">
-						<img src="images/experiment/figure/fig2.png" width="500" alt="fig2">
-						<figcaption>Fig 2. AFM result of 50-hour-in-20mM origami, imaged in 1x TAE containing 12.5mM of
-							magnesium ions.</figcaption>
-					</figure>
-					<p>From Figure 2, we can see that clear artifacts were observed. Out of these images, we have
-						classified them into two categories. The first one being the isolated intended monomers while
-						the other one is aggregations of the monomers. For the aggregation, it may have occurred due to
-						the sample being too concentrated or the buffer containing too high of a cation content.
-					</p>
-
-
-
-
-					<h3>DNA ORIGAMI PURIFICATION</h3>
-					<h4>Background:</h4>
-					<p>In order to maximize quality of results in other experiments, we decided to purify identified
-						samples in order to remove excess staple that could result in lowering experiments’ validity.
-					</p>
-					<h4>Materials and Methods:</h4>
-					<p>Samples that were to be purified were diluted to a lower concentration of magnesium ion (4mM)
-						before proceeding to use a centrifugation-based molecular weight cutoff (MWCO) purification kit
-						per the instruction manual. After purification, the magnesium concentration of each sample was
-						restored to its original value. Purified samples were kept at 4°C until further processing.
-					</p>
-
-					<figure class="table">
-						<figcaption>Table 6. Details of DNA origami purification</figcaption>
-						<img src="images/experiment/table/table6.png" width="400" alt="table1">
-					</figure>
-
-
-					<h3 id="stacking">STACKING CHARACTERIZATION</h3>
-					<h4>Background:</h4>
-					<p>To confirm the ability of our monomers to stack on their own, we decided to implement both
-						agarose gel electrophoresis and AFM-based observation to characterize the ability and degree of
-						stacking according to different buffer conditions.
-					</p>
-					<h4>Materials and Methods:</h4>
-					<p>To induce stacking, we incubated the DNA origami samples in a 20mM buffer and proceeded to run
-						the agarose gel electrophoresis as per the conditions described previously with a running buffer
-						of 1X TAE + 20mM Mg. AFM was performed using origami samples that were diluted to a
-						concentration of 1nM under the indicated imaging buffer conditions.
-					</p>
-
-					<h4>Results and Discussion:</h4>
-					<figure class="table">
-						<img src="images/experiment/figure/fig3.png" width="600" alt="fig3">
-						<figcaption>Fig 3. Agarose gel electrophoresis result of stacking induction.</figcaption>
-					</figure>
-					<p>From Figure 3, we can see that the samples annealed within a timeframe of 30 to 50 hours seemed
-						to achieve the intended structure and therefore show stacking. From this result, we can prove
-						again that the most ideal condition for our structure is with the 50-hour annealing time in a
-						20mM magnesium buffer, as it shows the strongest band with the most amount of stacking.
-					</p>
-					<figure class="table">
-						<img src="images/experiment/figure/fig4.png" width="600" alt="fig4">
-						<figcaption>Fig 4. AFM result of 50-hour-in-20mM origami, imaged in 1x TAE containing 50mM of
-							magnesium ions.</figcaption>
-					</figure>
-					<p>From Figure 4, we can see that again, the observed structures can be roughly divided into single
-						monomers or stacked monomers. Unlike the aggregation observed in the 12.5mM imaging buffer
-						condition, the grouped structures are neat and form a clear long structure, indicative of
-						successful vertical stacking.
-					</p>
-
-
-
-					<h3 id="locking">LOCKING MECHANISM</h3>
-					<h4>Background:</h4>
-					<p>To test out the design of our blocker DNA, we decided to make a prototype that works on
-						toehold-mediated strand displacement (TMSD) reaction and test the successful induction of lock
-						dissociation using polyacrylamide gel electrophoresis (PAGE).
-					</p>
-					<figure class="table">
-						<img src="images/experiment/figure/fig5.png" width="800" alt="fig5">
-						<figcaption>Fig 5. Schematic of the intended strand displacement reaction.</figcaption>
-					</figure>
-
-					<h4>Materials and Methods:</h4>
-					<p>Polyacrylamide gel electrophoresis was performed using 16% acrylamide gel with 1X TBE as the
-						running buffer, done at 50V at 4°C. Gels are then imaged through SYBR Gold staining and UV
-						transillumination.
-					</p>
-					<figure class="table">
-						<figcaption>Table 7. Polyacrylamide gel recipe</figcaption>
-						<img src="images/experiment/table/table7.png" width="400" alt="table1">
-					</figure>
-					<figure class="table">
-						<figcaption>Table 8. Details of polyacrylamide gel electrophoresis loaded samples</figcaption>
-						<img src="images/experiment/table/table8.png" width="400" alt="table1">
-					</figure>
-					<h4>Results and Discussion:</h4>
-					<figure class="table">
-						<img src="images/experiment/figure/fig6.png" width="500" alt="fig5">
-						<figcaption>Fig 6. Polyacrylamide gel electrophoresis results of the originally designed blocker
-							strands.</figcaption>
-					</figure>
-					<p>From Figure 6, we can see that by using our original design of the blocker strand number 2 being
-						30nt, the largest structure of 1+2+3+4 could not form and did not result in a band.
-						Consequently, the 1+2+3+4+5 lane also showed a similar banding pattern as no strand displacement
-						reaction occurred. As such, we redesigned the system by increasing the length of strand number 2
-						to be 34nt in length.
-					</p>
-					<figure class="table">
-						<img src="images/experiment/figure/fig7.png" width="500" alt="fig6">
-						<figcaption>Fig 7. Polyacrylamide gel electrophoresis results of the revised blocker strands.
-						</figcaption>
-					</figure>
-					<p>From Figure 7, we can see that indeed, each lane showed bands of the expected molecular weight.
-						In particular, we can see that the 1+2+3+4 lane resulted in a high molecular weight band that is
-						not present in the 1+2+3+4+5 lane. Instead, only two bands appeared in that lane which
-						corresponds to the intended 1+4+5 and 2+3 bands. As such, we can conclude that the locking
-						mechanism worked as intended and is ready to be replicated in an azobenzene-controlled fashion.
-					</p>
-
-
-					<h3 id="cholesterol">CONFIRMATION OF CHOLESTEROL INTEGRATION</h3>
-					<h4>Background:</h4>
-					<p>To realize the hydrophobic environment, we annealed another DNA origami batch using the optimum
-						parameters we found and integrated cholesterol-modified DNA into the annealing mix. For
-						confirmation of hydrophobicity, we also integrated DNA that also has fluorophore (FAM) into our
-						structure.
-					</p>
-					<h4>Materials and Methods:</h4>
-					<p>We developed an assay to test the hydrophobicity as below. Holes were punched out from a silicon
-						plate using a biopsy punch before the silicon plate was transferred on top of a slide glass.
-						1.5μL of the DNA solution was pipetted onto the created hole such that the solution covers about
-						half of the diameter and a clear air-solution boundary is formed when seen from above. One piece
-						of cover glass was then placed on top of the droplet to prevent evaporation during observation.
-					</p>
-					<figure class="table">
-						<img src="images/experiment/figure/fig8.png" width="600" alt="fig8">
-						<figcaption>Fig 8. Experimental design to confirm successful creation of hydrophobic
-							environment.</figcaption>
-					</figure>
-					<p>The whole construct is imaged using fluorescent confocal microscopy that was set to excite and
-						detect FAM fluorescence.
-					</p>
-
-					<h4>Results and Discussion:</h4>
-					<figure class="table">
-						<img src="images/experiment/figure/fig9.png" width="600" alt="fig9">
-						<figcaption>Fig 9. Confocal microscopy images of FAM fluorescence of cholesterol-integrated DNA
-							origami.</figcaption>
-					</figure>
-					<p>From Figure 9, we can indeed see that the fluorescence aggregated on the air-solution boundary of
-						the droplet. Comparing the unpurified and purified samples, we can infer that most of the
-						fluorescence that was seen inside the droplet in the unpurified sample was a result of excess
-						staples. As such, we can infer that the creation of a local hydrophobic environment that spans
-						through the origami structure was indeed successful.
-					</p>
-					<figure class="table">
-						<img src="images/experiment/gif/confocal1.gif" width="500" alt="gif">
-					</figure>
-
-
-
-					<h3 id="soap">INTEGRATION OF DNA INTO SOAP BUBBLE</h3>
-					<h4>Background:</h4>
-					<p>We then wanted a definite proof that indeed DNA with molecular weights similar to our structure
-						would be able to insert itself independently into the membrane of a soap bubble. We also wanted
-						to confirm whether insertion of DNA has any effect on the structural integrity of the bubble
-						itself.
-					</p>
-					<h4>Materials and Methods:</h4>
-					<p>100μL of DNA-inserted soap solution was pipetted onto a slide glass. With a pipette set to 75μL,
-						air is pipetted into the droplet of solution, creating a bubble. The slide glass was then placed
-						in a UV transilluminator to visualize the fluorescence. In the case of confocal microscopy, the
-						slide glass was imaged using a confocal microscope to perform optical sectioning and achieve 3D
-						reconstruction.
-					</p>
-					<figure class="table">
-						<figcaption>Table 9. Soap solution recipe</figcaption>
-						<img src="images/experiment/table/table9.png" width="250" alt="table1">
-					</figure>
-					<figure class="table">
-						<figcaption>Table 10. Details of soap bubble creation</figcaption>
-						<img src="images/experiment/table/table10.png" width="600" alt="table1">
-					</figure>
-
-
-					<h4>Results and Discussion:</h4>
-					<figure class="table">
-						<img src="images/experiment/figure/fig10.png" width="300" alt="fig9">
-						<figcaption>Fig 10. Photographs of SYBR Gold-induced fluorescence of the soap bubble.
-						</figcaption>
-					</figure>
-					<p>From Figure 10, we can see that indeed, the background fluorescence of SYBR Gold was intensified
-						due to DNA binding not just on the base of the bubble where solution gathers naturally, but also
-						in the membrane. As such, we conclude that yes, it is in fact possible to insert origami-sized
-						DNA into the membrane of a soap bubble.
-					</p>
-					<figure class="table">
-						<img src="images/experiment/figure/fig11.png" width="500" alt="fig9">
-						<figcaption>Fig 11. Time of bubble breaking according to different concentrations of DNA.
-						</figcaption>
-					</figure>
-					<p>From Figure 11, we can see that the bubble integrity is considerably high. The effect of DNA
-						concentration to the time of breaking was only statistically significant when the DNA inside
-						reaches concentrations above 8nM. In general, the integrity of a soap bubble can be modified by
-						adding chemicals inside the bubble solution or by modifying the surrounding environment
-						conditions. Therefore, we believe that the use of DNA nanotechnology inside soap bubble
-						membranes is completely feasible.
-					</p>
-					<figure class="table">
-						<img src="images/experiment/gif/confocal2.gif" width="500" alt="gif2">
-					</figure>
-					<br />
-
-
-
-					<h3>REFERENCE</h3>
-					<p>DN Kim, F Kilchherr, H Dietz, M Bathe. Quantitative prediction of 3D solution shape and
-						flexibility of nucleic acid nanostructures. Nucleic Acids Research, 40(7):2862-2868 (2012).
-					</p>
-					<p>Douglas, S. et al. (2009) “Self-assembly of DNA into nanoscale three-dimensional shapes”. Nature,
-						459(7245): 414-418
-					</p>
-					<p>Duckett, D., Murchie, A. and Lilley, D. (1990) “The role of metal ions in the conformation of the
-						four-way DNA junction”. The EMBO Journal, 9(2): 583-590
-					</p>
-					<p>Hernández-Ainsa, S., Bell, N. A. W., Thacker, V. V., Göpfrich, K., Misiunas, K., Fuentes-Perez,
-						M. E., Moreno-Herrero, F., & Keyser, U. F. (2013). DNA Origami Nanopores for Controlling DNA
-						Translocation. ACS Nano, 7(7), 6024–6030. https://doi.org/10.1021/nn401759r
-					</p>
-					<p>H. Dietz, S. M. Douglas, W. M. Shih, Folding DNA into twisted and curved nanoscale shapes.
-						Science325, 725 (2009).
-					</p>
-					<p>Mariurt, J. and Doty, P. (1961) “Thermal Renaturation of Deoxyribonucleic Acids”. Journal of
-						Molecular Biology, 3: 585-594
-					</p>
-					<p>Ohmann, A., Göpfrich, K., Joshi, H., Thompson, R. F., Sobota, D., Ranson, N. A., Aksimentiev, A.,
-						& Keyser, U. F. (2019). Controlling aggregation of cholesterol-modified DNA nanostructures.
-						Nucleic Acids Research, 47(21), 11441–11451. https://doi.org/10.1093/nar/gkz914
-					</p>
-					<p>P. W. K. Rothemund, Folding DNA to create nanoscale shapes and patterns. Nature 440, 297 (2006).
-					</p>
-					<p>Petersen, P., Tikhomirov, G.,& Qian, L. (2018). Information-based autonomous reconfiguration in
-						systems of interacting DNA nanostructures. Nature Communications, 9(1), 5362.
-						https://doi.org/10.1038/s41467-018-07805-7
-					</p>
-					<p>Qian, L.,& Winfree, E. (2011). Scaling Up Digital Circuit Computation with DNA Strand
-						Displacement Cascades. Science, 332(6034), 1196–1201. https://doi.org/10.1126/science.1200520
-					</p>
-					<p>Stahl E, Martin TG, Praetorius F, Dietz H. Facile and Scalable Preparation of Pure and Dense DNA
-						Origami Solutions. Angewandte Chemie (International Ed in English). 2014;53(47):12735-12740.
-						doi:10.1002/anie.201405991.
-					</p>
-				</article>
-
-
-			</section>
-			<div class="pagenav">
-				<span class="prev"><a href="analysis.html" rel="prev">&laquo; previous page</a></span>
-				<span class="next"><a href="future.html" rel="next">next page &raquo;</a></span>
+					</div>
+				</div>
+				<div class="p_dayo">
+				<p>The following is what can be inferred from the results of dimer formation experiments on the Outside and Inside. In contrast to the usual method, in which eight linkers of four different linkers are used to combine the triangular DNA folds, this experimental method uses four linkers of two different linkers. The dimer formation rate was lower than when four species were used, but the rate was higher when Inside linkers were used compared with Outside linkers, as shown in Figures 4(d) and 5(d). In other words, the linker at the inside position was more dominant than the dimer formation rate. If the outermost helix is convex, the binding of Outside and Inside would be shown in the upper graph of Fig 7, and this tendency was also confirmed in the AFM images (Fig 6) for each binding method on the A side. Therefore, the convex shape of the outermost helix is thought to facilitate bonding in the Inside linker. The proximity of the bonding positions of the two Inside linkers might also be a factor that facilitates bonding even with a convex shape. Therefore, as in the B edge of the first design origami and the A and B edges of the second design origami, if the convex shape of the outermost helix could be maintained on all sides of the triangular DNA origami, the dimer formation rate would be improved.Another factor is the length of the linker. The linkers are all 22 bases long, as shown in Figure 3, and the linker length between the three double helix is (9 bases + 6 bases) + 7 bases. This 7-base portion is only 2.4 nm, so it is affected by even the slightest in the situation shown in Fig 7 Outside in the upper row or in the lower row, where the outermost helix has a concave shape.</p>
+				</div>
+			</div>
+			</div>
 			</div>
 		</section>
-	</div>
+		<section id="area-3">
+			<div class="inner">
+				<h2>3. Verification of Assumptions</h2>
+				<h3>3-1. Triangle DNA origami redesign considering deformation </h3>
+				<p>Based on the above results and correlations, we assumed that the shape of the outermost helix was the dominant factor in dimer formation and redesigned the second DNA design origami, considering deformation. This is referred to as the redesigned origami. In this redesign, we aimed to satisfy the following three conditions:</p>
+				<p>(Condition 1) The 7-base side of the linker should be longer.</p>
+				<p>(Condition 2) The origami should be flat when all sides of the linker are included, and the outermost helix should be convex and closer to a straight line.</p>
+				<p>(Condition 3) When only one of the three sides contains a linker and the outermost helix on that side is convex and closer to a straight line.</p>
+				<p>The following is a description of the two main changes from the second design origami.</p>
+				<p>(Change I) The 7-base side of all 12 linkers is extended from 7 to 13 bases. The length of the adjacent staple was shortened by 6 bases.</p>
+				<p>(Change II) The staple of the second double helix from the outside of each of the three trapezoids was shortened by one base per trapezoid.</p>
+				<p>The reason for the design of Change I is that by lengthening the linker, the presence of a slight irregularity in the outermost helix can be minimized. Change II is a new design method introduced this time, which is designed to make the outermost helix convex and the shape of the linker bonding position closer to a straight line. It is possible to modify only the staple and linker in the relevant section.The design can be modified by changing only the staple or linker in the relevant section.A more detailed explanation of Modification Point II is provided below. In the triangular DNA origami used in this study, the distance between the crossovers is mainly 31 bp (base pair) or 32 bp. In the new design, the distance was intentionally shortened by 1 base pair (bp) or 2 bp to induce deformation in the two adjacent double helixes that were combined by a crossover(1).  This design prevents significant deformation of the linker binding position. The crossover, which shortens the spacing, should be as close as possible to the top of the triangle to avoid significant deformation of the linker bonding position by this design. Fig 8 shows the results of the CanDo structural analysis of the redesigned origami with linkers on only one of the three sides and deformation of the corners. Although the corners are significantly deformed due to the special design, conditions 2 and 3 were achieved.During this redesign, four other staples were changed to correct areas that were different from the design intent in the second design origami.However, this did not significantly affect the rate of dimer formation. </p>
+				<figure>
+					<img src="../img/Fig 8. Analysis Results of Redesign Origami.png"class="Fig8" style="width: 80%;">
+					<figcaption class="center">Fig 8. Analysis Results of Redesign Origami</figcaption>
+				</figure>
+				<h3>3-2. Dimer formation experiment using redesigned origami</h3>
+				<p>A redesigned origami was created and used to conduct an experimental study on dimerization at edge C. The dimer formation rate was 41.9%, showing an improvement compared to the dimerization results at edge C using the second origami design. In this design, the formation rate of the monomer of the triangular DNA origami decreased. The formation rate was 65.8%, lower than the 85.7% of the modified second-design origami. This decrease was contributed to the three factors. Reducing the stiffness of the outermost helix of the triangular DNA origami by extending the linker from 7 bases to 13 bases. Folding edges within a single DNA origami. The shortened staples in the modified design did not efficiently form a double helix to induce deformation. </p>
+				<h3>3-3. Design of linkers concluded spacer and dimer formation experiment</h3>
+				<div class="container">
+					<div class="right" style="width: 40%;">
+						<div class="container-img">
+						<figure class="right">
+							<img src="../img/Fig 9. Schematic of Linkers including 6T-spacer.png"class="Fig9">
+							<figcaption>Fig 9. Schematic of Linkers including 6T-spacer</figcaption>
+						</figure>
+						</div>
+						<div class="container-img">
+						<figure class="right">
+							<img src="../img/Fig 10. Dimer Rates with 6T-spacer.png" class="Fig10">
+							<figcaption>Fig 10. Dimer Rates with 6T-spacer</figcaption>
+						</figure>
+						</div>
+					</div>
+					<div class="p_dayo">
+						<p>Considering the significant impact of spacer-introduced linkers on dimer formation revealed by CanDo analysis, a linker with a thymine T spacer inserted with 6 bases was designed to bridge triangular DNA origamis at the center, as shown in Fig 9. The dimer formation experiment using this modified second-design origami with the spacer-inserted linker is shown in Fig 10. Compared to the results of dimer formation using the linker without a spacer in the second design origami, there was an improvement in dimer formation rate at side C. While similar dimer formation rates were observed at sides A and B, it is inferred that inducing a spacer does not affect the linker length when the outermost helix is convex like sides A and B, but it has a significant effect when the outermost helix is concave like side C. Therefore, lengthening the linker is believed to significantly improve the dimer formation rate at side C. It is considered that the main factor contributing to the improved dimer formation rate at side C in the redesigned origami is the elongation of the linker.Furthermore, an observed increase in the dimer formation rate was accompanied by gaps formed between the triangular DNA origamis. These gaps may not be suitable for high-precision two-dimensional arrays, yet they verified the assumption that the shape of the outermost helix is the dominant factor in dimer formation.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="Conclusion">
+      <div class="inner">
+        <h2>Conclusion</h2>
+        <p>To investigate the dominant factors affecting dimer formation rate in the assembly of dimer formation experiments by combining triangular DNA origami with linkers, structural analysis using CanDo and dimerization experiments under various conditions were conducted in this study. A comparison between the structural analysis by CanDo and the dimerization experiment results revealed the following two points:</p>
+				<p>(1) When a linker was added to only one side of the three sides, if the outermost helix of the triangular DNA origami had a convex shape on the plane containing the origami, the dimer formation rate on that side tended to be higher. Conversely, if it had a concave shape, the dimer formation rate was lower.</p>
+				<p>(2) Comparing the shapes of the outermost helix when linkers were added to the inner two crossover points connecting triangular DNA origamis versus when added to the outer two points, the former showed a convex center shape in the outermost helix, resulting in a higher dimer formation rate in the dimerization experiment.</p>
+				<p>Based on these analytical results, it was suggested that designing the outermost helix of the triangular DNA origami so that it has a convex shape when a linker is added to only one side of the three sides could suppress the decrease in dimer formation rate. Consequently, modified triangular DNA origamis were designed with this insight. Additionally, considering the significant impact of the outermost helix shape on dimer formation rate according to CanDo analysis, linkers inserting six bases as spacers were designed for the central part bridging triangular DNA origamis. Dimerization experiments utilizing these designs demonstrated the validity of the hypothesis that the shape of the outermost helix is a dominant factor in dimer formation rate.</p>
+      </div>
+    </section>
 
-  <!--/main--></main>
+	  
+		<section id="Reference">
+		  <div class="inner" id="Reference">
+			<h2>Reference</h2>
+			<ol>
+			<li> H. Dietz, S. M. Douglas, and W. M. Shih : “Folding DNA into Twisted and Curved Nanoscale Shapes”, Science, Vol.325, No.5941, pp.725-730 (2009)</li>
+			</ol>
+		  </div>
+		</section>
+	
+	  </main><!--/main-->
 
   <footer>
     <small>&copy; copyright.</small>  
