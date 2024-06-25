@@ -26,6 +26,28 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     document.querySelectorAll('.reference a').forEach(function(link) {
+//       link.addEventListener('click', function(event) {
+//         console.log('リンクがクリックされました');
+//         // 既存のハイライトを削除
+//         var highlighted = document.querySelector('.highlight');
+//         if (highlighted) {
+//           console.log('既存のハイライトを削除');
+//           highlighted.classList.remove('highlight');
+//         }
+//         // 対象のliにハイライトを追加
+//         var target = document.querySelector(this.getAttribute('href'));
+//         if (target) {
+//           console.log('ハイライトを追加');
+//           target.classList.add('highlight');
+//         } else {
+//           console.log('ターゲットが見つかりません');
+//         }
+//       });
+//     });
+//   });
+  
 // jQueryによるナビゲーションパネルの制御
 $(function() {
     $(".menu li").hover(
@@ -39,3 +61,17 @@ $(function() {
       }
     );
   });
+  
+// JS
+$(function () {
+    var headerHight = 100; //ヘッダーの高さ
+    $('a[href^="#"]').click(function () {
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? "html" : href);
+    var position = target.offset().top - headerHight;
+    $("html, body").animate({
+    scrollTop: position
+    }, 500, "swing");
+    return false;
+    });
+});
