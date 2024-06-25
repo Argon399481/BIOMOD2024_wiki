@@ -178,12 +178,13 @@ main{
 
 h2{
   font-size:1.4rem;
-  margin: 0 0 30px 0;
+  margin: 0 0 10px 0;
 }
 
 h3{
   font-size:1.2rem;
-  margin: 0 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .p_dayo p {
   display: flex;
@@ -425,13 +426,16 @@ section:nth-child(2n){
   display: inline-block;
 }
 figure {
+  margin-top: 20px;
   width: 100%;
   display: inline-block; /* 必要に応じて調整 */
   text-align: center;
 }
+figure.left {
+  float: left;
+  text-align: left;
+}
 figure.right {
-  margin-top: 20px;
-  padding-left: 20px;
   float: right;
   text-align: right;
 }
@@ -445,9 +449,20 @@ figcaption {
   text-align: left;
   word-wrap: break-word; /* 長い単語を折り返す */
   overflow-wrap: break-word; /* 長い単語を折り返す */
-  margin-top: 8px;
+  margin-top: 2px;
+  margin-bottom: 8px;
   font: italic sans-serif;
 }
+
+/* 表には適宜以下のclassを付与する */
+figcaption.table {
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+figcaption.center {
+  text-align: center;
+}
+
 
 img {
   display: inline-flex;
