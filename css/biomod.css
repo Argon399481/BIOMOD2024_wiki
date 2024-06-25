@@ -292,7 +292,7 @@ section:nth-child(2n){
 
 
 /* ここからオープニングアニメーションのCSS*/
-.bg {
+/* .bg {
   width: 100vw;
   height: 100vh;
   background: #11086c;
@@ -339,10 +339,10 @@ section:nth-child(2n){
 
 .text span:nth-child(4) {
   animation: textAnime2 .6s ease-in-out .8s forwards;
-}
+} */
 
 /*keyframe*/
-@keyframes textAnime1 {
+/* @keyframes textAnime1 {
   0% {
     opacity: 0;
   }
@@ -383,7 +383,7 @@ section:nth-child(2n){
     opacity: 0;
     visibility: hidden;
   }
-}
+} */
 
 /*  ここまでオープニングアニメーションのCSS*/
 #header h1{

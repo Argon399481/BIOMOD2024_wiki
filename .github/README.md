@@ -2,7 +2,7 @@
 ↓アクセスは以下のURLから  
 https://argon399481.github.io/BIOMOD2024_wiki/  
   
-・Update
+・Update  
 2024/6/3  
 サイトの作成を開始。  
   
