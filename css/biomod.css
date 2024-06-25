@@ -202,12 +202,12 @@ small{
   padding:20px;
 } */
 
-.footer small{
+footer small{
   background:#333;
   color:#fff;
   display: block;
   text-align: center;
-  padding:20px;
+  padding:20px 0;
 }
 
 
