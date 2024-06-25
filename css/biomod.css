@@ -185,7 +185,10 @@ h3{
   font-size:1.2rem;
   margin: 0 100px;
 }
-
+.p_dayo p {
+  display: flex;
+  padding-right: 20px;
+}
 /* 勝手に変えました！！！！！！！！！！
 /* 
 p{
@@ -215,6 +218,10 @@ nav ul{
 }
 .inner {
   margin: 0 15%;
+}
+.inner img {
+  width: 100%;
+  size: 2%;
 }
 
 /* 勝手に変えました！！！！！！！！！！
@@ -421,6 +428,16 @@ figure {
   width: 100%;
   display: inline-block; /* 必要に応じて調整 */
   text-align: center;
+}
+figure.right {
+  margin-top: 20px;
+  padding-left: 20px;
+  float: right;
+  text-align: right;
+}
+div.right {
+  float: right;
+  text-align: right;
 }
 
 figcaption {
