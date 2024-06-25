@@ -115,7 +115,6 @@ body{
 #header{
   height: 70px;/*高さ指定*/
   width:100%;/*横幅指定*/
-  /*以下はレイアウトのためのCSS*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,9 +122,12 @@ body{
   color:#fff;
   text-align: center;
   padding-right: 0px;
-  position:fixed;
-}
-
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  z-index:100;
+  margin:0;
+  }
 /*JSを使いfixedクラスが付与された際の設定*/
 
 #header.fixed{
@@ -175,9 +177,9 @@ header .gnav .menu li + li {
 }
 /*================ここまで川口が入れたやつ=============================*/
 
-main{
+/* main{
   padding-top: 70px;
-}
+} */
 
 h2{
   font-size:1.4rem;
@@ -292,7 +294,7 @@ section:nth-child(2n){
 
 
 /* ここからオープニングアニメーションのCSS*/
-.bg {
+/* .bg {
   width: 100vw;
   height: 100vh;
   background: #11086c;
@@ -339,10 +341,10 @@ section:nth-child(2n){
 
 .text span:nth-child(4) {
   animation: textAnime2 .6s ease-in-out .8s forwards;
-}
+} */
 
 /*keyframe*/
-@keyframes textAnime1 {
+/* @keyframes textAnime1 {
   0% {
     opacity: 0;
   }
@@ -383,7 +385,7 @@ section:nth-child(2n){
     opacity: 0;
     visibility: hidden;
   }
-}
+} */
 
 /*  ここまでオープニングアニメーションのCSS*/
 #header h1{
@@ -490,13 +492,14 @@ img {
   color: #fff;
   line-height: 40px;
   text-decoration: none;
-  font-size: medium;
+  font-size: 3.5vh;
 }
 
 .menuSub li a:hover {
   background: #FFCA7B;
 }
 
+/* 動きません。
 @keyframes highlight {
   0% {
     background-color: #e0f7ff;
@@ -507,4 +510,4 @@ img {
 }
 #Reference_1:target {
   animation: highlight 2.4s ease-in-out;
-}
+} */
