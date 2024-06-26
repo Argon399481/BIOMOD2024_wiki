@@ -191,8 +191,15 @@ h3{
   margin-top: 20px;
   margin-bottom: 10px;
 }
+p {
+  text-align: justify
+}
 sup {
   vertical-align: super;
+  font-size: smaller;
+}
+sub {
+  vertical-align: sub;
   font-size: smaller;
 }
 .p_dayo p {
@@ -227,6 +234,19 @@ footer small{
   padding:20px 0;
 }
 
+li { 
+  list-style-position: outside;
+  margin-left: 20px;
+}
+li::marker {
+  font-weight: bold;
+}
+#Reference li::marker {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+}
 
 nav ul{
   list-style: none;
@@ -498,6 +518,12 @@ img {
 .menuSub li a:hover {
   background: #FFCA7B;
 }
+
+/* 強調用 */
+span.emphasize {
+  font-weight: bold;
+}
+
 
 /* 動きません。
 @keyframes highlight {
