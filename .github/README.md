@@ -22,12 +22,14 @@ Experimentに着手しました。
 Futureを実装しました。  
 Experimentを実装しました。(Conclusion含む)  
 Referenceの表示を綺麗にしました。  
-Experimentに着手しました。  
   
 2024/6/26  
 submenuを訂正しました。  
 微調整しました。  
-footerをSpecialThanksに変更しました。
+footerをSpecialThanksに変更しました。  
+  
+2024/6/27  
+Teamを実装しました。  
   
 ## 妥協点
 
