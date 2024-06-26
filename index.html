@@ -20,12 +20,36 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
   <link rel="shortcut icon" href="img/favicon.ico">
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
 </head>
 
 <body>
-	
-	<div id="header"></div>
+	<header id="header" role="banner">
+			  <img src="img/Logo.png" class="Logo" alt="Team-logo">
+			  <h1><a href="index.html">BIOMOD NOKO 2024</a></h1>
+			</a>
+			<nav id="mainNav">
+			  <div>
+				<ul class="menu">
+				  <li><a href="html/project.html">Project</a>
+				  </li>
+				  <li><a href="html/Experiment.html">Experiment</a>
+					<ul class="menuSub">
+					  <li><a href="html/Experiment.html#Analysis">Analysis</a></li>
+					  <li><a href="html/Experiment.html#Results">Results</a></li>
+					  <li><a href="#">Verification</a></li>
+					  <li><a href="#">Conclusion</a></li>
+					</ul>
+				  </li>
+				  <li><a href="html/Future.html">Future</a>
+				  </li>
+				  <li><a href="html/Team.html">Team</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+		</div>
+	</header>
     
   <main>
 	<video loop src="video/Animation.mp4" width="900px" autoplay muted id="anime" style="display: block; margin: 0 auto;"></video>
@@ -58,7 +82,9 @@
 </main>
 <!--/main-->
 
-<div id="footer"></div>
+  <footer>
+    <small>&copy; copyright.</small>  
+  </footer>
    
 <button id="scrollToTopBtn">Top</button>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
