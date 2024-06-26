@@ -1,4 +1,4 @@
-// ページの読み込みが完了した時に実行される初期化コード
+// 押したらページの一番上に移動するボタン
 window.addEventListener('DOMContentLoaded', function() {
     // ボタン要素を取得
     var scrollToTopBtn = document.getElementById('scrollToTopBtn');
@@ -26,28 +26,6 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   document.querySelectorAll('.reference a').forEach(function(link) {
-//     link.addEventListener('click', function(event) {
-//       console.log('リンクがクリックされました');
-//       // 既存のハイライトを削除
-//       var highlighted = document.querySelector('.highlight');
-//       if (highlighted) {
-//         console.log('既存のハイライトを削除');
-//         highlighted.classList.remove('highlight');
-//       }
-//       // 対象のliにハイライトを追加
-//       var target = document.querySelector(this.getAttribute('href'));
-//       if (target) {
-//         console.log('ハイライトを追加');
-//         target.classList.add('highlight');
-//       } else {
-//         console.log('ターゲットが見つかりません');
-//       }
-//     });
-//   });
-// });
-
 // jQueryによるナビゲーションパネルの制御
 $(function() {
     $(".menu li").hover(
@@ -62,7 +40,7 @@ $(function() {
     );
   });
   
-// JS
+// ページ遷移の位置調整
 $(function () {
     var headerHight = 70; //ヘッダーの高さ
     $('a[href^="#"]').click(function () {
