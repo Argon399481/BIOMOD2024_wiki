@@ -2,7 +2,7 @@
 ↓アクセスは以下のURLから  
 https://argon399481.github.io/BIOMOD2024_wiki/  
   
-# Update
+## Update!
 2024/6/3  
 サイトの作成を開始。  
   
@@ -23,11 +23,10 @@ Referenceの表示を綺麗にしました。
 Experimentに着手しました。  
   
 2024/6/26  
-submenuを訂正しました。
-微調整しました。  
-
+submenuを訂正しました。  
+微調整しました。
   
-# 妥協点
+## 妥協点
 
 - pの中にあるaタグを指定するようにしてrelativeとabsolute組めないしdivをpとaの間に設けるの困難だからaにtitle属性持たせるんで良くね？
 - figcaptionのある画像にalt入れるのめんどいしくどいしコード見づらいから良くね？
