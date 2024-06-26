@@ -1,7 +1,7 @@
 # BIOMOD2024_wiki
 ↓アクセスは以下のURLから  
 https://argon399481.github.io/BIOMOD2024_wiki/  
-※このwikiはtestとして作ったものであり、内容のほとんどは以下の論文から引用させていただいたものとなります。  
+※このwikiはtestとして作ったものであり、内容のほとんどは以下の論文から引用させていただいたものです。  
 https://www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja
   
 ## Update!
