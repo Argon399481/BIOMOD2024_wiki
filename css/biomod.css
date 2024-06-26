@@ -107,9 +107,6 @@
   }
 /*========= ここまでリセットCSS ===============*/
 
-body{
-    font:18px "Sylfaen","ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
-}
 
 /*========= 上部固定させるためのCSS ===============*/
 #header{
@@ -127,17 +124,13 @@ body{
   z-index:100;
   margin:0;
   }
-/*JSを使いfixedクラスが付与された際の設定*/
-
-#header.fixed{
-  position: fixed;/*fixedを設定して固定*/
-    z-index: 999;/*最前面へ*/
-    top:0;/*位置指定*/
-    left:0;/*位置指定*/
-}
-
 
 /*========= レイアウトのためのCSS ===============*/
+
+body{
+  font:18px "Sylfaen","ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+}
+
 .Logo{
   width: 124px;
   height: 70px;
@@ -145,14 +138,7 @@ body{
 .menu{
     padding-right: 10px;/* メニューの位置調整 */
 }
-header .gnav .menu li + li {
-    margin-left: 40px; /* メニューそれぞれに間隔をあけるため */
-}
 
-
-/* main{
-  padding-top: 70px;
-} */
 h1.heading {
   padding-bottom: 5px;
   margin: 10px 0;
@@ -161,19 +147,17 @@ h1.heading {
   font-weight: bold;
   text-align: center;
 }
-
 h2{
   font-size:1.4rem;
   margin: 0 0 10px 0;
 }
-
 h3{
   font-size:1.2rem;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 p {
-  text-align: justify
+  text-align: justify;
 }
 sup {
   vertical-align: super;
@@ -183,6 +167,7 @@ sub {
   vertical-align: sub;
   font-size: smaller;
 }
+
 .p_dayo p {
   padding-right: 20px;
   word-wrap: break-word; /* 長い単語を折り返す */
@@ -193,26 +178,6 @@ sub {
   padding:0;
   font-size:100%;
   vertical-align:baseline;
-}
-/* 勝手に変えました！！！！！！！！！！
-/* 
-p{
-  padding:0 50px;
-}
-small{
-  background:#333;
-  color:#fff;
-  display: block;
-  text-align: center;
-  padding:20px;
-} */
-
-footer small{
-  background:#333;
-  color:#fff;
-  display: block;
-  text-align: center;
-  padding:20px 0;
 }
 
 ol li { 
@@ -228,9 +193,11 @@ li::marker {
 ul {
   list-style-type: none;
 }
+ol {
+  text-align: justify;
+}
 
 nav ul{
-  list-style: none;
   display: flex;
   justify-content: center;
 }
@@ -242,21 +209,14 @@ nav ul{
   size: 2%;
 }
 
-/* 勝手に変えました！！！！！！！！！！
-a{
+
+footer small{
+  background:#333;
+  color:#fff;
   display: block;
-  text-decoration: none;
-  color: #fff;
-  padding:10px;
-  transition:all 0.3s;
-} */
-
-
-nav ul li.current a,
-nav ul li a:hover{
-  color:#fff; 
+  text-align: center;
+  padding:20px 0;
 }
-
 
 section{
   padding:30px;
@@ -264,10 +224,6 @@ section{
 
 section:nth-child(2n){
   background:#f3f3f3; 
-}
-/* referのcss保留 */
-#Reference {
-  display: block;
 }
 
 
@@ -292,6 +248,137 @@ section:nth-child(2n){
   background-color: #0c0650; /* ホバー時の背景色 */
   cursor: pointer; /* ホバー時にポインターを変更 */
 }
+
+#header h1{
+  font-size: 6vh;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  color: #fff;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+  width: 140px;
+  height: 70px;
+  background: #11086c;
+  font-size: large;
+}
+
+.menu li a {
+  display: block;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  line-height: 70px;
+  font-size: 4vh;
+}
+
+.menuSub {
+  position: absolute;
+  display: none;
+}
+
+#header a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition:all 0.3s;
+}
+.container {
+  display: inline-block;
+}
+.container-img {
+  display: inline-block;
+}
+figure {
+  margin-top: 20px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+figure.left {
+  float: left;
+  text-align: left;
+}
+figure.right {
+  float: right;
+  text-align: right;
+}
+div.right {
+  float: right;
+  text-align: right;
+}
+
+figcaption {
+  width: 100%; /* キャプションの幅を画像に合わせる */
+  text-align: left;
+  word-wrap: break-word; /* 長い単語を折り返す */
+  overflow-wrap: break-word; /* 長い単語を折り返す */
+  margin-top: 2px;
+  margin-bottom: 8px;
+  font: italic sans-serif;
+}
+
+/* 表には適宜以下のclassを付与する */
+figcaption.table {
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+figcaption.center {
+  text-align: center;
+}
+
+
+img {
+  display: inline-flex;
+}
+
+
+
+/*.openが付与された時、表示の設定*/
+.menuSub.open {
+  display: block;
+}
+.menuSub li{
+  height: 40px;
+}
+
+.menuSub li a {
+  display: block;
+  color: #fff;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 3.5vh;
+}
+
+.menuSub li a:hover {
+  background: #FFCA7B;
+}
+
+/* 強調用 */
+span.emphasize {
+  font-weight: bold;
+}
+
+
+/* 動きません。
+@keyframes highlight {
+  0% {
+    background-color: #e0f7ff;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+#Reference_1:target {
+  animation: highlight 2.4s ease-in-out;
+} */
 
 
 /* ここからオープニングアニメーションのCSS*/
@@ -389,132 +476,3 @@ section:nth-child(2n){
 } */
 
 /*  ここまでオープニングアニメーションのCSS*/
-#header h1{
-  font-size: 6vh;
-}
-
-.menu {
-  display: flex;
-  justify-content: flex-start;
-  list-style-type: none;
-  color: #fff;
-  padding: 0;
-}
-
-.menu li {
-  position: relative;
-  width: 140px;
-  height: 70px;
-  background: #11086c;
-  font-size: large;
-}
-
-.menu li a {
-  display: block;
-  position: relative;
-  text-align: center;
-  height: 100%;
-  line-height: 70px;
-  font-size: 4vh;
-}
-
-.menuSub {
-  position: absolute;
-  display: none;
-}
-
-#header a{
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  transition:all 0.3s;
-}
-.container {
-  display: inline-block;
-}
-.container-img {
-  display: inline-block;
-}
-figure {
-  margin-top: 20px;
-  width: 100%;
-  display: inline-block; /* 必要に応じて調整 */
-  text-align: center;
-}
-figure.left {
-  float: left;
-  text-align: left;
-}
-figure.right {
-  float: right;
-  text-align: right;
-}
-div.right {
-  float: right;
-  text-align: right;
-}
-
-figcaption {
-  width: 100%; /* キャプションの幅を画像に合わせる */
-  text-align: left;
-  word-wrap: break-word; /* 長い単語を折り返す */
-  overflow-wrap: break-word; /* 長い単語を折り返す */
-  margin-top: 2px;
-  margin-bottom: 8px;
-  font: italic sans-serif;
-}
-
-/* 表には適宜以下のclassを付与する */
-figcaption.table {
-  margin-top: 8px;
-  margin-bottom: 2px;
-}
-figcaption.center {
-  text-align: center;
-}
-
-
-img {
-  display: inline-flex;
-}
-
-
-
-/*.openが付与された時、表示の設定*/
-.menuSub.open {
-  display: block;
-}
-.menuSub li{
-  height: 40px;
-}
-
-.menuSub li a {
-  display: block;
-  color: #fff;
-  line-height: 40px;
-  text-decoration: none;
-  font-size: 3.5vh;
-}
-
-.menuSub li a:hover {
-  background: #FFCA7B;
-}
-
-/* 強調用 */
-span.emphasize {
-  font-weight: bold;
-}
-
-
-/* 動きません。
-@keyframes highlight {
-  0% {
-    background-color: #e0f7ff;
-  }
-  100% {
-    background-color: transparent;
-  }
-}
-#Reference_1:target {
-  animation: highlight 2.4s ease-in-out;
-} */
