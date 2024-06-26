@@ -122,7 +122,6 @@ body{
   color:#fff;
   text-align: center;
   padding-right: 0px;
-  position: -webkit-sticky;
   position: sticky;
   top:0;
   z-index:100;
@@ -151,35 +150,17 @@ header .gnav .menu li + li {
 }
 
 
-/*========= 川口が入れたやつ ===============*/
-.jumbotron .container {
-  padding-left: 10vh;
-  padding-top: 20vh;
-}
-
-.jumbotron h1 {
-  font-size: 6vw;
-  color: #fff;
-}
-.jumbotron h2 {
-  font-size: 4vw;
-}
-.post-header h2,
-.post-title {
-  color: #000000;
-}
-
-.post-content img {
-  max-width: 100%; /* 画像がコンテナより大きい場合、コンテナの幅に合わせてリサイズ */
-  height: auto;    /* 高さは自動的に調整 */
-  display: block;  /* 中央揃えのため */
-  margin: 0 auto;  /* 画像を中央に配置 */
-}
-/*================ここまで川口が入れたやつ=============================*/
-
 /* main{
   padding-top: 70px;
 } */
+h1.heading {
+  padding-bottom: 5px;
+  margin: 10px 0;
+  font-size: 2em;
+  border-bottom: 2px solid #848484;
+  font-weight: bold;
+  text-align: center;
+}
 
 h2{
   font-size:1.4rem;
