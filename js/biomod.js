@@ -26,8 +26,6 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-
 // document.addEventListener('DOMContentLoaded', function() {
 //   document.querySelectorAll('.reference a').forEach(function(link) {
 //     link.addEventListener('click', function(event) {
@@ -77,8 +75,3 @@ $(function () {
     return false;
     });
 });
-$(function() {
-    $("#header").load("header.html");
-    $("#footer").load("footer.html");
-  });
-  console.log($("#footer").length);
