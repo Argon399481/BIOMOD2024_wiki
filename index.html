@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--ファビコンがない。
-  単純に文量がない。
-  ヘッダーの動きは面白いが、それ以外の動きが全くない。
-  フォントに一貫性がない。
-  構造上Ctrl+Fが使えない。
-  各項目内に書かれている内容が読みづらい、単調。
-  ヘッダーを回す必要性がない、ストーリー性がない、つながりがない。-->
-  
 
 <head>
 	<meta charset="UTF-8">
@@ -24,6 +16,7 @@
 </head>
 
 <body>
+	<main>
 	<header id="header" role="banner">
 			  <img src="img/Logo.png" class="Logo" alt="Team-logo">
 			  <h1><a href="index.html">BIOMOD Team NoKo 2024</a></h1>
@@ -31,7 +24,9 @@
 			<nav id="mainNav">
 			  <div>
 				<ul class="menu">
-				  <li><a href="html/project.html">Project</a>
+				  <li><a href="html/Project.html">Project</a>
+				  </li>
+					<li><a href="html/Design.html">Design</a>
 				  </li>
 				  <li><a href="html/Experiment.html">Experiment</a>
 					<ul class="menuSub">
@@ -50,23 +45,26 @@
 			</nav>
 		</div>
 	</header>
-	<main>
-			<video id="video" poster="img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
+			<video id="background" poster="img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
 			<source src="video/DNAbackground.mp4" type="video/mp4">
 			</video>
-    
-			<div class="container" style="position: relative; margin-left: 20%; margin-top: -5%;">
-				<video loop width="100%" autoplay muted id="anime" style="padding-left: 5%;">
+			
+			<div class="bg">
+			<h1 class="TextTyping">Bilayer Gel Bilayer</h1>
+			</div>
+			
+			<div class="container" style="position: relative; margin-left: 20%;">
+				<video id="lipo" loop width="100%" muted style="width: 80%; padding-left: 20%; margin-top: 5%;">
+					<source src="video/fluorescent_fuyo.webm" type="video/webm">
 					<source src="video/touka_fuyo.webm" type="video/webm">
-					<source src="video/0001-0100.mo" type="video/mov">
+					<source src="video/0001-0100.mov" type="video/mov">
 				</video>
 				<div style="position: absolute; top: 20vh; left:0;">
 				<h1 class="title"><span style="color:red;">B</span>ilayer</h1>
-				<h1 class="title"><span style="color:lightgreen;">D</span>NA</h1>
+				<h1 class="title"><span style="color:lightgreen;">G</span>el</h1>
 				<h1 class="title"><span style="color:blue;">B</span>ilayer</h1>
 				</div>
       </div>
-
 	
     <section id="area-1">
 		<div class="inner">
@@ -101,8 +99,10 @@
     <small>&copy; Special Thanks <a href="https://www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja" style="color: #fff;">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>  
   </footer>
    
+<button id="video-btn">▷</button>
 <button id="scrollToTopBtn">Top</button>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
 <script src="js/biomod.js"></script>
 </body>
 
