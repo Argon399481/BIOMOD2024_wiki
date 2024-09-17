@@ -35,6 +35,7 @@ Teamを実装しました。
 各種サイトを参考にしつつ3Dモデルを入れるなどして雰囲気をガラッと変えました。  
   
   これからfutureとELSI作る！
+  Github、X、instagramのリンクを載せる。
 ## 妥協点
 
 - pの中にあるaタグを指定するようにしてrelativeとabsolute組めないしdivをpとaの間に設けるの困難だからaにtitle属性持たせるんで良くね？
