@@ -31,7 +31,7 @@
 
   body {
     line-height:1;
-    background-color: #fff;
+    background-color: #000;
   }
 
   article,aside,details,figcaption,figure,
@@ -111,7 +111,7 @@
 
 /*========= 上部固定させるためのCSS ===============*/
 #header{
-  height: 70px;/*高さ指定*/
+  height: 80px;/*高さ指定*/
   width:100%;/*横幅指定*/
   display: flex;
   justify-content: space-between;
@@ -223,12 +223,14 @@ nav ul{
 }
 
 
-footer small{
-  background:#333;
-  color:#fff;
+footer{
+  background-color:#333;
   display: block;
   text-align: center;
   padding:20px 0;
+}
+footer a{
+  color: #fff;
 }
 
 section{
@@ -261,7 +263,8 @@ section{
 
 
 #header h1{
-  font-size: 6vh;
+  font-size: 5vh;
+  margin-top: 1vh;
 }
 
 .menu {
