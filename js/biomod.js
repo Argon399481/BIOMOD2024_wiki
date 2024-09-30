@@ -1,29 +1,28 @@
-// 押したらページの一番上に移動するボタン
-window.addEventListener('DOMContentLoaded', function() {
-    // ボタン要素を取得
-    var scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-    // 要素が存在するか確認
-    if (scrollToTopBtn) {
-        // ボタンをクリックした時のスクロール機能を追加
-        scrollToTopBtn.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // スムーズスクロール
-            });
-        });
-
-        // スクロール位置が一定以上になるとボタンを表示する
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 300) { // 300pxよりスクロールされたら表示
-                scrollToTopBtn.style.display = 'block';
-            } else {
-                scrollToTopBtn.style.display = 'none';
-            }
-        });
+//横尾　下から出てくるボタン
+jQuery(function() {
+  var appear = false;
+  var pagetop = $('#scrollToTopBtn');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {  //300pxスクロールしたら
+      if (appear == false) {
+        appear = true;
+        pagetop.stop().animate({
+          'bottom': '0px' //下から0pxの位置に
+        }, 300); //0.3秒かけて現れる
+      }
     } else {
-        console.log('scrollToTopBtnが見つかりませんでした。');
+      if (appear) {
+        appear = false;
+        pagetop.stop().animate({
+          'bottom': '-100px' //下から-100pxの位置に
+        }, 300); //0.3秒かけて隠れる
+      }
     }
+  });
+  pagetop.click(function () {
+    $('body, html').animate({ scrollTop: 0 }, 100); //0.1秒かけてトップへ戻る
+    return false;
+  });
 });
 
 // jQueryによるナビゲーションパネルの制御
