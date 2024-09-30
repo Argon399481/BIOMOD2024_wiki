@@ -242,18 +242,17 @@ section{
 /*========= 川口が入れたやつ ===============*/
 #scrollToTopBtn {
   position: fixed;
-  bottom: 40px; /* 画面下からの距離 */
+  bottom: -100px; /* 画面下からの距離 */
   right: 40px; /* 画面右からの距離 */
   background-color: #11086c; /* 背景色 */
   color: #ffffff; /* テキストの色 */
   border: none; /* ボーダーなし */
-  border-radius: 50%; /* 円形のボタンにする */
+  border-radius: 50% 50% 0 0; /* 円形のボタンにする */
   width: 70px; /* ボタンの幅 */
-  height: 70px; /* ボタンの高さ */
+  height: 100px; /* ボタンの高さ */
   font-size: 20px; /* テキストのサイズ */
   line-height: 50px; /* テキストの垂直方向の中央揃え */
   text-align: center; /* テキストの水平方向の中央揃え */
-  display: none; /* 最初は非表示 */
 }
 
 #scrollToTopBtn:hover {
