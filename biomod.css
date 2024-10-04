@@ -1,0 +1,612 @@
+@charset "utf-8";
+  /*
+  html5doctor.com Reset Stylesheet
+  v1.6.1
+  Last Updated: 2010-09-17
+  Author: Richard Clark - http://richclarkdesign.com
+  Twitter: @rich_clark
+  */
+
+  html, body, div, span, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  abbr, address, cite, code,
+  del, dfn, em, img, ins, kbd, q, samp,
+  small, strong, sub, sup, var,
+  b, i,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section, summary,
+  time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    color: #f3f3f3;
+  }
+
+  body {
+    line-height:1;
+    background-color: #000;
+  }
+
+  article,aside,details,figcaption,figure,
+  footer,header,hgroup,menu,nav,section {
+    display:block;
+  }
+
+  nav ul {
+    list-style:none;
+  }
+
+  blockquote, q {
+    quotes:none;
+  }
+
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content:'';
+    content:none;
+  }
+
+  a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+  }
+  
+  .reference a {
+    text-decoration:none;
+  }
+
+  /* change colours to suit your needs */
+  ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+  }
+
+  /* change colours to suit your needs */
+  mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+  }
+
+  del {
+    text-decoration: line-through;
+  }
+
+  abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+  }
+
+  table {
+    border-collapse:collapse;
+    border-spacing:0;
+  }
+
+  /* change border colour to suit your needs */
+  hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+  }
+
+  input, select {
+    vertical-align:middle;
+  }
+/*========= ここまでリセットCSS ===============*/
+
+
+/*========= 上部固定させるためのCSS ===============*/
+#header{
+  height: 80px;/*高さ指定*/
+  width:100%;/*横幅指定*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background:rgba(69, 70, 155, 0.3); */
+  color:#fff;
+  text-align: center;
+  padding-right: 0px;
+  position: sticky;
+  top:0;
+  z-index:100;
+  margin:0;
+  box-shadow: 
+    inset 0 30px 50px 10px rgba(0, 0, 0, 0.7) 
+    , 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+main{
+  background-color:rgba(0, 0, 0, 0.2); 
+}
+
+body{
+  font:18px "Consolas", "Courier New", "monospace","ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+}
+/* プログラミング感を出すためにVSCodeの標準フォントである"Consolas", "Courier New", "monospace"を追加 */
+
+.Logo{
+  width: 124px;
+  height: 70px;
+}
+.menu{
+    padding-right: 10px;/* メニューの位置調整 */
+}
+
+h1.heading {
+  padding-bottom: 5px;
+  margin: 10px 0;
+  font-size: 2em;
+  border-bottom: 2px solid #848484;
+  font-weight: bold;
+  text-align: center;
+}
+h1.title{
+  font-size: 15vh;
+}
+
+h2{
+  font-size:1.4rem;
+  margin: 0 0 10px 0;
+}
+h3{
+  font-size:1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+p {
+  text-align: justify;
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.p_dayo p {
+  padding-right: 20px;
+  word-wrap: break-word; /* 長い単語を折り返す */
+  overflow-wrap: break-word; /* 長い単語を折り返す */
+}
+.p_dayo a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+}
+
+ol li { 
+  list-style-position: outside;
+  margin-left: 20px;
+}
+li::marker {
+  font-weight: bold;
+}
+#Reference li::marker {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+}
+ol {
+  text-align: justify;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+.inner {
+  margin: 0 15%;
+}
+.inner img {
+  width: 100%;
+  size: 2%;
+}
+
+
+footer{
+  background-color:#333;
+  display: block;
+  text-align: center;
+  padding:20px 0;
+}
+footer a{
+  color: #fff;
+}
+
+section{
+  padding:30px;
+  background-color:rgba(11, 7, 37, 0.5); 
+}
+
+
+/*========= 川口が入れたやつ ===============*/
+#scrollToTopBtn {
+  position: fixed;
+  bottom: -100px; /* 画面下からの距離 */
+  right: 40px; /* 画面右からの距離 */
+  background-color: #11086c; /* 背景色 */
+  color: #ffffff; /* テキストの色 */
+  border: none; /* ボーダーなし */
+  border-radius: 50% 50% 0 0; /* 円形のボタンにする */
+  width: 70px; /* ボタンの幅 */
+  height: 100px; /* ボタンの高さ */
+  font-size: 20px; /* テキストのサイズ */
+  line-height: 50px; /* テキストの垂直方向の中央揃え */
+  text-align: center; /* テキストの水平方向の中央揃え */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0c0650; /* ホバー時の背景色 */
+  cursor: pointer; /* ホバー時にポインターを変更 */
+}
+
+
+#header h1{
+  font-size: 5vh;
+  margin-top: 1vh;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  color: #fff;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+  width: 140px;
+  height: 70px;
+  /* background: #11086c; */
+  font-size: large;
+}
+
+.menu li a {
+  display: block;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  line-height: 80px;
+  font-size: 4vh;
+}
+
+.menuSub {
+  position: absolute;
+  display: none;
+  box-shadow: inset 0 -30px 60px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+#header a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition:all 0.3s;
+}
+.container {
+  display: inline-block;
+}
+.container-img {
+  display: inline-block;
+}
+figure {
+  margin-top: 20px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+figure.left {
+  float: left;
+  text-align: left;
+}
+figure.right {
+  float: right;
+  text-align: right;
+}
+div.right {
+  float: right;
+  text-align: right;
+}
+
+figcaption {
+  width: 100%; /* キャプションの幅を画像に合わせる */
+  text-align: left;
+  word-wrap: break-word; /* 長い単語を折り返す */
+  overflow-wrap: break-word; /* 長い単語を折り返す */
+  margin-top: 2px;
+  margin-bottom: 8px;
+  font: italic sans-serif;
+}
+
+/* 表には適宜以下のclassを付与する */
+figcaption.table {
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+figcaption.center {
+  text-align: center;
+}
+
+
+img {
+  display: inline-flex;
+}
+
+
+
+/*.openが付与された時、表示の設定*/
+.menuSub.open {
+  display: block;
+}
+.menuSub li{
+  height: 40px;
+}
+
+.menuSub li a {
+  display: block;
+  color: #fff;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 3.5vh;
+}
+
+/* 強調用 */
+span.emphasize {
+  font-weight: bold;
+}
+
+/*==================================================
+　5-3-3 左から右に線が伸びる（下部）
+===================================*/
+.menu li a{
+  /*線の基点とするためrelativeを指定*/
+position: relative;
+}
+
+.menu li.current a,
+.menu li a:hover{
+  color:#003A47;
+}
+
+.menu li a::after {
+  content: '';
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: 2px;
+  background:#0481A2;
+  /*アニメーションの指定*/
+  transition: all .3s;
+  transform: scale(0, 1);/*X方向0、Y方向1*/
+  transform-origin: left top;/*左上基点*/
+}
+
+/*現在地とhoverの設定*/
+.menu li.current a::after,
+.menu li a:hover::after {
+  transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+/*再生停止ボタン*/
+#movie-button {
+  background-image: url(../img/favicon.png);
+  position: fixed;
+  bottom: 120px; /* 画面下からの距離 */
+  right: 40px; /* 画面右からの距離 */
+  background-color: #11086c; /* 背景色 */
+  color: #ffffff; /* テキストの色 */
+  border: none; /* ボーダーなし */
+  border-radius: 50%; /* 円形のボタンにする */
+  width: 70px; /* ボタンの幅 */
+  height: 70px; /* ボタンの高さ */
+  font-size: 20px; /* テキストのサイズ */
+  line-height: 50px; /* テキストの垂直方向の中央揃え */
+  text-align: center; /* テキストの水平方向の中央揃え */
+  cursor:pointer;/*カーソルを指に変更*/
+  z-index:1;
+}
+
+.movie-button span {
+  color:#ffffff;
+}
+.movie-button span i {
+  font-size:4vw;/*アイコンの大きさを指定*/
+}
+
+/* ここからオープニングアニメーション？ */
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  animation: bgAnime 5s linear 0s forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.TextTyping {
+  font-size: 6vw;
+  color: #fff;
+  height: 1em;
+  line-height: 1.2;
+  position: absolute;
+  top: 0;
+  left: 20vw;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1000;
+  opacity: 0;
+  animation: typinganime .5s linear forwards;
+}
+
+/* h1.TextTyping:nth-child(1) {
+  left: 20vw;
+  animation: typinganime .5s linear forwards;
+}
+h1.TextTyping:nth-child(2) {
+  left: 40vw;
+  animation: typinganime .5s linear 1s forwards;
+}
+h1.TextTyping:nth-child(3) {
+  left: 60vw;
+  animation: typinganime .5s linear 2s forwards;
+} */
+
+.TextTyping span {
+	display: none;
+}
+.TextTyping span:nth-child(1) {
+  animation: textAnime2 .6s ease-in-out 2s forwards;
+}
+
+.TextTyping span:nth-child(2) {
+  animation: textAnime2 .6s ease-in-out 4s forwards;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+ 	content: "|";
+	animation: typinganime .8s ease infinite;
+}
+
+/*keyframe*/
+@keyframes typinganime{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textAnime2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-30%);
+  }
+
+  100% {
+    transform: translateY(30%);
+  }
+
+}
+
+
+@keyframes bgAnime {
+  0% {
+    opacity: 1;
+    backdrop-filter: blur(5px);
+  }
+
+  80% {
+    opacity: 1;
+    backdrop-filter: blur(5px);
+  }
+
+  100% {
+    opacity: 0;
+    backdrop-filter: blur(5px);
+    visibility: hidden;
+  }
+}
+
+
+/* ここからオープニングアニメーションのCSS*/
+/* 
+
+.text span {
+  display: inline-block;
+}
+
+.TextTyping span:nth-child(1) {
+  animation: textAnime2 .6s ease-in-out .5s forwards;
+}
+
+.TextTyping span:nth-child(2) {
+  animation: textAnime2 .6s ease-in-out .6s forwards;
+}
+
+.text span:nth-child(3) {
+  animation: textAnime2 .6s ease-in-out .7s forwards;
+}
+
+.text span:nth-child(4) {
+  animation: textAnime2 .6s ease-in-out .8s forwards;
+} */
+
+/*keyframe*/
+/* @keyframes textAnime1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textAnime2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-30%);
+  }
+
+  75% {
+    transform: translateY(30%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bgAnime {
+  0% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+} */
+
+/*  ここまでオープニングアニメーションのCSS*/

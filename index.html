@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--ファビコンがない。
-  単純に文量がない。
-  ヘッダーの動きは面白いが、それ以外の動きが全くない。
-  フォントに一貫性がない。
-  構造上Ctrl+Fが使えない。
-  各項目内に書かれている内容が読みづらい、単調。
-  ヘッダーを回す必要性がない、ストーリー性がない、つながりがない。-->
-  
 
 <head>
 	<meta charset="UTF-8">
@@ -19,40 +11,77 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
   <link rel="shortcut icon" href="img/favicon.ico">
-	
 
+	
 </head>
 
 <body>
+	<main>
 	<header id="header" role="banner">
 			  <img src="img/Logo.png" class="Logo" alt="Team-logo">
-			  <h1><a href="index.html">BIOMOD NOKO 2024</a></h1>
-			</a>
-			<nav id="mainNav">
+			  <h1><a href="index.html">BIOMOD Team NoKo 2024</a></h1>
+			<nav  id="mainNav">
 			  <div>
 				<ul class="menu">
-				  <li><a href="html/project.html">Project</a>
+				  <li><a href="html/Project.html">Project</a>
+						<ul class="menuSub">
+							<li><a href="html/Project.html#Background">Background</a></li>
+							<li><a href="html/Project.html#Problem">Problem</a></li>
+							<li><a href="html/Project.html#Solution">Solution</a></li>
+							<li><a href="html/Project.html#Goals">Goals</a></li>
+						</ul>
+				  </li>
+					<li><a href="html/Design.html">Design</a>
+						<ul class="menuSub">
+							<li><a href="html/Design.html#Liposome">liposome</a></li>
+							<li><a href="html/Design.html#Hydrogel">hydrogel</a></li>
+							<li><a href="html/Design.html#Origami">origami</a></li>
+						</ul>
 				  </li>
 				  <li><a href="html/Experiment.html">Experiment</a>
 					<ul class="menuSub">
-					  <li><a href="html/Experiment.html#Analysis">Analysis</a></li>
-					  <li><a href="html/Experiment.html#Results">Results</a></li>
-					  <li><a href="html/Experiment.html#Verification">Verification</a></li>
-					  <li><a href="html/Experiment.html#Conclusion">Conclusion</a></li>
+					  <li><a href="html/Experiment.html#Summary">Summary</a></li>
+					  <li><a href="html/Experiment.html#BDB">BDB</a></li>
+					  <li><a href="html/Experiment.html#BGB">BGB</a></li>
+					  <li><a href="html/Experiment.html#Tubulation">Tubulation</a></li>
 					</ul>
 				  </li>
 				  <li><a href="html/Future.html">Future</a>
 				  </li>
+					<li><a href="html/ELSI.html">ELSI</a>
+						<ul class="menuSub">
+							<li><a href="html/ELSI.html#Ethics">Ethics</a></li>
+							<li><a href="html/ELSI.html#Legal">Legal</a></li>
+							<li><a href="html/ELSI.html#Social">Social</a></li>
+						</ul>
+						</li>
 				  <li><a href="html/Team.html">Team</a>
 				  </li>
 				</ul>
 			  </div>
 			</nav>
-		</div>
 	</header>
-    
-  <main>
-	<video loop src="video/Animation.mp4" width="900px" autoplay muted id="anime" style="display: block; margin: 0 auto;"></video>
+			<video id="background" poster="img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
+			<source src="video/DNAbackground.mp4" type="video/mp4">
+			</video>
+			
+			<div class="bg">
+			<h1 class="TextTyping">Bilayer Gel Bilayer</h1>
+			</div>
+			
+			<div class="container" style="position: relative; margin-left: 20%;">
+				<video id="lipo" loop width="100%" muted style="width: 80%; padding-left: 20%; margin-top: 5%;">
+					<source src="video/fluorescent_fuyo.webm" type="video/webm">
+					<source src="video/touka_fuyo.webm" type="video/webm">
+					<source src="video/0001-0100.mov" type="video/mov">
+				</video>
+				<div style="position: absolute; top: 20vh; left:0;">
+				<h1 class="title"><span style="color:red;">B</span>ilayer</h1>
+				<h1 class="title"><span style="color:lightgreen;">G</span>el</h1>
+				<h1 class="title"><span style="color:blue;">B</span>ilayer</h1>
+				</div>
+      </div>
+	
     <section id="area-1">
 		<div class="inner">
 		<h2>Abstract</h2>
@@ -74,7 +103,7 @@
 	<section>
 		<div class="inner">
 		<h2>CONCEPT VIDEO</h2>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/hsCstt8fQN8" title="YouTube video player" style="display: block; margin: 0 auto;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/5xA97c6ryLc" title="YouTube video player" style="display: block; margin: 0 auto;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		</div>
 	</section>
 
@@ -83,11 +112,26 @@
 <!--/main-->
 
   <footer>
-    <small>&copy; Special Thanks <a href="https://www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja" style="color: #fff;">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>  
-  </footer>
+    <small>&copy; Special Thanks <a href="https://www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>  
+		<ul>
+			<li><a href="https://github.com/Argon399481/BIOMOD2024_wiki" target="_blank">GitHub</a></li>
+			<li><a href="https://x.com/BiomodTeamNoKo" target="_blank">X</a></li>
+			<li><a href="https://www.instagram.com/biomod_teamnoko/" target="_blank">instagram</a></li>
+		</ul>
+	</footer>
    
+	<div id="movie">
+		<div id="movie-button">
+		 <div class="movie-button">
+		  <span class="movie-button-pause"><i class="fas fa-pause-circle"></i>▢</span><!--停止ボタン-->
+		  <span class="movie-button-play"><i class="fas fa-play-circle"></i>▷</span><!--再生ボタン-->
+		 </div>
+		</div>
+	   </div>
+
 <button id="scrollToTopBtn">Top</button>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
 <script src="js/biomod.js"></script>
 </body>
 

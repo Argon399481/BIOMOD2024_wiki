@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="BIOMOD Team Noko">
+	<title>BIOMOD Team Noko 2024</title>
+	<link rel="stylesheet" type="text/css" media="all" href="../css/biomod.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+	<style>
+    footer small {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@v0.151.3/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@v0.151.3/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+
+<body>
+	<main>
+	<header id="header" role="banner">
+			  <img src="img/Logo.png" class="Logo" alt="Team-logo">
+			  <h1><a href="../index.html">BIOMOD Team NoKo 2024</a></h1>
+			</a>
+			<nav id="mainNav">
+			  <div>
+				<ul class="menu">
+				  <li><a href="Project.html">Project</a>
+				  </li>
+					<li><a href="Design.html">Design</a>
+				  </li>
+				  <li><a href="Experiment.html">Experiment</a>
+					<ul class="menuSub">
+					  <li><a href="Experiment.html#Analysis">Analysis</a></li>
+					  <li><a href="Experiment.html#Results">Results</a></li>
+					  <li><a href="Experiment.html#Verification">Verification</a></li>
+					  <li><a href="Experiment.html#Conclusion">Conclusion</a></li>
+					</ul>
+				  </li>
+				  <li class="current"><a href="Future.html">Future</a>
+				  </li>
+				  <li><a href="Team.html">Team</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+		</div>
+	</header>
+			    <video id="video" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
+    <source src="../video/DNAbackground.mp4" type="video/mp4">
+    </video>
+
+  <section id="area-1">
+      <div class="inner">
+        <h1 class="heading">Future</h1>
+        <p>DNA nanotechnology has provided us with a wide variety of structures, far exceeding what nature has built with DNA, ranging from arbitrary architectures made of DNA motifs, DNA origami, and DNA bricks to logic circuits, reaction networks, and self-organization on lipid surfaces, duplicating some of the functional complexity of biological systems. Identifying the factors affecting the dimerisation of DNA origami by the linker will enable the design of DNA origami with more stable dimerisation. This provides the basis for developing more stable nanostructures. The influential factor on dimerizing of triangular DNA origami that we found is useful for the realization of large scale 2D-array of DNA origami which can be widely applicable to various applications.</p>
+      </div>
+    </section>
+  <!--/area1-->
+
+    <script type="module">
+        // 1. Three.jsライブラリの読み込み
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+        import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+        import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
+
+        // 2. シーンを作成する
+        const scene = new THREE.Scene();
+
+        // 3. カメラを作成する
+        const camera = new THREE.PerspectiveCamera(
+            75, // 視野角
+            window.innerWidth / window.innerHeight, // アスペクト比
+            0.1, // ニアクリップ面
+            1000 // ファークリップ面
+        );
+        camera.position.z = 5; // カメラの位置を設定する
+
+        // 4. レンダラーを作成する
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.zoomSpeed = 0.5;
+        controls.update(); // 初期化時に一度だけ呼び出す
+
+        // AmbientLightを追加する
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+        scene.add(ambientLight);
+
+        // 5. GLTFLoaderを作成する
+        const loader = new GLTFLoader();
+        
+        const dracoLoader = new DRACOLoader(); // DRACOLoaderのインスタンスを作成
+        dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.4.1/');
+        loader.setDRACOLoader(dracoLoader); // GLTFLoaderにDRACOLoaderのインスタンスを提供
+
+        // 6. 3Dモデルのロード＆描画
+        loader.load(
+            "test dayo1.gltf",
+            function (gltf) {
+                scene.add(gltf.scene);
+            },
+            undefined,
+            function (error) {
+                console.error(error);
+            }
+        );
+
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
+  
+
+  </main><!--/main-->
+
+  <footer>
+    <small>&copy; Special Thanks <a href="//www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja" style="color: #fff;">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>  
+  </footer>
+   
+<button id="scrollToTopBtn">Top</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="../js/biomod.js"></script>
+
+</body>
+
+</html>
