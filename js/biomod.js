@@ -55,15 +55,25 @@ $(function () {
 
 // video止めたり流したりする奴
 $(function(){
-    $("#video-btn").click(function (){
-        if($('#background')[0].paused){
-          $('#background')[0].play();
-          $(this).addClass('current');
-        }else{
-          $('#background')[0].pause();
-          $(this).removeClass('current');
-        }
-    });
+  $('.movie-button-pause').show();
+  $('.movie-button-play').hide();
+  $("#movie-button").click(function (){
+    $('.movie-button').toggleClass('show');
+    if($('video')[0].paused){
+      $('video')[0].play();
+      $(this).addClass('current');
+    }else{
+      $('video')[0].pause();
+      $(this).removeClass('current');
+    }
+    if($('.movie-button').hasClass('show')){
+      $('.movie-button-pause').hide();
+      $('.movie-button-play').show();
+    }else{
+      $('.movie-button-pause').show();
+      $('.movie-button-play').hide();
+    }
+  });
 });
 
 // BGBの動き遅くする奴

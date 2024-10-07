@@ -412,8 +412,8 @@ position: relative;
   transform: scale(1, 1);/*X方向にスケール拡大*/
 }
 
-
-#video-btn{
+/*再生停止ボタン*/
+#movie-button {
   background-image: url(../img/favicon.png);
   position: fixed;
   bottom: 120px; /* 画面下からの距離 */
@@ -427,13 +427,16 @@ position: relative;
   font-size: 20px; /* テキストのサイズ */
   line-height: 50px; /* テキストの垂直方向の中央揃え */
   text-align: center; /* テキストの水平方向の中央揃え */
+  cursor:pointer;/*カーソルを指に変更*/
+  z-index:1;
 }
 
-#video-btn:hover {
-  background-color: #0c0650; /* ホバー時の背景色 */
-  cursor: pointer; /* ホバー時にポインターを変更 */
+.movie-button span {
+  color:#ffffff;
 }
-
+.movie-button span i {
+  font-size:4vw;/*アイコンの大きさを指定*/
+}
 
 /* ここからオープニングアニメーション？ */
 .bg {
