@@ -111,7 +111,7 @@
 
 /*========= 上部固定させるためのCSS ===============*/
 #header{
-  height: 80px;/*高さ指定*/
+  height: 14vh;/*高さ指定*/
   width:100%;/*横幅指定*/
   display: flex;
   justify-content: space-between;
@@ -141,12 +141,9 @@ body{
 /* プログラミング感を出すためにVSCodeの標準フォントである"Consolas", "Courier New", "monospace"を追加 */
 
 .Logo{
-  width: 124px;
-  height: 70px;
+  height: 80%;
 }
-.menu{
-    padding-right: 10px;/* メニューの位置調整 */
-}
+
 
 h1.heading {
   padding-bottom: 5px;
@@ -158,6 +155,7 @@ h1.heading {
 }
 h1.title{
   font-size: 15vh;
+  padding-left: 85%;
 }
 
 h2{
@@ -263,36 +261,44 @@ section{
 
 #header h1{
   font-size: 5vh;
-  margin-top: 1vh;
+}
+
+nav.header{
+  height: 100%;
 }
 
 .menu {
   display: flex;
-  justify-content: flex-start;
-  list-style-type: none;
+  width: 50vw;
+  height: 100%;
   color: #fff;
-  padding: 0;
+  margin-left: 10vw;
 }
+
+/* .menu{
+    padding-right: 10px;メニューの位置調整 
+    } */
 
 .menu li {
+  flex: 1;
+  width: 10vw;
   position: relative;
-  width: 140px;
-  height: 70px;
   /* background: #11086c; */
-  font-size: large;
 }
 
-.menu li a {
+
+a.big-category{
+  padding-top: 20px;
   display: block;
+  height: 50%;
+  font-size: 1.3em;
   position: relative;
   text-align: center;
-  height: 100%;
-  line-height: 80px;
-  font-size: 4vh;
 }
 
 .menuSub {
   position: absolute;
+  width: 100%;
   display: none;
   box-shadow: inset 0 -30px 60px 0 rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
@@ -350,11 +356,28 @@ figcaption.center {
 }
 
 
-img {
+/* img {
   display: inline-flex;
+} */
+
+div.footer-info{
+  width: 40%;
+  margin-left: 60%;
 }
 
+.footer-info ul{
+  display: flex;
+}
 
+li.footer-link{
+  width: 10%;
+}
+img.under_li{
+  width: 100%;
+}
+li.Thanks{
+  width: 25%;
+}
 
 /*.openが付与された時、表示の設定*/
 .menuSub.open {
@@ -362,6 +385,7 @@ img {
 }
 .menuSub li{
   height: 40px;
+  width: 100%;
 }
 
 .menuSub li a {
@@ -376,6 +400,13 @@ img {
 span.emphasize {
   font-weight: bold;
 }
+/* ▼▼▼ CSS（ここから）（※2） ▼▼▼ */
+/* スライダー（bxslider）の設定 */
+.bx-wrapper {							/* スライダー領域の設定 */
+	max-width: 960px;
+	margin: 0 auto;
+}
+/* ▲▲▲ CSS（ここまで） ▲▲▲ */
 
 /*==================================================
 　5-3-3 左から右に線が伸びる（下部）

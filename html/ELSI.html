@@ -7,136 +7,108 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="description" content="BIOMOD Team Noko">
 	<title>BIOMOD Team Noko 2024</title>
-	<link rel="stylesheet" type="text/css" media="all" href="../css/biomod.css">
+	<!-- <link rel="stylesheet" type="text/css" media="all" href="../css/biomod.css"> -->
+  <link rel="stylesheet" type="text/css" href="../css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
-  <link rel="shortcut icon" href="../img/favicon.ico">
+  <!-- <link rel="shortcut icon" href="../img/favicon.ico"> -->
 	<style>
-    footer small {
+    /* footer small {
       position: fixed;
       bottom: 0;
       width: 100%;
+    } */
+    .slider {
+    margin: 0 auto;
+    width: 80%;
+    }
+    .slider img {
+        height: auto;
+        width: 100%;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: #000;
     }
   </style>
-  <script type="importmap">
-    {
-      "imports": {
-        "three": "https://unpkg.com/three@v0.151.3/build/three.module.js",
-        "three/addons/": "https://unpkg.com/three@v0.151.3/examples/jsm/"
-      }
-    }
-  </script>
 </head>
 
 <body>
 	<main>
 	<header id="header" role="banner">
-			  <img src="img/Logo.png" class="Logo" alt="Team-logo">
-			  <h1><a href="../index.html">BIOMOD Team NoKo 2024</a></h1>
-			</a>
-			<nav id="mainNav">
-			  <div>
-				<ul class="menu">
-				  <li><a href="Project.html">Project</a>
-				  </li>
-					<li><a href="Design.html">Design</a>
-				  </li>
-				  <li><a href="Experiment.html">Experiment</a>
+		<img src="../img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;">
+		<h1><a href="../index.html" style="margin-left: 10%;">BIOMOD Team NoKo 2024</a></h1>
+		<nav class="header">
+			<ul class="menu">
+				<li><a href="Project.html" class="big-category">Project</a>
 					<ul class="menuSub">
-					  <li><a href="Experiment.html#Analysis">Analysis</a></li>
-					  <li><a href="Experiment.html#Results">Results</a></li>
-					  <li><a href="Experiment.html#Verification">Verification</a></li>
-					  <li><a href="Experiment.html#Conclusion">Conclusion</a></li>
+						<li><a href="Project.html#Background">Background</a></li>
+						<li><a href="Project.html#Problem">Problem</a></li>
+						<li><a href="Project.html#Solution">Solution</a></li>
+						<li><a href="Project.html#Goals">Goals</a></li>
 					</ul>
-				  </li>
-				  <li class="current"><a href="Future.html">Future</a>
-				  </li>
-				  <li><a href="Team.html">Team</a>
-				  </li>
+				</li>
+				<li><a href="Design.html" class="big-category">Design</a>
+					<ul class="menuSub">
+						<li><a href="Design.html#Liposome">liposome</a></li>
+						<li><a href="Design.html#Hydrogel">hydrogel</a></li>
+						<li><a href="Design.html#Origami">origami</a></li>
+					</ul>
+				</li>
+				<li><a href="Experiment.html" class="big-category">Experiment</a>
+				<ul class="menuSub">
+					<li><a href="Experiment.html#Summary">Summary</a></li>
+					<li><a href="Experiment.html#BDB">BDB</a></li>
+					<li><a href="Experiment.html#BGB">BGB</a></li>
+					<li><a href="Experiment.html#Tubulation">Tubulation</a></li>
 				</ul>
-			  </div>
-			</nav>
-		</div>
+				</li>
+				<li><a href="Future.html" class="big-category">Future</a>
+				</li>
+				<li><a href="ELSI.html" class="big-category">ELSI</a>
+					<ul class="menuSub">
+						<li><a href="ELSI.html#Ethics">Ethics</a></li>
+						<li><a href="ELSI.html#Legal">Legal</a></li>
+						<li><a href="ELSI.html#Social">Social</a></li>
+					</ul>
+					</li>
+				<li><a href="Team.html" class="big-category">Team</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
-			    <video id="video" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
+	<!-- <video id="video" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
     <source src="../video/DNAbackground.mp4" type="video/mp4">
-    </video>
+	</video> -->
 
-  <section id="area-1">
-      <div class="inner">
-        <h1 class="heading">Future</h1>
-        <p>DNA nanotechnology has provided us with a wide variety of structures, far exceeding what nature has built with DNA, ranging from arbitrary architectures made of DNA motifs, DNA origami, and DNA bricks to logic circuits, reaction networks, and self-organization on lipid surfaces, duplicating some of the functional complexity of biological systems. Identifying the factors affecting the dimerisation of DNA origami by the linker will enable the design of DNA origami with more stable dimerisation. This provides the basis for developing more stable nanostructures. The influential factor on dimerizing of triangular DNA origami that we found is useful for the realization of large scale 2D-array of DNA origami which can be widely applicable to various applications.</p>
-      </div>
-    </section>
-  <!--/area1-->
+	<section id="area-1">
+		<div class="inner">
+		<h1 class="heading">Team</h1>
+		<h2>Member</h2>
+					<ul class="slider">
+						<li><img src="../img/Team/Team Photo/LINE_ALBUM_20240905_241004_1.jpg" alt="サンプル01"></li>
+						<li><img src="../img/Team/Team Photo/LINE_ALBUM_実験記録 820_241004_1.jpg" alt="サンプル02"></li>
+						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_1.jpg" alt="サンプル03"></li>
+						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_2.jpg" alt="サンプル04"></li>
+						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_3.jpg" alt="サンプル05"></li>
+					</ul>
+			</div>
+		</div>
+    <button type="button" class="slick-prev" aria-label="Previous" style="margin-left: 50%;">Previous</button>
+    <button type="button" class="slick-next" aria-label="Next">Next</button>
 
-    <script type="module">
-        // 1. Three.jsライブラリの読み込み
-        import * as THREE from 'three';
-        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-        import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-        import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
+	</section>
 
-        // 2. シーンを作成する
-        const scene = new THREE.Scene();
+	</main>
 
-        // 3. カメラを作成する
-        const camera = new THREE.PerspectiveCamera(
-            75, // 視野角
-            window.innerWidth / window.innerHeight, // アスペクト比
-            0.1, // ニアクリップ面
-            1000 // ファークリップ面
-        );
-        camera.position.z = 5; // カメラの位置を設定する
-
-        // 4. レンダラーを作成する
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
-
-        const controls = new OrbitControls(camera, renderer.domElement);
-        controls.zoomSpeed = 0.5;
-        controls.update(); // 初期化時に一度だけ呼び出す
-
-        // AmbientLightを追加する
-        const ambientLight = new THREE.AmbientLight(0xffffff, 1);
-        scene.add(ambientLight);
-
-        // 5. GLTFLoaderを作成する
-        const loader = new GLTFLoader();
-        
-        const dracoLoader = new DRACOLoader(); // DRACOLoaderのインスタンスを作成
-        dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.4.1/');
-        loader.setDRACOLoader(dracoLoader); // GLTFLoaderにDRACOLoaderのインスタンスを提供
-
-        // 6. 3Dモデルのロード＆描画
-        loader.load(
-            "test dayo1.gltf",
-            function (gltf) {
-                scene.add(gltf.scene);
-            },
-            undefined,
-            function (error) {
-                console.error(error);
-            }
-        );
-
-        function animate() {
-            requestAnimationFrame(animate);
-            renderer.render(scene, camera);
-        }
-        animate();
-    </script>
-  
-
-  </main><!--/main-->
-
-  <footer>
+	<footer>
     <small>&copy; Special Thanks <a href="//www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja" style="color: #fff;">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>  
   </footer>
    
 <button id="scrollToTopBtn">Top</button>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+<script type="text/javascript" src="../js/slick.min.js"></script>
 <script src="../js/biomod.js"></script>
 
 </body>

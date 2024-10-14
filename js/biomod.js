@@ -32,7 +32,7 @@ $(function() {
         //クラス名「open」を付与する
         $(this).children(".menuSub").addClass("open");
         //hoverが外れた場合
-      }, function() {
+       }, function() {
         //クラス名「open」を取り除く
         $(this).children(".menuSub").removeClass("open");
       }
@@ -78,7 +78,7 @@ $(function(){
 
 // BGBの動き遅くする奴
 var videoElem = document.getElementById('lipo');
-videoElem.playbackRate = 0.6;
+videoElem.playbackRate = 0.4;
 videoElem.play(); // 必要に応じて再生を開始
 
 // オープニングアニメーション
@@ -140,3 +140,8 @@ $(window).on('load', function () {
 	TypingInit(); //初期設定
 	TypingAnime();/* アニメーション用の関数を呼ぶ*/
 });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+
+//Team Photoのところの設定
+$('.slider').slick({
+  autoplay: true, // 自動再生オン
+}); 

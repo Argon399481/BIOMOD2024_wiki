@@ -21,7 +21,7 @@
 		ul.left {
 			position: absolute;
 			top: 0;
-			left: 250px;
+			left: 30%;
 			width: 55%;
 			text-align: justify;
 		}
@@ -32,7 +32,7 @@
 			width: 55%;
 			text-align: justify;
 		}
-		li.name{
+		.name{
 			font-size: 5vh;
 			font-weight: bold;
 		}
@@ -47,7 +47,7 @@
 			margin-left: 80px;
 		}
 		img {
-			border-radius:50%;
+			border-radius:20%;
 		}
 	</style>
 	
@@ -56,134 +56,165 @@
 <body>
 	<main>
 	<header id="header" role="banner">
-			  <img src="img/Logo.png" class="Logo" alt="Team-logo">
-			  <h1><a href="../index.html">BIOMOD Team NoKo 2024</a></h1>
-			</a>
-			<nav id="mainNav">
-			  <div>
-				<ul class="menu">
-				  <li><a href="Project.html">Project</a>
-				  </li>
-					<li><a href="Design.html">Design</a>
-				  </li>
-				  <li><a href="Experiment.html">Experiment</a>
+		<img src="../img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;">
+		<h1><a href="../index.html" style="margin-left: 10%;">BIOMOD Team NoKo 2024</a></h1>
+		<nav class="header">
+			<ul class="menu">
+				<li><a href="Project.html" class="big-category">Project</a>
 					<ul class="menuSub">
-					  <li><a href="Experiment.html#Analysis">Analysis</a></li>
-					  <li><a href="Experiment.html#Results">Results</a></li>
-					  <li><a href="Experiment.html#Verification">Verification</a></li>
-					  <li><a href="Experiment.html#Conclusion">Conclusion</a></li>
+						<li><a href="Project.html#Background">Background</a></li>
+						<li><a href="Project.html#Problem">Problem</a></li>
+						<li><a href="Project.html#Solution">Solution</a></li>
+						<li><a href="Project.html#Goals">Goals</a></li>
 					</ul>
-				  </li>
-				  <li><a href="Future.html">Future</a>
-				  </li>
-				  <li class="current"><a href="Team.html">Team</a>
-				  </li>
+				</li>
+				<li><a href="Design.html" class="big-category">Design</a>
+					<ul class="menuSub">
+						<li><a href="Design.html#Liposome">liposome</a></li>
+						<li><a href="Design.html#Hydrogel">hydrogel</a></li>
+						<li><a href="Design.html#Origami">origami</a></li>
+					</ul>
+				</li>
+				<li><a href="Experiment.html" class="big-category">Experiment</a>
+				<ul class="menuSub">
+					<li><a href="Experiment.html#Summary">Summary</a></li>
+					<li><a href="Experiment.html#BDB">BDB</a></li>
+					<li><a href="Experiment.html#BGB">BGB</a></li>
+					<li><a href="Experiment.html#Tubulation">Tubulation</a></li>
 				</ul>
-			  </div>
-			</nav>
-		</div>
+				</li>
+				<li><a href="Future.html" class="big-category">Future</a>
+				</li>
+				<li><a href="ELSI.html" class="big-category">ELSI</a>
+					<ul class="menuSub">
+						<li><a href="ELSI.html#Ethics">Ethics</a></li>
+						<li><a href="ELSI.html#Legal">Legal</a></li>
+						<li><a href="ELSI.html#Social">Social</a></li>
+					</ul>
+					</li>
+				<li><a href="Team.html" class="big-category">Team</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
-			    <video id="video" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
+	<video id="video" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
     <source src="../video/DNAbackground.mp4" type="video/mp4">
-    </video>
+	</video>
 
-		<section id="area-1">
-      <div class="inner">
-			<h1 class="heading">Team</h1>
-				<div class="container">
-						<img src="../img/syoumeisyashin_man.png" class="l_member">
-						<ul class="left">
-							<li class="name">Kengo Kurematsu</li>
-							<li>Role：Team Leader, Chief Writer&Presenter, Origami Designer</li>
-							<li>Grade：Junior</li>
-							<li>MBTI：ENFJ</li>
-							<li>My Favorite：Kickboxing, basketball, and DNA origami design. I feel like eating DNA origami.</li>
-						</ul>
-				</div>
-				<div class="container" style="width: 100%; position: relative;">
-						<img src="../img/syoumeisyashin_man.png" class="r_member">
-						<ul class="right">
-							<li class="name">Kazuya Yokoo</li>
-							<li>Role：Team Subleader, Chief Web Designer</li>
-							<li>Grade：Junior</li>
-							<li>MBTI：INFJ</li>
-							<li>My Favorite：Weekend with strawberry ice cream</li>
-						</ul>
-				</div>
-				<div class="container">
-						<img src="../img/syoumeisyashin_man.png" class="l_member">
-						<ul class="left">
-							<li class="name">Yamato Misawa</li>
-							<li>Role：Chief Video Editor</li>
-							<li>Grade：Junior</li>
-							<li>MBTI：ENTP</li>
-							<li>My Favorite：Kamen Rider</li>
-						</ul>
-				</div>
-				<div class="container" style="width: 100%; position: relative;">
-						<img src="../img/syoumeisyashin_man.png" class="r_member">
-						<ul class="right">
-							<li class="name">Karen Kawaguchi</li>
-							<li>Role：Web Designer, 3D modeler</li>
-							<li>Grade：Sophomore</li>
-							<li>MBTI：INTP</li>
-							<li>My Favorite：Curiosity and Excitement</li>
-						</ul>
-				</div>
-				<div class="container">
-						<img src="../img/syoumeisyashin_man.png" class="l_member">
-						<ul class="left">
-							<li class="name">Miri Saito</li>
-							<li>Role：Video Editor, Video Illustrator</li>
-							<li>Grade：Sophomore</li>
-							<li>MBTI：ENFJ</li>
-							<li>My Favorite：Badminton, guitar, illustration, creation, Eve</li>
-						</ul>
-				</div>
-				<div class="container" style="width: 100%; position: relative;">
-						<img src="../img/syoumeisyashin_man.png" class="r_member">
-						<ul class="right">
-							<li class="name">Rena Shiomitsu</li>
-							<li>Role：Writer&Presenter</li>
-							<li>Grade：Sophomore</li>
-							<li>MBTI：INTP</li>
-							<li>My Favorite：Congratulations on completing My Hero Academia! Dear Mr. Kohei Horikoshi</li>
-						</ul>
-				</div>
-				<div class="container">
-						<img src="../img/syoumeisyashin_man.png" class="l_member">
-						<ul class="left">
-							<li class="name">Wakana Aso</li>
-							<li>Role：Video Editor, Video Illustrator</li>
-							<li>Grade：Freshman</li>
-							<li>MBTI：INFP</li>
-							<li>My Favorite：Playing the piano, photography, calligraphy</li>
-						</ul>
-				</div>
-				<div class="container" style="width: 100%; position: relative;">
-						<img src="../img/syoumeisyashin_man.png" class="r_member">
-						<ul class="right">
-							<li class="name">Norito Muramatsu</li>
-							<li>Role：Video Editor, 3D modeler, Origami Designer</li>
-							<li>Grade：Freshman</li>
-							<li>MBTI：ENTJ</li>
-							<li>My Favorite：Matcha flavored sweets</li>
-						</ul>
-				</div>
-				<div class="container" style="width: 100%; position: relative;">
-					<img src="../img/syoumeisyashin_man.png" class="r_member">
-					<ul class="right">
-						<li class="name">Team Photo</li>
-						
+	<section id="area-1">
+		<div class="inner">
+		<h1 class="heading">Team</h1>
+		<h2 style="text-align: center;">Member</h2>
+			<div class="container">
+					<img src="../img/Team/Kengo Kurematsu.png" class="l_member">
+					<ul class="left">
+						<li class="name">Kengo Kurematsu</li>
+						<li>Role：Team leader, Chief Writer&Presenter, Origami Designer</li>
+						<li>Grade：Junior</li>
+						<li>MBTI：ENFJ</li>
+						<li>My Favorite：Kickboxing, basketball, and DNA origami design. I feel like eating DNA origami.</li>
 					</ul>
 			</div>
-					
-					</div>
+			<div class="container" style="width: 100%; position: relative;">
+					<img src="../img/Team/Kazuya Yokoo.png" class="r_member">
+					<ul class="right">
+						<li class="name">Kazuya Yokoo</li>
+						<li>Role：Team Subleader, Chief Web Designer</li>
+						<li>Grade：Junior</li>
+						<li>MBTI：INFJ</li>
+						<li>My Favorite：Weekend with strawberry ice cream</li>
+					</ul>
 			</div>
-			
-		</section>
+			<div class="container">
+					<img src="../img/Team/Yamato Misawa.png" class="l_member">
+					<ul class="left">
+						<li class="name">Yamato Misawa</li>
+						<li>Role：Chief Video Editor</li>
+						<li>Grade：Junior</li>
+						<li>MBTI：ENTP</li>
+						<li>My Favorite：Kamen Rider</li>
+					</ul>
+			</div>
+			<div class="container" style="width: 100%; position: relative;">
+					<img src="../img/Team/Karen Kawaguchi.png" class="r_member">
+					<ul class="right">
+						<li class="name">Karen Kawaguchi</li>
+						<li>Role：Web Designer, 3D Video Creator</li>
+						<li>Grade：Sophomore</li>
+						<li>MBTI：INTP</li>
+						<li>My Favorite：Curiosity and Excitement</li>
+					</ul>
+			</div>
+			<div class="container">
+					<img src="../img/Team/Miri Saito.png" class="l_member">
+					<ul class="left">
+						<li class="name">Miri Saito</li>
+						<li>Role：Video Editor, Video Illustrator</li>
+						<li>Grade：Sophomore</li>
+						<li>MBTI：ENFJ</li>
+						<li>My Favorite：Badminton, guitar, illustration, creation, Eve</li>
+					</ul>
+			</div>
+			<div class="container" style="width: 100%; position: relative;">
+					<img src="../img/Team/Rena Shiomitsu.png" class="r_member">
+					<ul class="right">
+						<li class="name">Rena Shiomitsu</li>
+						<li>Role：Writer&Presenter</li>
+						<li>Grade：Sophomore</li>
+						<li>MBTI：INTP</li>
+						<li>My Favorite：Congratulations on completing My Hero Academia! Dear Mr. Kohei Horikoshi</li>
+					</ul>
+			</div>
+			<div class="container">
+					<img src="../img/Team/Wakana Aso.png" class="l_member">
+					<ul class="left">
+						<li class="name">Wakana Aso</li>
+						<li>Role：Video Editor, Video Illustrator</li>
+						<li>Grade：Freshman</li>
+						<li>MBTI：INFP</li>
+						<li>My Favorite：Playing the piano, photography, calligraphy</li>
+					</ul>
+			</div>
+			<div class="container" style="width: 100%; position: relative;">
+					<img src="../img/Team/Norito Muramatsu.png" class="r_member">
+					<ul class="right">
+						<li class="name">Norito Muramatsu</li>
+						<li>Role：3D Video Creator, Origami Designer</li>
+						<li>Grade：Freshman</li>
+						<li>MBTI：ENTJ</li>
+						<li>My Favorite：Matcha flavored sweets</li>
+					</ul>
+			</div>
+			<div class="container" style="text-align: center;">
+				<h2>Mentor</h2>
+				<div class="container-img" style="width: 20%; padding: 0 10%;">
+					<figure class="left">
+						<img src="../img/Team/Shoji Iwabuchi.png">
+						<figcaption class="name">Shoji Iwabuchi</figcaption>
+					</figure>
+				</div>
+				<div class="container-img" style="width: 20%; padding: 0 10%;">
+					<figure class="right">
+						<img src="../img/Team/Ryuji Kawano.png">
+						<figcaption class="name">Ryuji Kawano</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div>
+				<div class="bx-wrapper">
+					<ul class="bxslider">
+						<li><img src="../img/Team/Team Photo/LINE_ALBUM_20240905_241004_1.jpg" alt="サンプル01"></li>
+						<li><img src="../img/Team/Team Photo/LINE_ALBUM_実験記録 820_241004_1.jpg" alt="サンプル02"></li>
+						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_1.jpg" alt="サンプル03"></li>
+						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_2.jpg" alt="サンプル04"></li>
+						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_3.jpg" alt="サンプル05"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <!--/main--></main>
+	</main>
 
 	<footer>
     <small>&copy; Special Thanks <a href="//www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja" style="color: #fff;">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>  
