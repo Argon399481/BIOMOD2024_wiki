@@ -44,8 +44,11 @@ Teamの内容を変更しました。
 
 2024/10/14  
 Teamに写真を追加しました。  
-headerとfooterの調整  
-lipoの3Dを変更  
+headerとfooterの調整を行いました。  
+BGBの3Dを変更しました。  
+  
+2024/10/15  
+BGBの3D animationのつなぎ目をなくしました。  
 
 ## 妥協点
 
