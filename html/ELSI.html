@@ -7,31 +7,57 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="description" content="BIOMOD Team Noko">
 	<title>BIOMOD Team Noko 2024</title>
-	<!-- <link rel="stylesheet" type="text/css" media="all" href="../css/biomod.css"> -->
-  <link rel="stylesheet" type="text/css" href="../css/slick.css">
-  <link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" media="all" href="../css/biomod.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
-  <!-- <link rel="shortcut icon" href="../img/favicon.ico"> -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+	
 	<style>
-    /* footer small {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    } */
-    .slider {
-    margin: 0 auto;
-    width: 80%;
-    }
-    .slider img {
-        height: auto;
-        width: 100%;
-    }
-    .slick-prev:before,
-    .slick-next:before {
-        color: #000;
-    }
-  </style>
+		div.container {
+			margin: 30px 0;
+			height: 267px;
+			width: 100%;
+			position: relative;
+		}
+		ul.left {
+			position: absolute;
+			top: 0;
+			left: 30%;
+			width: 55%;
+			text-align: justify;
+		}
+		ul.right {
+			position: absolute;
+			top: 0;
+			left: 80px;
+			width: 55%;
+			text-align: justify;
+		}
+		.name{
+			font-size: 5vh;
+			font-weight: bold;
+			text-align: center;
+		}
+		img.r_member {
+			width: 20%;
+			float: right;
+			margin-right: 10%;
+		}
+		img.l_member {
+			width: 20%;
+			float: left;
+			margin-left: 10%;
+		}
+		img {
+			border-radius: 20%;
+		}
+		.slider div img {
+			border-radius: 0%;
+		}
+	</style>
+	
 </head>
 
 <body>
@@ -78,37 +104,43 @@
 			</ul>
 		</nav>
 	</header>
-	<!-- <video id="video" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
-    <source src="../video/DNAbackground.mp4" type="video/mp4">
-	</video> -->
+	<video id="background" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;"> <!-- あとでposter変える！！ -->
+		<source src="../video/レコーディング 2024-10-21 090427.mp4" type="video/mp4">
+	</video>
 
-	<section id="area-1">
-		<div class="inner">
-		<h1 class="heading">Team</h1>
-		<h2>Member</h2>
-					<ul class="slider">
-						<li><img src="../img/Team/Team Photo/LINE_ALBUM_20240905_241004_1.jpg" alt="サンプル01"></li>
-						<li><img src="../img/Team/Team Photo/LINE_ALBUM_実験記録 820_241004_1.jpg" alt="サンプル02"></li>
-						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_1.jpg" alt="サンプル03"></li>
-						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_2.jpg" alt="サンプル04"></li>
-						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_3.jpg" alt="サンプル05"></li>
-					</ul>
+  <section id="area-1">
+    <div class="inner">
+      <h1 class="heading">Future</h1>
+      <p>DNA nanotechnology has provided us with a wide variety of structures, far exceeding what nature has built with DNA, ranging from arbitrary architectures made of DNA motifs, DNA origami, and DNA bricks to logic circuits, reaction networks, and self-organization on lipid surfaces, duplicating some of the functional complexity of biological systems. Identifying the factors affecting the dimerisation of DNA origami by the linker will enable the design of DNA origami with more stable dimerisation. This provides the basis for developing more stable nanostructures. The influential factor on dimerizing of triangular DNA origami that we found is useful for the realization of large scale 2D-array of DNA origami which can be widely applicable to various applications.</p>
+    </div>
+  </section>
+<!--/area1-->
+
+</main><!--/main-->
+
+  <footer>
+		<section class="footer">
+			<div class="footer-info"> 
+				<ul style="margin-left: 50%;">
+					<li class="footer-link"><a href="https://github.com/Argon399481/BIOMOD2024_wiki" target="_blank"><img class="under_li" src="../img/icon/github.png"></a></li>
+					<li class="footer-link"><a href="https://x.com/BiomodTeamNoKo" target="_blank"><img class="under_li" src="../img/icon/twitterx.png"></a></li>
+					<li class="footer-link"><a href="https://www.instagram.com/biomod_teamnoko/" target="_blank"><img class="under_li" src="../img/icon/instagram.png"></a></li>
+				</ul>
+				<ul class="SpecialThanks">
+					<li class="Thanks"><a href="https://web.tuat.ac.jp/~rjkawano/" target="_blank"><img class="under_li" src="../img/logo/logo_kawano_lab.png"></a></li>
+					<li class="Thanks"><a href="https://www.mext.go.jp/a_menu/shinkou/hojyo/main5_a5.htm" target="_blank"><img class="under_li" style="padding-top: 21%;" src="../img/logo/KAKENHIlogoM_v2.jpg"></a></li>
+					<li class="Thanks" style="width: 50%;"><a href="https://bottomup-biotech.elsi.jp" target="_blank"><img class="under_li" style="padding-top: 17%;" src="../img/logo/Gakuhen_logo.jpg"></a></li>
+				</ul>
 			</div>
-		</div>
-    <button type="button" class="slick-prev" aria-label="Previous" style="margin-left: 50%;">Previous</button>
-    <button type="button" class="slick-next" aria-label="Next">Next</button>
-
-	</section>
-
-	</main>
-
-	<footer>
-    <small>&copy; Special Thanks <a href="//www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja" style="color: #fff;">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>  
-  </footer>
+			<small>&copy; Special Thanks <a href="https://www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>
+			<small>&copy;BIOMOD2024</a></small>
+		</section>
+	</footer>
    
 <button id="scrollToTopBtn">Top</button>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
-<script type="text/javascript" src="../js/slick.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="../js/biomod.js"></script>
 
 </body>

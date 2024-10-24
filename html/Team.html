@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="description" content="BIOMOD Team Noko">
 	<title>BIOMOD Team Noko 2024</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="stylesheet" type="text/css" media="all" href="../css/biomod.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
@@ -15,6 +17,7 @@
 	<style>
 		div.container {
 			margin: 30px 0;
+			height: 267px;
 			width: 100%;
 			position: relative;
 		}
@@ -35,19 +38,20 @@
 		.name{
 			font-size: 5vh;
 			font-weight: bold;
+			text-align: center;
 		}
 		img.r_member {
 			width: 20%;
 			float: right;
-			margin-right: 80px;
+			margin-right: 10%;
 		}
 		img.l_member {
 			width: 20%;
 			float: left;
-			margin-left: 80px;
+			margin-left: 10%;
 		}
-		img {
-			border-radius:20%;
+		.container img {
+			border-radius: 20%;
 		}
 	</style>
 	
@@ -97,12 +101,11 @@
 			</ul>
 		</nav>
 	</header>
-	<video id="video" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
-    <source src="../video/DNAbackground.mp4" type="video/mp4">
+	<video id="background" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;"> <!-- あとでposter変える！！ -->
+		<source src="../video/レコーディング 2024-10-21 090427.mp4" type="video/mp4">
 	</video>
 
 	<section id="area-1">
-		<div class="inner">
 		<h1 class="heading">Team</h1>
 		<h2 style="text-align: center;">Member</h2>
 			<div class="container">
@@ -159,7 +162,7 @@
 					<img src="../img/Team/Rena Shiomitsu.png" class="r_member">
 					<ul class="right">
 						<li class="name">Rena Shiomitsu</li>
-						<li>Role：Writer&Presenter</li>
+						<li>Role：Writer</li>
 						<li>Grade：Sophomore</li>
 						<li>MBTI：INTP</li>
 						<li>My Favorite：Congratulations on completing My Hero Academia! Dear Mr. Kohei Horikoshi</li>
@@ -185,43 +188,96 @@
 						<li>My Favorite：Matcha flavored sweets</li>
 					</ul>
 			</div>
-			<div class="container" style="text-align: center;">
-				<h2>Mentor</h2>
-				<div class="container-img" style="width: 20%; padding: 0 10%;">
-					<figure class="left">
-						<img src="../img/Team/Shoji Iwabuchi.png">
+	</section>
+	<section>
+			<h2>Mentor</h2>
+			<div class="container">
+				<div class="container-img" style="width: 49.5%; padding: 0 10%;">
+					<figure class="left" style="text-align: center;">
+						<img src="../img/Team/Shoji Iwabuchi.png" style="width: 200px;">
 						<figcaption class="name">Shoji Iwabuchi</figcaption>
 					</figure>
 				</div>
-				<div class="container-img" style="width: 20%; padding: 0 10%;">
-					<figure class="right">
-						<img src="../img/Team/Ryuji Kawano.png">
+				<div class="container-img" style="width: 49.5%;  padding: 0 10%;">
+					<figure class="right" style="text-align: center;">
+						<img src="../img/Team/Ryuji Kawano.png" style="width: 200px;">
 						<figcaption class="name">Ryuji Kawano</figcaption>
 					</figure>
 				</div>
 			</div>
+		</section>
+		<section>
+			<h2>Team Photo</h2>
 			<div>
-				<div class="bx-wrapper">
-					<ul class="bxslider">
-						<li><img src="../img/Team/Team Photo/LINE_ALBUM_20240905_241004_1.jpg" alt="サンプル01"></li>
-						<li><img src="../img/Team/Team Photo/LINE_ALBUM_実験記録 820_241004_1.jpg" alt="サンプル02"></li>
-						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_1.jpg" alt="サンプル03"></li>
-						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_2.jpg" alt="サンプル04"></li>
-						<li><img src="../img/Team/Team Photo/LINE_ALBUM_817, 18 合宿！_241004_3.jpg" alt="サンプル05"></li>
-					</ul>
+				<div class="slider" style="width: 60%; margin: 10px auto;">
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_7.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_9.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241023_1.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241023_5.jpg"></div>
+					<div><img src="../img\Team\Team Photo\240903104958839.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_26.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_13.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_11.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_32.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_10.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241023_6.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_16.jpg"></div>
+					<div><img src="../img\Team\Team Photo\240824113018853.jpg"></div>
+					<div><img src="../img\Team\Team Photo\240807172934891.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_2.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_20240905_241004_1.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_15.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_25.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_19.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_20240905_241023_1.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_6.jpg"></div>
+					<div><img src="../img\Team\Team Photo\241007134845184.jpg"></div>
+					<div><img src="../img\Team\Team Photo\240911102950160.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_21.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_5.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_20240905_241023_2.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_24.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_8.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_14.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241023_7.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_30.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_20.jpg"></div>
+					<div><img src="../img\Team\Team Photo\241013140415920.jpg"></div>
+					<div><img src="../img\Team\Team Photo\240911163224136.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_17.jpg"></div>
+					<div><img src="../img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241023_3.jpg"></div>
+					<div><img src="../img\Team\Team Photo\240925124630974.jpg"></div>
+					<div><img src="../img\Team\Team Photo\240911103145913.jpg"></div>
+					<div><img src="../img\Team\Team Photo\240818124404506.jpg"></div>
 				</div>
 			</div>
-		</div>
 	</section>
 
 	</main>
 
-	<footer>
-    <small>&copy; Special Thanks <a href="//www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja" style="color: #fff;">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>  
-  </footer>
+  <footer>
+		<section class="footer">
+			<div class="footer-info"> 
+				<ul style="margin-left: 50%;">
+					<li class="footer-link"><a href="https://github.com/Argon399481/BIOMOD2024_wiki" target="_blank"><img class="under_li" src="../img/icon/github.png"></a></li>
+					<li class="footer-link"><a href="https://x.com/BiomodTeamNoKo" target="_blank"><img class="under_li" src="../img/icon/twitterx.png"></a></li>
+					<li class="footer-link"><a href="https://www.instagram.com/biomod_teamnoko/" target="_blank"><img class="under_li" src="../img/icon/instagram.png"></a></li>
+				</ul>
+				<ul class="SpecialThanks">
+					<li class="Thanks"><a href="https://www.tuat.ac.jp/en/" target="_blank"><img class="under_li" style="padding-top: 25%;" src="../img/logo/Logo_TUAT_English.png"></a></li>
+					<li class="Thanks"><a href="https://web.tuat.ac.jp/~rjkawano/" target="_blank"><img class="under_li" src="../img/logo/logo_kawano_lab.png"></a></li>
+					<li class="Thanks"><a href="https://www.mext.go.jp/a_menu/shinkou/hojyo/main5_a5.htm" target="_blank"><img class="under_li" style="padding-top: 21%;" src="../img/logo/KAKENHIlogoM_v2.jpg"></a></li>
+					<li class="Thanks" style="width: 50%;"><a href="https://bottomup-biotech.elsi.jp" target="_blank"><img class="under_li" style="padding-top: 17%;" src="../img/logo/Logo_gakuhen.jpg"></a></li>
+				</ul>
+			</div>
+			<small>&copy;BIOMOD Team NoKo 2024</a></small>
+		</section>
+	</footer>
    
 <button id="scrollToTopBtn">Top</button>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="../js/biomod.js"></script>
 
 </body>

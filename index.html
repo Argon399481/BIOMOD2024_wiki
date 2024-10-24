@@ -15,7 +15,7 @@
 
 <body>
 	<main>
-	<header id="header" role="banner">
+	<header role="banner">
 		<img src="img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;">
 		<h1><a href="index.html" style="margin-left: 10%;">BIOMOD Team NoKo 2024</a></h1>
 		<nav class="header">
@@ -57,49 +57,85 @@
 			</ul>
 		</nav>
 	</header>
-	<video id="background" poster="img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
-		<source src="video/DNAbackground.mp4" type="video/mp4">
+	<video id="background" poster="img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;"> <!-- あとでposter変える！！ -->
+		<source src="video/レコーディング 2024-10-21 090427.mp4" type="video/mp4">
 	</video>
 			
-			<div class="bg">
-			<h1 class="TextTyping">Bilayer Gel Bilayer</h1>
-			</div>
+	<div class="bg">
+	<h1 class="TextTyping">Bilayer Gel Bilayer</h1>
+	</div>
 			
-			<div class="container" style="position: relative; width: 100%;">
-				<video id="lipo" loop width="100%" muted poster="img/100_honban_BGBwithTube.png" style="width: 50%; padding-left: 40%; margin-top: 5%;">
-					<source src="video/101_reversible_BGBwithTube.webm" type="video/webm">
-					<source src="video/0001-0100.mov" type="video/mov">
-				</video>
-				<div style="position: absolute; top: 15vh; left:0;">
-				<h1 class="title"><span style="color:red;">B</span>ilayer</h1>
-				<h1 class="title"><span style="color:lightgreen;">G</span>el</h1>
-				<h1 class="title"><span style="color:blue;">B</span>ilayer</h1>
-				</div>
-      </div>
+	<section>
+		<div class="container">
+          <div class="right" style="width: 50%;">
+            <div class="container-img">
+            <video id="lipo" loop width="100%" muted poster="img/100_honban_BGBwithTube.png">
+							<source src="video/101_reversible_BGBwithTube.webm" type="video/webm">
+							<source src="video/0001-0100.mov" type="video/mov">
+						</video>
+            </div>
+          </div>
+          <div style="width: 40%; margin: 70px 0 0 130px;">
+						<h1 class="title"><span style="color:red;">B</span>ilayer</h1>
+						<h1 class="title"><span style="color:lightgreen;">G</span>el</h1>
+						<h1 class="title"><span style="color:blue;">B</span>ilayer</h1>
+					</div>
+			</div>
+		</section>
 	
-    <section id="area-1">
-		<div class="inner">
+    <section id="Abstract">
 		<h2>Abstract</h2>
-			<p>DNA origami is a method of creating nanostructures with high precision using DNA strands as building blocks. By linking multiple DNA origami to form a multimer, it is possible to create complex and functional larger-scale structures. Taking advantage of the stronger bonding strength between cytosine and guanine than between adenine and thymine, it was possible to design a triangular dimeric DNA origami with an increased number of cytosine and guanine in the linker base sequence. Here, toward the realization of large-scale 2D- arrays of DNA origami, which can be widely applicable to various applications, we investigated the dimerization of triangular DNA origami linked by linkers ssDNA that differ from the above-mentioned approach. The dimerization is strongly influenced by the deformation of a side of a triangle, which enables the dimerization rate of triangular DNA origami to increase. We demonstrate that the shape of the outermost helix has a large effect on the dimer formation rate and that introducing a spacer into the linker can significantly improve dimer formation in triangular DNA origami.</p>
-		</div>
+			<p>Liposomes are expected to be applied as reactors in drug delivery systems and molecular robotics by encapsulating drug molecules or autonomous systems constructed by designed biomolecules. Conventional liposomes are sensitive to external stresses such as pH changes and osmotic shock and collapse easily in such environments. This prevents the application of liposomes in vivo and the natural environment, thus the increase of the strength of the liposome membrane is essential for further applications. Previous research has increased the stability of liposomes by using DNA hydrogel cytoskeleton or PEG-modified lipid. However, DNA hydrogel inside the membrane and PEG modification on the membrane might inhibit molecular transportation through liposome membranes.</p>
+			<p>Here, we developed the “BGB (Bilayer-Gel-Bilayer)” structure to solve this problem. BGB is a capsule-like structure consisting of three layers: inner lipid bilayer layer, DNA hydrogel layer, and outer lipid bilayer layer. The DNA hydrogel is packed by inner and outer bilayers. Our BGB structure increases the stability of liposomes without the interference between the DNA hydrogel and the inner solution. Moreover, DNA origami for the pore-formation is protected by DNA hydrogel, thus the formed pore is expected to be stable in various environments compared with conventional pore-formation systems such as using DNA nanostructures. Our BGB structure will expand the application field of liposomes under more extreme conditions.</p>
     </section>
-	<!--/area1-->
-
-	<section id="area-2">
-		<div class="inner"> 
-		<h2>WE ARE A TEAM OF EIGHT UNDERGRADUATES FROM TUAT, GIVING OUR BEST FOR BIOMOD 2024</h2>
-			<p>Hi! We are Team Noko! This is our YouTube video, through which you will have the chance to get up to speed about our project, not only the technicalities but also regarding the `why'! During summer, we have spent hours in thinking up ideas, designing, and planning our experiments, all while revising multiple times for each of them. In addition, running gels, pipetting, and microscope-ing have been the most of our life during this summer, apart from the occasional meal run to the convenience store (duh!). In addition to the video, this website is dedicated to elaborating our project, the culmination of all of our ideas and hard work. Feel free to surf around and immerse yourself in understanding our project! We hope you sincerely enjoy your time here and we hope we have succeeded in justifying our passion!
-			</p>
-		</div>
-	</section>
-	<!--/area2-->
+		<section id="Project">
+			<h2>Project</h2>
+			<div class="container">
+				<p>Hello! We are Team Noko!</p>
+				<a href="html/Project.html" style="color:#fff;">Read more	→</a>
+			</div>
+		</section>
+		<section id="Design">
+			<h2>Design</h2>
+			<div class="container">
+				<p>Hello! We are Team Noko!</p>
+				<a href="html/Design.html" style="color:#fff;">Read more	→</a>
+			</div>
+		</section>
+		<section id="Experiment">
+			<h2>Experiment</h2>
+			<div class="container">
+				<p>Hello! We are Team Noko!</p>
+				<a href="html/Experiment.html" style="color:#fff;">Read more	→</a>
+			</div>
+		</section>
+		<section id="Future">
+			<h2>Future</h2>
+			<div class="container">
+				<p>Hello! We are Team Noko!</p>
+				<a href="html/Future.html" style="color:#fff;">Read more	→</a>
+			</div>
+		</section>
+		<section id="ELSI">
+			<h2>ELSI</h2>
+			<div class="container">
+				<p>Hello! We are Team Noko!</p>
+				<a href="html/ELSI.html" style="color:#fff;">Read more	→</a>
+			</div>
+		</section>
+		<section id="Team">
+			<h2>Team</h2>
+			<div class="container">
+				<p>Hello! We are Team Noko!</p>
+				<img src="img\Team\Team Photo\LINE_ALBUM_817, 18 合宿！_241004_3.jpg" style="width: 50%; margin: 0 auto;">
+				<a href="html/Team.html" style="color:#fff;">Learn about us	→</a>
+			</div>
+		</section>
 
 		 
 	<section>
-		<div class="inner">
 		<h2>CONCEPT VIDEO</h2>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/5xA97c6ryLc" title="YouTube video player" style="display: block; margin: 0 auto;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-		</div>
+		<iframe src="https://www.youtube.com/embed/5xA97c6ryLc" class="concept-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</section>
 
 
@@ -107,19 +143,22 @@
 <!--/main-->
 
   <footer>
-		<p>BIOMOD Team NoKo</p>
-		<div class="footer-info"> 
-			<ul>
-				<li class="footer-link" style="margin-right: 5%;"><a href="https://github.com/Argon399481/BIOMOD2024_wiki" target="_blank"><img class="under_li" src="img/icon/github.png"></a></li>
-				<li class="footer-link" style="margin-right: 5%;"><a href="https://x.com/BiomodTeamNoKo" target="_blank"><img class="under_li" src="img/icon/twitterx.png"></a></li>
-				<li class="footer-link"><a href="https://www.instagram.com/biomod_teamnoko/" target="_blank"><img class="under_li" src="img/icon/instagram.png"></a></li>
-			</ul>
-			<ul class="SpecialThanks">
-				<li class="Thanks"><img class="under_li" style="padding-top: 20%;" src="img/logo/KAKENHIlogoM_v2.jpg"></li>
-				<li class="Thanks"><img class="under_li" src="img/logo/logo_kawano_lab.png"></li>
-			</ul>
-		</div>
-		<small>&copy; Special Thanks <a href="https://www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>  
+		<section class="footer">
+			<div class="footer-info"> 
+				<ul style="margin-left: 50%;">
+					<li class="footer-link"><a href="https://github.com/Argon399481/BIOMOD2024_wiki" target="_blank"><img class="under_li" src="img/icon/github.png"></a></li>
+					<li class="footer-link"><a href="https://x.com/BiomodTeamNoKo" target="_blank"><img class="under_li" src="img/icon/twitterx.png"></a></li>
+					<li class="footer-link"><a href="https://www.instagram.com/biomod_teamnoko/" target="_blank"><img class="under_li" src="img/icon/instagram.png"></a></li>
+				</ul>
+				<ul class="SpecialThanks">
+					<li class="Thanks"><a href="https://www.tuat.ac.jp/en/" target="_blank"><img class="under_li" style="padding-top: 25%;" src="img/logo/Logo_TUAT_English.png"></a></li>
+					<li class="Thanks"><a href="https://web.tuat.ac.jp/~rjkawano/" target="_blank"><img class="under_li" src="img/logo/logo_kawano_lab.png"></a></li>
+					<li class="Thanks"><a href="https://www.mext.go.jp/a_menu/shinkou/hojyo/main5_a5.htm" target="_blank"><img class="under_li" style="padding-top: 21%;" src="img/logo/KAKENHIlogoM_v2.jpg"></a></li>
+					<li class="Thanks" style="width: 50%;"><a href="https://bottomup-biotech.elsi.jp" target="_blank"><img class="under_li" style="padding-top: 17%;" src="img/logo/Logo_gakuhen.jpg"></a></li>
+				</ul>
+			</div>
+			<small>&copy;BIOMOD Team NoKo 2024</a></small>
+		</section>
 	</footer>
    
 	<div id="movie">
@@ -135,6 +174,67 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
 <script src="js/biomod.js"></script>
+<script>
+	// オープニングアニメーション
+// TextTypingというクラス名がついている子要素（span）を表示から非表示にする定義
+function TextTypingAnime() {
+	$('.TextTyping').each(function () {
+		var elemPos = $(this).offset().top - 50;
+		var scroll = $(window).scrollTop();
+		var windowHeight = $(window).height();
+		var thisChild = "";
+		if (scroll >= elemPos - windowHeight) {
+			thisChild = $(this).children(); //spanタグを取得
+			//spanタグの要素の１つ１つ処理を追加
+			thisChild.each(function (i) {
+				var time = 100;
+				//時差で表示する為にdelayを指定しその時間後にfadeInで表示させる
+				$(this).delay(time * i).fadeIn(time);
+			});
+		} else {
+			thisChild = $(this).children();
+			thisChild.each(function () {
+				$(this).stop(); //delay処理を止める
+				$(this).css("display", "none"); //spanタグ非表示
+			});
+		}
+	});
+}
+
+$(document).ready(function () {
+	//spanタグを追加する
+	var element = $(".TextTyping");
+	element.each(function () {
+		var text = $(this).html();
+		var textbox = "";
+		text.split('').forEach(function (t) {
+			if (t !== " ") {
+				textbox += '<span>' + t + '</span>';
+			} else {
+				textbox += t;
+			}
+		});
+		$(this).html(textbox);
+
+	});
+
+	TextTypingAnime();/* アニメーション用の関数を呼ぶ*/
+});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+
+
+var arr = []
+//初期値の設定
+function TypingInit() {
+	$('.js_typing').each(function (i) { //js_typingクラスを全て処理をおこなう
+		arr[i] = new ShuffleText(this);//動作させるテキストを配列に格納
+	});
+}
+// 画面が読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function () {
+	TypingInit(); //初期設定
+	TypingAnime();/* アニメーション用の関数を呼ぶ*/
+});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+</script>
 </body>
 
 </html>
