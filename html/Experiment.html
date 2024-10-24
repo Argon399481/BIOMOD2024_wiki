@@ -346,7 +346,54 @@
 		<p class="and">「This is the end of this page」</p>
 	</section> -->
 	<section>
-		<div class="inner" id="Analysis" style="padding-top: 70px; margin-top: -70px;">
+		<h1 class="heading">Experiment</h1>
+		<h2>〇 Mainly Results</h2>
+		<ol>
+			<li>The BDB structure was constructed.</li>
+			<li>The designed DNA hydrogel was confirmed to have formed.</li>
+			<li>The BGB structure was successfully constructed.</li>
+			<li>It was demonstrated that the BGB structure is stronger than liposomes.</li>
+			<li>The annealing of the tubular DNA origami was confirmed.</li>
+			<li>Tubulation was achieved in the BG structure.</li>
+			<li>Pores were successfully opened in the BGB structure.</li>
+		</ol>
+
+		<h1 style="color: red; margin-top: 50px;">～～～～～ここから以前の文章～～～～～</h1>
+		<h3>1-1. Structural analysis method using CanDo</h3>
+		<p> CanDo (Computer-Aided Engineering for DNA Origami) is a method for predicting the three-dimensional shape of DNA origami, including its bends and twists, from its design. Each base pair of the double helix is treated as a finite element, and the average position coordinates and RMSF (RMSF) for each base pair are calculated. Position coordinates and RMSF (Root-Mean-Square Fluctuation) values for each base pair. The following six states of triangular DNA origami were subject to structural analysis to verify the correlation between the shape of triangular DNA origami and the dimer formation rate.</p>
+		<ul style="margin: 10px 0;">
+			<li><span class="emphasize">State 1</span> <br> one of the three sides contains a linker.</li>
+			<li><span class="emphasize">State 2</span> <br> Containing linkers on only two of the four linkers on any one of the three sides, either the inner or outer two.</li>
+		</ul>
+		<p>State 1 is the analysis to verify the correlation between the state of the triangular DNA origami at the time of dimer formation and the dimer formation rate. This was done for the first and second design origami. State 2 is the analysis of the correlation between the dimer formation experiment of the second design origami by selective linker (which will be described in Section 4) and the dimer formation rate.</p>
+		<h3>1-2. Methods for the preparation of triangular DNA origami</h3>
+		<div class="container">
+			<p>The method for the preparation of triangular DNA origami is described. After mixing the solutions according to Table 1, a thermal cycler (Program Temp Control System PC-350, ASTEC) was used to anneal it at a constant rate (-1°C/min) from 90°C to 20°C for 70 min. After annealing, the solution was stored at 4°C.</p>
+			<figure>
+				<figcaption class="table center">Table 1. Mixing Ratio for Triangular DNA Origami</figcaption>
+				<img src="../img/Table 1. Mixing Ratio for Triangular DNA Origami.png" class="Fig1" style="width: 60%;">
+			</figure>
+		</div>
+		<h3>1-3. Dimer preparation method</h3>
+		<p>This section describes the dimer preparation method for triangular DNA origami. The method of dimer production of triangular DNA oligomers is described. Four linkers corresponding to each side were mixed in equal quantities, then diluted further 100-fold with ultrapure water to prepare a linker solution for each side. The linker solution corresponding to the side to be bound was added to the triangular DNA origami solution (concentration of M13mp18): (concentration of each linker) = 1:4. The solution was then annealed in a thermal cycler from 60°C to 20°C at a constant rate (-0.02°C/min) for 2000 min. After annealing, the solution was stored at 4°C.</p>
+		<h3>1-4. Methods for dimer formation by selective linker</h3>
+		<p>In order to verify the contribution of edge deformation and linker binding position to the dimer formation rate, the dimer formation was carried out by two linkers out of four on each side. Two of the four linkers were selected, as shown in Fig. 3. The red and blue linkers are used for the outer side, and the green and black linkers are used for the inner side. The mixing and annealing were the same as for the case with four linkers.</p>
+		<h3>1-5.  Evaluation of dimer formation</h3>
+		<p>Triangular DNA origami and its dimer formation were assessed by atomic force microscopy (AFM) observation. The AFM procedure is described below.</p>
+		<ol style="margin: 10px 0;">
+			<li>Mix 10 X TAE buffer (0.4 M Tris-HCl buffer, 0.4 M acetic acid, and 0.01 M EDTA) and MgCl<sub>2</sub> solution to concentrations of 1X and 25 mM, respectively.</li>
+			<li>Drop 30 µL of the solution of step (1) onto the cleaved mica, followed by 10 µL of the sample solution, and wait for 10 minutes.</li>
+			<li>Remove the solution from the mica using a micropipette and wash the sample with ultra-pure water. The sample is washed by dropping 30 µL of ultrapure water onto the micropipette, waiting for 10 seconds, and then removing the solution. Repeat this 3 times.</li>
+			<li>Dry the sample for 2 minutes using an N<sub>2</sub> gun.</li>
+			<li>Observe the sample with an AFM (MultiMode 8, BRUKER).</li>
+		</ol>
+		<p style="padding-top: 20px;">The BRUKER is equipped with a cantilever (Tap300AI-G, Budget Sensors) with a resonance frequency of 300 kHz. The dimer formation rate (unit: %) was calculated according to formula (1) below.</p>
+		<figure style="margin: 20px 0;">
+			<img src="../img/Fomula1.png" class="Fomula1" alt="Fomula1" style="width: 80%;">
+		</figure>
+	</div>
+	</section>
+	<section>
 		<h1 class="heading">Experiment</h1>
 		<h2>1. Analysis and Experimental Methods</h2>
 		<h3>1-1. Structural analysis method using CanDo</h3>
@@ -384,7 +431,6 @@
 	</div>
 	</section>
 	<section>
-		<div class="inner" id="Results" style="padding-top: 70px; margin-top: -70px;">
 		<h2>2. Results and Correlation</h2>
 		<h3>2-1. Correlation between analysis results and dimer formation rate</h3>
 		<p>The correlation between the results of the structural analysis by CanDo and the dimer formation rate is described below.The correlation between the results of the structural analysis by CanDo and the dimer formation rate is described below. The graphs in Figures 2 to 5 (a) to (c) show the outermost double helix (hereafter referred to as the outermost helix) of the triangular DNA origami.The horizontal axis indicated the 336 base pairs belonging to the double helix, and the vertical axis indicated the two-dimensional distance in the graph. The 2D distance was calculated using only the coordinates parallel to the plane containing the triangular DNA origami, which were the average position coordinates of the base pairs outputted by CanDo.The distance between the base pairs at the two ends of the outermost helix and the average positional coordinates of the base pairs. The deformation toward the inside of the triangular DNA origami is negative (concave), while the deformation toward the outside is positive (concave) (Fig 1).</p>
@@ -445,10 +491,8 @@
 			</div>
 		</div>
 		</div>
-		</div>
 	</section>
 	<section>
-		<div class="inner" id="Verification" style="padding-top: 70px; margin-top: -70px;">
 			<h2>3. Verification of Assumptions</h2>
 			<h3>3-1. Triangle DNA origami redesign considering deformation </h3>
 			<p>Based on the above results and correlations, we assumed that the shape of the outermost helix was the dominant factor in dimer formation and redesigned the second DNA design origami, considering deformation. This is referred to as the redesigned origami. In this redesign, we aimed to satisfy the following 3 conditions:</p>
@@ -492,7 +536,6 @@
 		</div>
 	</section>
 	<section>
-		<div class="inner" id="Conclusion" style="padding-top: 70px; margin-top: -70px;">
 			<h2>Conclusion</h2>
 			<p>To investigate the dominant factors affecting dimer formation rate in the assembly of dimer formation experiments by combining triangular DNA origami with linkers, structural analysis using CanDo and dimerization experiments under various conditions were conducted in this study. A comparison between the structural analysis by CanDo and the dimerization experiment results revealed the following two points:</p>
 			<ol style="margin: 10px 0;">
@@ -505,7 +548,6 @@
 
 	  
 		<section id="Reference">
-		  <div class="inner" id="Reference">
 			<h2>Reference</h2>
 			<ol>
 			<li id="Reference_1"> H. Dietz, S. M. Douglas, and W. M. Shih : “Folding DNA into Twisted and Curved Nanoscale Shapes”, Science, Vol.325, No.5941, pp.725-730 (2009)</li>

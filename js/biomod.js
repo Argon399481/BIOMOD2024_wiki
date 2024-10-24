@@ -76,72 +76,26 @@ $(function(){
   });
 });
 
-// BGBの動き遅くする奴
-var videoElem = document.getElementById('lipo');
-videoElem.playbackRate = 0.4;
-videoElem.play(); // 必要に応じて再生を開始
 
-// オープニングアニメーション
-// TextTypingというクラス名がついている子要素（span）を表示から非表示にする定義
-function TextTypingAnime() {
-	$('.TextTyping').each(function () {
-		var elemPos = $(this).offset().top - 50;
-		var scroll = $(window).scrollTop();
-		var windowHeight = $(window).height();
-		var thisChild = "";
-		if (scroll >= elemPos - windowHeight) {
-			thisChild = $(this).children(); //spanタグを取得
-			//spanタグの要素の１つ１つ処理を追加
-			thisChild.each(function (i) {
-				var time = 100;
-				//時差で表示する為にdelayを指定しその時間後にfadeInで表示させる
-				$(this).delay(time * i).fadeIn(time);
-			});
-		} else {
-			thisChild = $(this).children();
-			thisChild.each(function () {
-				$(this).stop(); //delay処理を止める
-				$(this).css("display", "none"); //spanタグ非表示
-			});
-		}
-	});
-}
-
-$(document).ready(function () {
-	//spanタグを追加する
-	var element = $(".TextTyping");
-	element.each(function () {
-		var text = $(this).html();
-		var textbox = "";
-		text.split('').forEach(function (t) {
-			if (t !== " ") {
-				textbox += '<span>' + t + '</span>';
-			} else {
-				textbox += t;
-			}
-		});
-		$(this).html(textbox);
-
-	});
-
-	TextTypingAnime();/* アニメーション用の関数を呼ぶ*/
-});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
-
-
-var arr = []
-//初期値の設定
-function TypingInit() {
-	$('.js_typing').each(function (i) { //js_typingクラスを全て処理をおこなう
-		arr[i] = new ShuffleText(this);//動作させるテキストを配列に格納
-	});
-}
-// 画面が読み込まれたらすぐに動かしたい場合の記述
-$(window).on('load', function () {
-	TypingInit(); //初期設定
-	TypingAnime();/* アニメーション用の関数を呼ぶ*/
-});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
 //Team Photoのところの設定
-$('.slider').slick({
-  autoplay: true, // 自動再生オン
-}); 
+// $(document).ready(function(){
+//   $('.slider').slick({
+//     slidesToShow: 1,  // 1枚ずつ表示
+//     slidesToScroll: 1,  // 1枚ずつスクロール
+//     infinite: true,  // 無限ループ
+//     arrows: true,  // ナビゲーション矢印を有効
+//     prevArrow: '.slick-prev',  // 前の矢印
+//     nextArrow: '.slick-next'   // 次の矢印
+//   });
+// });
+
+
+$(document).on('ready', function() {
+  $(".slider").slick({
+    autoplay: true,
+    autoplaySpeed: 400,
+    dots: true,
+    infinite: true,  // 無限ループ
+  });
+});

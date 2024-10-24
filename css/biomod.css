@@ -31,7 +31,6 @@
 
   body {
     line-height:1;
-    background-color: #000;
   }
 
   article,aside,details,figcaption,figure,
@@ -110,7 +109,7 @@
 
 
 /*========= 上部固定させるためのCSS ===============*/
-#header{
+header{
   height: 14vh;/*高さ指定*/
   width:100%;/*横幅指定*/
   display: flex;
@@ -137,6 +136,7 @@ main{
 
 body{
   font:18px "Consolas", "Courier New", "monospace","ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+  background-color: #000;
 }
 /* プログラミング感を出すためにVSCodeの標準フォントである"Consolas", "Courier New", "monospace"を追加 */
 
@@ -154,13 +154,12 @@ h1.heading {
   text-align: center;
 }
 h1.title{
-  font-size: 15vh;
-  padding-left: 85%;
+  font-size: 80px;
 }
 
 h2{
   font-size:1.4rem;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
 }
 h3{
   font-size:1.2rem;
@@ -212,28 +211,34 @@ nav ul{
   display: flex;
   justify-content: center;
 }
-.inner {
-  margin: 0 15%;
-}
-.inner img {
-  width: 100%;
-  size: 2%;
-}
-
 
 footer{
-  background-color:#333;
+  background-color:#535353;
   display: block;
   text-align: center;
-  padding:20px 0;
+  box-shadow: inset 0 -30px 100px 0 rgba(0, 0, 0, 0.5);
 }
 footer a{
   color: #fff;
 }
 
 section{
-  padding:30px;
-  background-color:rgba(11, 7, 37, 0.5); 
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 1000px;
+  background-color:rgba(0, 0, 0, 0.7); 
+}
+
+section > * {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#lipo {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 
 
@@ -259,7 +264,7 @@ section{
 }
 
 
-#header h1{
+header h1{
   font-size: 5vh;
 }
 
@@ -275,36 +280,31 @@ nav.header{
   margin-left: 10vw;
 }
 
-/* .menu{
-    padding-right: 10px;メニューの位置調整 
-    } */
-
 .menu li {
   flex: 1;
   width: 10vw;
+  font-size: 3.5vh;
   position: relative;
-  /* background: #11086c; */
 }
 
 
 a.big-category{
-  padding-top: 20px;
+  padding-top: 25%;
   display: block;
-  height: 50%;
-  font-size: 1.3em;
   position: relative;
   text-align: center;
 }
 
 .menuSub {
   position: absolute;
+  top: 14vh;
   width: 100%;
   display: none;
   box-shadow: inset 0 -30px 60px 0 rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
 }
 
-#header a{
+header a{
   display: block;
   text-decoration: none;
   color: #fff;
@@ -312,15 +312,23 @@ a.big-category{
 }
 .container {
   display: inline-block;
+  margin: 0 50px;
+}
+.container img {
+  max-width: 100%;
 }
 .container-img {
   display: inline-block;
+  max-width: 100%;
 }
 figure {
   margin-top: 20px;
   width: 100%;
   display: inline-block;
   text-align: center;
+}
+figure *{
+  max-width: 100%;
 }
 figure.left {
   float: left;
@@ -355,14 +363,13 @@ figcaption.center {
   text-align: center;
 }
 
-
-/* img {
-  display: inline-flex;
-} */
+section.footer {
+  background-color: transparent;
+}
 
 div.footer-info{
-  width: 40%;
-  margin-left: 60%;
+  width: 70%;
+  margin-left: 30%;
 }
 
 .footer-info ul{
@@ -370,13 +377,23 @@ div.footer-info{
 }
 
 li.footer-link{
-  width: 10%;
+  width: 15%;
+  margin-left: 10%;
 }
 img.under_li{
   width: 100%;
 }
 li.Thanks{
   width: 25%;
+  margin-right: 2%;
+}
+
+.concept-video{
+  display: block;
+  margin: 0 auto;
+  width: 560px;
+  height: auto;
+  aspect-ratio: 16/9;
 }
 
 /*.openが付与された時、表示の設定*/
@@ -384,14 +401,14 @@ li.Thanks{
   display: block;
 }
 .menuSub li{
-  height: 40px;
+  height: 7.2vh;
   width: 100%;
 }
 
 .menuSub li a {
   display: block;
   color: #fff;
-  line-height: 40px;
+  line-height: 7vh;
   text-decoration: none;
   font-size: 3.5vh;
 }
@@ -416,11 +433,6 @@ span.emphasize {
 position: relative;
 }
 
-.menu li.current a,
-.menu li a:hover{
-  color:#003A47;
-}
-
 .menu li a::after {
   content: '';
   /*絶対配置で線の位置を決める*/
@@ -429,7 +441,7 @@ position: relative;
   left: 10%;
   /*線の形状*/
   width: 80%;
-  height: 2px;
+  height: 0.3vh;
   background:#0481A2;
   /*アニメーションの指定*/
   transition: all .3s;
@@ -641,3 +653,102 @@ h1.TextTyping:nth-child(3) {
 } */
 
 /*  ここまでオープニングアニメーションのCSS*/
+
+
+
+/*====================================================================
+slick
+====================================================================*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.sliderArea {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.sliderArea.w300 {
+  max-width: 300px;
+}
+.slick-slide {
+  margin: 0 5px;
+}
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+.slick-active {
+  opacity: 1;
+}
+.slick-current {
+  opacity: 1;
+}
+.thumb {
+  margin: 20px 0 0;
+}
+.thumb .slick-slide {
+  cursor: pointer;
+}
+.thumb .slick-slide:hover {
+  opacity: .7;
+}
+.slick-dots li button::before {
+  color: #fff;
+}
+.slick-dots li.slick-active button::before {
+  color: #fff;
+}
+/*====================================================================
+以下は不要です。
+====================================================================*/
+/* body {
+  font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  letter-spacing: .025em;
+  line-height: 1.8;
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+}
+.section {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.section p._a {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 30px 0 0;
+}
+.section p._a .link {
+  display: inline-block;
+  color: #607D8B;
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
+.section p._a .link:before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #607D8B;
+  border-right: 2px solid #607D8B;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-right: 10px;
+} */
