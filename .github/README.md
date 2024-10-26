@@ -1,10 +1,13 @@
 # BIOMOD2024_wiki
 ↓アクセスは以下のURLから  
 https://argon399481.github.io/BIOMOD2024_wiki/  
-※このwikiはtestとして作ったものであり、内容のほとんどは以下の論文から引用させていただいたものです。  
+※このwikiは現在作成中であり、内容には以下の論文から引用させていただいたものが残っています。  
 https://www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja
   
 ## Update!
+2024/10/26  
+私のPCが壊れました。(川口)  
+  
 2024/10/24  
 Teamにスライダーを実装しました。
 背景を変更しました(仮)。  
