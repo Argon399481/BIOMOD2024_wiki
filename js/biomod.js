@@ -76,26 +76,44 @@ $(function(){
   });
 });
 
-
-
-//Team Photoのところの設定
-// $(document).ready(function(){
-//   $('.slider').slick({
-//     slidesToShow: 1,  // 1枚ずつ表示
-//     slidesToScroll: 1,  // 1枚ずつスクロール
-//     infinite: true,  // 無限ループ
-//     arrows: true,  // ナビゲーション矢印を有効
-//     prevArrow: '.slick-prev',  // 前の矢印
-//     nextArrow: '.slick-next'   // 次の矢印
-//   });
-// });
-
-
+// Teamの画像スライダー
 $(document).on('ready', function() {
   $(".slider").slick({
     autoplay: true,
-    autoplaySpeed: 400,
+    autoplaySpeed: 2000,
     dots: true,
-    infinite: true,  // 無限ループ
+    infinite: true,
   });
 });
+
+// Projectのページ内タブ
+$(".tab_label").on("click",function(){
+	var $th = $(this).index();
+	$(".tab_label").removeClass("active");
+	$(".tab_panel").removeClass("active");
+	$(this).addClass("active");
+	$(".tab_panel").eq($th).addClass("active");
+});
+
+// Intersection Observerの設定
+const checkboxes = document.querySelectorAll('input[type="checkbox"] + label');
+
+// 遅延時間（ミリ秒単位）
+const delay = 300;
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    // もし、entry.targetが.pseudo-checkboxでない場合
+    if (entry.isIntersecting && !entry.target.classList.contains('pseudo-checkbox')) {
+      setTimeout(() => {
+        entry.target.classList.add('in-view'); // .in-viewクラスを追加
+      }, delay);
+
+      observer.unobserve(entry.target); // 一度だけ実行するため監視を解除
+    }
+  });
+}, { threshold: 0.1 });
+
+
+// 各チェックボックスのlabel要素を監視
+checkboxes.forEach(checkbox => observer.observe(checkbox));

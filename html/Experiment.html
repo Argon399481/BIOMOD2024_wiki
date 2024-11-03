@@ -15,48 +15,52 @@
 
 <body>
 	<main>
-	<header id="header" role="banner">
-		<img src="../img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;">
-		<h1><a href="../index.html" style="margin-left: 10%;">BIOMOD Team NoKo 2024</a></h1>
-		<nav class="header">
-			<ul class="menu">
-				<li><a href="Project.html" class="big-category">Project</a>
+		<header role="banner">
+			<a href="../index.html" style="margin-left: 5%;"><img src="../img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;"></a>
+			<nav class="header">
+				<ul class="menu">
+					<li><a href="Project.html" class="big-category">Project</a>
+						<ul class="menuSub">
+							<li><a href="Project.html#Background">Background</a></li>
+							<li><a href="Project.html#Problem">Problem</a></li>
+							<li><a href="Project.html#Solution">Solution</a></li>
+							<li><a href="Project.html#Goals">Goals</a></li>
+						</ul>
+					</li>
+					<li><a href="Design.html" class="big-category">Design</a>
+						<ul class="menuSub">
+							<li><a href="Design.html#Liposome">liposome</a></li>
+							<li><a href="Design.html#Hydrogel">hydrogel</a></li>
+							<li><a href="Design.html#Origami">origami</a></li>
+						</ul>
+					</li>
+					<li><a href="Experiment.html" class="big-category">Experiment</a>
 					<ul class="menuSub">
-						<li><a href="Project.html#Background">Background</a></li>
-						<li><a href="Project.html#Problem">Problem</a></li>
-						<li><a href="Project.html#Solution">Solution</a></li>
-						<li><a href="Project.html#Goals">Goals</a></li>
-					</ul>
-				</li>
-				<li><a href="Design.html" class="big-category">Design</a>
-					<ul class="menuSub">
-						<li><a href="Design.html#Liposome">liposome</a></li>
-						<li><a href="Design.html#Hydrogel">hydrogel</a></li>
-						<li><a href="Design.html#Origami">origami</a></li>
-					</ul>
-				</li>
-				<li><a href="Experiment.html" class="big-category">Experiment</a>
-				<ul class="menuSub">
-					<li><a href="Experiment.html#Summary">Summary</a></li>
-					<li><a href="Experiment.html#BDB">BDB</a></li>
-					<li><a href="Experiment.html#BGB">BGB</a></li>
-					<li><a href="Experiment.html#Tubulation">Tubulation</a></li>
-				</ul>
-				</li>
-				<li><a href="Future.html" class="big-category">Future</a>
-				</li>
-				<li><a href="ELSI.html" class="big-category">ELSI</a>
-					<ul class="menuSub">
-						<li><a href="ELSI.html#Ethics">Ethics</a></li>
-						<li><a href="ELSI.html#Legal">Legal</a></li>
-						<li><a href="ELSI.html#Social">Social</a></li>
+						<li><a href="Experiment.html#MainResults">Main Results</a></li>
+						<li><a href="Experiment.html#BDB">BDB</a></li>
+						<li><a href="Experiment.html#BGB">BGB</a></li>
+						<li><a href="Experiment.html#Tubulation">Tubulation</a></li>
+						<li><a href="Experiment.html#MaterialsMethods">Methods</a></li>
 					</ul>
 					</li>
-				<li><a href="Team.html" class="big-category">Team</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+					<li><a href="Modeling.html" class="big-category">Modeling</a>
+					</li>
+					<li><a href="Future.html" class="big-category">Future</a>
+					</li>
+					<li><a href="ELSI.html" class="big-category">ELSI</a>
+						<ul class="menuSub">
+							<li><a href="ELSI.html#Ethics">Ethics</a></li>
+							<li><a href="ELSI.html#Legal">Legal</a></li>
+							<li><a href="ELSI.html#Social">Social</a></li>
+						</ul>
+						</li>
+					<li><a href="Team.html" class="big-category">Team</a>
+					</li>
+					<li><a href="Appendix.html" class="big-category">Appendix</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
   <video id="background" poster="img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
     <source src="video/DNAbackground.mp4" type="video/mp4">
   </video>
@@ -345,9 +349,10 @@
 			the fluorescence of each DNA strand by a confocal microscopy.
 		<p class="and">「This is the end of this page」</p>
 	</section> -->
+
+	<h1 class="heading">Experiment</h1>
 	<section>
-		<h1 class="heading">Experiment</h1>
-		<h2>〇 Mainly Results</h2>
+		<h2 id="MainResults">〇Main Results</h2>
 		<ol>
 			<li>The BDB structure was constructed.</li>
 			<li>The designed DNA hydrogel was confirmed to have formed.</li>
@@ -357,8 +362,10 @@
 			<li>Tubulation was achieved in the BG structure.</li>
 			<li>Pores were successfully opened in the BGB structure.</li>
 		</ol>
+	</section>
 
-		<h1 style="color: red; margin-top: 50px;">～～～～～ここから以前の文章～～～～～</h1>
+	<h1 style="color: red; margin-top: 50px;">～～～～～ここから以前の文章～～～～～</h1>
+	<section>
 		<h3>1-1. Structural analysis method using CanDo</h3>
 		<p> CanDo (Computer-Aided Engineering for DNA Origami) is a method for predicting the three-dimensional shape of DNA origami, including its bends and twists, from its design. Each base pair of the double helix is treated as a finite element, and the average position coordinates and RMSF (RMSF) for each base pair are calculated. Position coordinates and RMSF (Root-Mean-Square Fluctuation) values for each base pair. The following six states of triangular DNA origami were subject to structural analysis to verify the correlation between the shape of triangular DNA origami and the dimer formation rate.</p>
 		<ul style="margin: 10px 0;">
@@ -545,6 +552,16 @@
 			<p style="padding-top: 20px;">Based on these analytical results, it was suggested that designing the outermost helix of the triangular DNA origami so that it has a convex shape when a linker is added to only one side of the three sides could suppress the decrease in dimer formation rate. Consequently, modified triangular DNA origamis were designed with this insight. Additionally, considering the significant impact of the outermost helix shape on dimer formation rate according to CanDo analysis, linkers inserting six bases as spacers were designed for the central part bridging triangular DNA origamis. Dimerization experiments utilizing these designs demonstrated the validity of the hypothesis that the shape of the outermost helix is a dominant factor in dimer formation rate.</p>
 		</div>
 	</section>
+	<h1 style="color: red; margin-top: 50px;">～～～～～ここまで以前の文章～～～～～</h1>
+	<section>
+		<h2 id="MaterialsMethods">〇Materials and Methods</h2>
+		<h3>- Materials and Reagents</h3>
+		<p>All staple strands and linker-DNA strands were purchased from Integrated DNA Technologies (IDT, Iowa, USA). FAM-modified DNA strands were purchased from Eurofins Genomics (Ebersberg, Germany). Single-stranded M13mp18 viral DNA was purchased from Tilibit Nanosystems (Garching, Germany) via Eurofins. MgCl₂, glucose, sorbitol, and trehalose were purchased from Kishida Chemical (Osaka, Japan). FAM, Rhod PE, TAE, BSA,  and Heavy mineral oil were purchased from Sigma-Aldrich (Merck, Massachusetts, USA). NBD-PE and SYBR Gold were purchased from Thermo Fisher Scientific (California, USA). EDTA was purchased from Kanto Chemical (Tokyo, Japan), and KCl was purchased from Nakalai Tesque (Kyoto, Japan).</p>
+		<p>POPC was purchased from NOF Corporation (Tokyo, Japan), while POPG and DOTAP were purchased from Avanti Polar Lipids (Alabama, USA). Cholesterol was purchased from Fujifilm Wako Pure Chemical Corporation (Osaka, Japan). Ultrapure water (resistivity 18.2 MΩ·cm) was supplied from Direct-Q UV3 (Merck Millipore, Massachusetts, USA). AMCA-modified DNA was purchased from Sangon Biotech (Shanghai, China) to prepare BDB and Generay Biotech (Shanghai, China) to prepare BGB.</p>
+		<p><span style="color: red;">これいる？→　</span>Agarose S was purchased from Nippon Gene (Tokyo, Japan), and the loading buffer was purchased from Takara Bio (Shiga, Japan).</p>
+		<br>
+		<a href="../MaterialsSheet.pdf" target="_blank" style="color: #cccccc;">Click here to view the materials list→</a>
+	</section>
 
 	  
 		<section id="Reference">
@@ -557,9 +574,24 @@
 	
 	  </main><!--/main-->
 
-    <footer>
-			<small>&copy; Special Thanks <a href="//www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja" style="color: #fff;">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>  
-		</footer>
+	  <footer>
+		<section class="footer">
+			<div class="footer-info">
+				<ul style="margin-left: 50%;">
+					<li class="footer-link"><a href="https://github.com/Argon399481/BIOMOD2024_wiki" target="_blank"><img class="under_li" src="../img/icon/github.png"></a></li>
+					<li class="footer-link"><a href="https://x.com/BiomodTeamNoKo" target="_blank"><img class="under_li" src="../img/icon/twitterx.png"></a></li>
+					<li class="footer-link"><a href="https://www.instagram.com/biomod_teamNoKo/" target="_blank"><img class="under_li" src="../img/icon/instagram.png"></a></li>
+				</ul>
+				<ul class="SpecialThanks">
+					<li class="Thanks"><a href="https://www.tuat.ac.jp/en/" target="_blank"><img class="under_li" style="padding-top: 25%;" src="../img/logo/Logo_TUAT_English.png"></a></li>
+					<li class="Thanks"><a href="https://web.tuat.ac.jp/~rjkawano/index_en.html" target="_blank"><img class="under_li" src="../img/logo/logo_kawano_lab.png"></a></li>
+					<li class="Thanks"><a href="https://www.mext.go.jp/a_menu/shinkou/hojyo/main5_a5.htm" target="_blank"><img class="under_li" style="padding-top: 21%;" src="../img/logo/KAKENHIlogoM_v2.jpg"></a></li>
+					<li class="Thanks" style="width: 50%;"><a href="https://bottomup-biotech.elsi.jp/en/" target="_blank"><img class="under_li" style="padding-top: 10.5%;" src="../img/logo/Logo_gakuhen.png"></a></li>
+				</ul>
+			</div>
+			<small>&copy;BIOMOD Team NoKo 2024</a></small>
+		</section>
+	</footer>
    
 <button id="scrollToTopBtn">Top</button>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>

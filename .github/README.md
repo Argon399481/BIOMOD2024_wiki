@@ -5,6 +5,12 @@ https://argon399481.github.io/BIOMOD2024_wiki/
 https://www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja
   
 ## Update!
+2023/11/3  
+AppendixとModelingのページを追加しました。  
+旧PCと共に飛んだfooterを復旧しました。  
+等幅フォントが読みづらかったのでフォントをTimes New Romanに変更しました。  
+Teamを編集しました。特にAcknowledgementの項目を追加しました。  
+  
 2024/10/26  
 私のPCが壊れました。(川口)  
   

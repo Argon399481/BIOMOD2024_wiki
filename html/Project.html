@@ -10,59 +10,62 @@
   <link rel="stylesheet" type="text/css" media="all" href="../css/biomod.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
-  <link rel="shortcut icon" href="../img/favicon.ico">
+  <!-- <link rel="shortcut icon" href="../img/favicon.ico"> -->
 </head>
 
 <body>
 	<main>
-	<header id="header" role="banner">
-		<img src="../img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;">
-		<h1><a href="../index.html" style="margin-left: 10%;">BIOMOD Team NoKo 2024</a></h1>
-		<nav class="header">
-			<ul class="menu">
-				<li><a href="Project.html" class="big-category">Project</a>
+		<header role="banner">
+			<a href="../index.html" style="margin-left: 5%;"><img src="../img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;"></a>
+			<nav class="header">
+				<ul class="menu">
+					<li><a href="Project.html" class="big-category">Project</a>
+						<ul class="menuSub">
+							<li><a href="Project.html#Background">Background</a></li>
+							<li><a href="Project.html#Problem">Problem</a></li>
+							<li><a href="Project.html#Solution">Solution</a></li>
+							<li><a href="Project.html#Goals">Goals</a></li>
+						</ul>
+					</li>
+					<li><a href="Design.html" class="big-category">Design</a>
+						<ul class="menuSub">
+							<li><a href="Design.html#Liposome">liposome</a></li>
+							<li><a href="Design.html#Hydrogel">hydrogel</a></li>
+							<li><a href="Design.html#Origami">origami</a></li>
+						</ul>
+					</li>
+					<li><a href="Experiment.html" class="big-category">Experiment</a>
 					<ul class="menuSub">
-						<li><a href="Project.html#Background">Background</a></li>
-						<li><a href="Project.html#Problem">Problem</a></li>
-						<li><a href="Project.html#Solution">Solution</a></li>
-						<li><a href="Project.html#Goals">Goals</a></li>
-					</ul>
-				</li>
-				<li><a href="Design.html" class="big-category">Design</a>
-					<ul class="menuSub">
-						<li><a href="Design.html#Liposome">liposome</a></li>
-						<li><a href="Design.html#Hydrogel">hydrogel</a></li>
-						<li><a href="Design.html#Origami">origami</a></li>
-					</ul>
-				</li>
-				<li><a href="Experiment.html" class="big-category">Experiment</a>
-				<ul class="menuSub">
-					<li><a href="Experiment.html#Summary">Summary</a></li>
-					<li><a href="Experiment.html#BDB">BDB</a></li>
-					<li><a href="Experiment.html#BGB">BGB</a></li>
-					<li><a href="Experiment.html#Tubulation">Tubulation</a></li>
-				</ul>
-				</li>
-				<li><a href="Future.html" class="big-category">Future</a>
-				</li>
-				<li><a href="ELSI.html" class="big-category">ELSI</a>
-					<ul class="menuSub">
-						<li><a href="ELSI.html#Ethics">Ethics</a></li>
-						<li><a href="ELSI.html#Legal">Legal</a></li>
-						<li><a href="ELSI.html#Social">Social</a></li>
+						<li><a href="Experiment.html#MainResults">Main Results</a></li>
+						<li><a href="Experiment.html#BDB">BDB</a></li>
+						<li><a href="Experiment.html#BGB">BGB</a></li>
+						<li><a href="Experiment.html#Tubulation">Tubulation</a></li>
+						<li><a href="Experiment.html#MaterialsMethods">Methods</a></li>
 					</ul>
 					</li>
-				<li><a href="Team.html" class="big-category">Team</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+					<li><a href="Modeling.html" class="big-category">Modeling</a>
+					</li>
+					<li><a href="Future.html" class="big-category">Future</a>
+					</li>
+					<li><a href="ELSI.html" class="big-category">ELSI</a>
+						<ul class="menuSub">
+							<li><a href="ELSI.html#Ethics">Ethics</a></li>
+							<li><a href="ELSI.html#Legal">Legal</a></li>
+							<li><a href="ELSI.html#Social">Social</a></li>
+						</ul>
+						</li>
+					<li><a href="Team.html" class="big-category">Team</a>
+					</li>
+					<li><a href="Appendix.html" class="big-category">Appendix</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 	<video id="background" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;"> <!-- あとでposter変える！！ -->
 		<source src="../video/レコーディング 2024-10-21 090427.mp4" type="video/mp4">
 	</video>
     
     <section id="area-1">
-      <div class="inner">
         <h1 class="heading">Project</h1>
         <p>DNA spontaneously forms double helix structures based on base complementarity under appropriate temperature and ionic conditions. In recent years, a technology called DNA origami has attracted attention, which uses this property to fold long cyclic single-stranded DNA (scaffold) with hundreds of short single-stranded DNA (staple) to produce two-dimensional or three-dimensional nanoscale structures with a size of approximately 100 nm<sup class="reference"><a href="#Reference_1" title="P. W. K. Rothemund : “Folding DNA to create nanoscale shapes and patterns”, Nature, Vol.440, No.7082, pp.297-302 (2006)">&#91;1&#93;</a></sup><sup class="reference"><a href="#Reference_2" title="C. E. Castro, F. Kilchherr, D. N. Kim, E. L. Shiao, T. Wauer, P. Wortmann, M. Bathe, and H. Dietz : “A primer to scaffolded DNA origami”, Nat. Meth., Vol.8, No.3, pp.221-229 (2011)">&#91;2&#93;</a></sup>. By combining multiple DNA origami and making them into polymers, it is possible to fabricate larger-scale structures with complex functionality <sup class="reference"><a href="#Reference_3" title="W. Liu, H. Zhong, R. Wang, and N. C. Seeman : “Crystalline Two-Dimensional DNA-Origami Arrays”, Angew. Chemie Int. Ed., Vol.123, No.1, pp.278-281 (2011)">&#91;3&#93;</a></sup><sup class="reference"><a href="#Reference_4" title="Y. Suzuki, M. Endo, and H. Sugiyama : “Lipid-bilayer-assisted two-dimensional self-assembly of DNA origami nanostructures”, Nat. Commun., Vol.6, p.8052 (2015)">&#91;4&#93;</a></sup>.</p>
         <div class="container">
@@ -106,12 +109,220 @@
         </div>
       </div>
     </section>
-  <!--/area1-->
+    <!--/area1-->
+
+    <section>
+      <div class="tab_wrap">
+        <input id="tab1" type="radio" name="tab_btn" checked>
+        <input id="tab2" type="radio" name="tab_btn">
+        <input id="tab3" type="radio" name="tab_btn">
+        <input id="tab4" type="radio" name="tab_btn">
+        <input id="tab5" type="radio" name="tab_btn">
+      
+        <div class="tab_area">
+          <label class="tab" id="tab1_label" for="tab1">BDB</label>
+          <label class="tab" id="tab2_label" for="tab2">DNA hydrogel</label>
+          <label class="tab" id="tab3_label" for="tab3">BGB</label>
+          <label class="tab" id="tab4_label" for="tab4">Tubulation</label>
+          <label class="tab" id="tab5_label" for="tab5">Pore creation</label>
+        </div>
+        <div class="panel_area">
+          <!-- BDB -->
+          <div id="panel1" class="tab_panel">
+            <input id='one' type='checkbox' />
+            <label for='one'>
+              <span></span>
+              Prepare positively charged liposomes
+              <ins><i>Prepare positively charged liposomes</i></ins>
+            </label>
+            
+            <input id='two' type='checkbox' />
+            <label for='two'>
+              <span></span>
+              Prepare BD structure
+              <ins><i>Prepare BD structure</i></ins>
+            </label>
+            
+            <input id='three' type='checkbox' />
+            <label for='three'>
+              <span></span>
+              Prepare BDB structure
+              <ins><i>Prepare BDB structure</i></ins>
+            </label>
+            
+            <input id='four' type='checkbox' />
+            <label for='four'>
+              <span></span>
+              Purify to increase the concentration of the BDB structure in the mixture
+              <ins><i>Purify to increase the concentration of the BDB structure in the mixture</i></ins>
+            </label>
+            
+            <input id='five' type='checkbox' />
+            <label for='five' class="pseudo-checkbox">
+              <span></span>
+              Construct a mathematical model of centrifugal sedimentation and evaluate the model
+              <ins><i>Construct a mathematical model of centrifugal sedimentation and evaluate the model</i></ins>
+            </label>
+          </div>
+
+          <!-- DNA hydrogel -->
+          <div id="panel2" class="tab_panel">
+            <input id='six' type='checkbox' />
+            <label for='six'>
+              <span></span>
+              Design Y motif
+              <ins><i>Design Y motif</i></ins>
+            </label>
+
+            <input id='seven' type='checkbox' />
+            <label for='seven'>
+              <span></span>
+              Form DNA hydrogel
+              <ins><i>Form DNA hydrogel</i></ins>
+            </label>
+
+            <input id='eight' type='checkbox' />
+            <label for='eight'>
+              <span></span>
+              Evaluate DNA hydrogel with Y motif
+              <ins><i>Evaluate DNA hydrogel with Y motif</i></ins>
+            </label>
+
+            <input id='nine' type='checkbox' />
+            <label for='nine'>
+              <span></span>
+              Perform rehybridization to control the aggregation of BGB
+              <ins><i>Perform rehybridization to control the aggregation of BGB</i></ins>
+            </label>
+          </div>
+          
+          <!-- BGB -->
+          <div id="panel3" class="tab_panel">
+            <input id='ten' type='checkbox' />
+            <label for='ten'>
+              <span></span>
+              Prepare BG structure
+              <ins><i>Prepare BG structure</i></ins>
+            </label>
+
+            <input id='eleven' type='checkbox' />
+            <label for='eleven'>
+              <span></span>
+              Prepare BGB structure
+              <ins><i>Prepare BGB structure</i></ins>
+            </label>
+
+            <input id='twelve' type='checkbox' />
+            <label for='twelve'>
+              <span></span>
+              Purify to increase the concentration of the BGB structure in the mixture
+              <ins><i>Purify to increase the concentration of the BGB structure in the mixture</i></ins>
+            </label>
+
+            <input id='thirteen' type='checkbox' />
+            <label for='thirteen'>
+              <span></span>
+              Demonstrate that BGB remains more stable than liposomes at different temperatures
+              <ins><i>Demonstrate that BGB remains more stable than liposomes at different temperatures</i></ins>
+            </label>
+
+            <input id='fourteen' type='checkbox' />
+            <label for='fourteen'>
+              <span></span>
+              Demonstrate that BGB remains more stable than liposomes at high salt concentrations
+              <ins><i>Demonstrate that BGB remains more stable than liposomes at high salt concentrations</i></ins>
+            </label>
+
+            <input id='fifteen' type='checkbox' />
+            <label for='fifteen'>
+              <span></span>
+              Demonstrate that BGB remains more stable than liposomes at high sugar concentrations
+              <ins><i>Demonstrate that BGB remains more stable than liposomes at high sugar concentrations</i></ins>
+            </label>
+
+            <input id='sixteen' type='checkbox' />
+            <label for='sixteen'>
+              <span></span>
+              Demonstrate that BGB is maintained at extremely low pH
+              <ins><i>Demonstrate that BGB is maintained at extremely low pH</i></ins>
+            </label>
+
+            <input id='seventeen' type='checkbox' />
+            <label for='seventeen' class="pseudo-checkbox">
+              <span></span>
+              Demonstrate that BGB is stable for a longer period than liposomes
+              <ins><i>Demonstrate that BGB is stable for a longer period than liposomes</i></ins>
+            </label>
+          </div>
+
+          <!-- Tubulation -->
+          <div id="panel4" class="tab_panel">
+            <input id='eighteen' type='checkbox' />
+            <label for='eighteen'>
+              <span></span>
+              Design tubulation origami
+              <ins><i>Design tubulation origami</i></ins>
+            </label>
+
+            <input id='nineteen' type='checkbox' />
+            <label for='nineteen' class="pseudo-checkbox">
+              <span></span>
+              Evaluate tubulation origami
+              <ins><i>Evaluate tubulation origami</i></ins>
+            </label>
+
+            <input id='twenty' type='checkbox' />
+            <label for='twenty' class="pseudo-checkbox">
+              <span></span>
+              Evaluate origami polymerization with AFM
+              <ins><i>Evaluate origami polymerization with AFM</i></ins>
+            </label>
+
+            <input id='twenty-one' type='checkbox' />
+            <label for='twenty-one' class="pseudo-checkbox">
+              <span></span>
+              Tubulate liposomes with tubulation origami
+              <ins><i>Tubulate liposomes with tubulation origami</i></ins>
+            </label>
+
+            <input id='twenty-two' type='checkbox' />
+            <label for='twenty-two' class="pseudo-checkbox">
+              <span></span>
+              Optimize DNA hydrogel for tubulation of the BG structure
+              <ins><i>Optimize DNA hydrogel for tubulation of the BG structure</i></ins>
+            </label>
+          </div>
+
+          <!-- Pore creation -->
+          <div id="panel5" class="tab_panel">
+            <input id='twenty-three' type='checkbox' />
+            <label for='twenty-three' class="pseudo-checkbox">
+              <span></span>
+              Conduct simulations of membrane fusion in silico
+              <ins><i>Conduct simulations of membrane fusion in silico</i></ins>
+            </label>
+
+            <input id='twenty-four' type='checkbox' />
+            <label for='twenty-four' class="pseudo-checkbox">
+              <span></span>
+              Create pores in the BDB structure with origami
+              <ins><i>Create pores in the BDB structure with origami</i></ins>
+            </label>
+
+            <input id='twenty-five' type='checkbox' />
+            <label for='twenty-five' class="pseudo-checkbox">
+              <span></span>
+              Create pores in the BGB structure with origami
+              <ins><i>Create pores in the BGB structure with origami</i></ins>
+            </label>
+          </div>
+        </div>
+      </div>      
+    </section>
   
     <section id="Reference">
-      <div class="inner" id="Reference">
         <h2>Reference</h2>
-        <ol>
+        <ol class="reference_ol">
         <li id="Reference_1"> P. W. K. Rothemund : “Folding DNA to create nanoscale shapes and patterns”, Nature, Vol.440, No.7082, pp.297-302 (2006)</li>
         <li id="Reference_2"> C. E. Castro, F. Kilchherr, D. N. Kim, E. L. Shiao, T. Wauer, P. Wortmann, M. Bathe, and H. Dietz : “A primer to scaffolded DNA origami”, Nat. Meth., Vol.8, No.3, pp.221-229 (2011)</li>
         <li id="Reference_3"> W. Liu, H. Zhong, R. Wang, and N. C. Seeman : “Crystalline Two-Dimensional DNA-Origami Arrays”, Angew. Chemie Int. Ed., Vol.123, No.1, pp.278-281 (2011)</li>
@@ -131,22 +342,22 @@
 
   </main><!--/main-->
 
-  <footer>
+	<footer>
 		<section class="footer">
-			<div class="footer-info"> 
+			<div class="footer-info">
 				<ul style="margin-left: 50%;">
 					<li class="footer-link"><a href="https://github.com/Argon399481/BIOMOD2024_wiki" target="_blank"><img class="under_li" src="../img/icon/github.png"></a></li>
 					<li class="footer-link"><a href="https://x.com/BiomodTeamNoKo" target="_blank"><img class="under_li" src="../img/icon/twitterx.png"></a></li>
-					<li class="footer-link"><a href="https://www.instagram.com/biomod_teamnoko/" target="_blank"><img class="under_li" src="../img/icon/instagram.png"></a></li>
+					<li class="footer-link"><a href="https://www.instagram.com/biomod_teamNoKo/" target="_blank"><img class="under_li" src="../img/icon/instagram.png"></a></li>
 				</ul>
 				<ul class="SpecialThanks">
-					<li class="Thanks"><a href="https://web.tuat.ac.jp/~rjkawano/" target="_blank"><img class="under_li" src="../img/logo/logo_kawano_lab.png"></a></li>
+					<li class="Thanks"><a href="https://www.tuat.ac.jp/en/" target="_blank"><img class="under_li" style="padding-top: 25%;" src="../img/logo/Logo_TUAT_English.png"></a></li>
+					<li class="Thanks"><a href="https://web.tuat.ac.jp/~rjkawano/index_en.html" target="_blank"><img class="under_li" src="../img/logo/logo_kawano_lab.png"></a></li>
 					<li class="Thanks"><a href="https://www.mext.go.jp/a_menu/shinkou/hojyo/main5_a5.htm" target="_blank"><img class="under_li" style="padding-top: 21%;" src="../img/logo/KAKENHIlogoM_v2.jpg"></a></li>
-					<li class="Thanks" style="width: 50%;"><a href="https://bottomup-biotech.elsi.jp" target="_blank"><img class="under_li" style="padding-top: 17%;" src="../img/logo/Gakuhen_logo.jpg"></a></li>
+					<li class="Thanks" style="width: 50%;"><a href="https://bottomup-biotech.elsi.jp/en/" target="_blank"><img class="under_li" style="padding-top: 10.5%;" src="../img/logo/Logo_gakuhen.png"></a></li>
 				</ul>
 			</div>
-			<small>&copy; Special Thanks <a href="https://www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja">Revealing the Influential Factor on Dimerizing of Triangular DNA Origami by Linker</a></small>
-			<small>&copy;BIOMOD2024</a></small>
+			<small>&copy;BIOMOD Team NoKo 2024</a></small>
 		</section>
 	</footer>
    
