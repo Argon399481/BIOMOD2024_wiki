@@ -10,13 +10,16 @@
 	<link rel="stylesheet" type="text/css" media="all" href="../css/biomod.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
-  <link rel="shortcut icon" href="../img/favicon.ico">
+  <!-- <link rel="shortcut icon" href="../img/favicon.ico"> -->
 </head>
 
 <body>
 	<main>
 		<header role="banner">
-			<a href="../index.html" style="margin-left: 5%;"><img src="../img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;"></a>
+			<div style="margin-left: 5%; position: relative;">
+				<a href="../index.html" id="pseudo-logo"></a>
+				<video src="../video/logo_animation.webm" poster="../img/logo/Logo.png" webkit-playsinline playsinline muted id="teamLogoVideo" alt="Team-logo"></video>
+			</div>
 			<nav class="header">
 				<ul class="menu">
 					<li><a href="Project.html" class="big-category">Project</a>
@@ -43,8 +46,6 @@
 						<li><a href="Experiment.html#MaterialsMethods">Methods</a></li>
 					</ul>
 					</li>
-					<li><a href="Modeling.html" class="big-category">Modeling</a>
-					</li>
 					<li><a href="Future.html" class="big-category">Future</a>
 					</li>
 					<li><a href="ELSI.html" class="big-category">ELSI</a>
@@ -62,40 +63,43 @@
 				</ul>
 			</nav>
 		</header>
-  	<video id="background" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
-    <source src="../video/レコーディング 2024-10-21 090427.mp4" type="video/mp4">
+  	<video id="background" poster="../img/BGBchan.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
+    <source src="../video/BGBchan.mp4" type="video/mp4">
   	</video>
 
 	<h1 class="heading">ELSI</h1>
-	<section id="Introduction">
-		<h2>Introduction</h2>
-		<p>On this page, Bilayer-DNA-Bilayer (BDB) and  Bilayer-Gel-Bilayer (BGB) are discussed from the perspective of ELSI. ELSI stands for Ethical, Legal, and Social Issues. The development of science and technology brings great benefits to society. On the other hand, the development has at times caused serious problems for both society and the environment. Therefore, when developing new technologies and implementing them in society, it is necessary to consider their impact on society from an ELSI perspective in advance. We have a responsibility to consider a better future by examining new technologies and ELSI with experts in various fields and people in various positions.</p>
-	</section>
-	<section id="Ethical">
-		<h2>Ethical Issues</h2>
+
+	<!-- Ref入れなさい！！ -->
+	
+	<section>
+		<h2 id="Introduction">Introduction</h2>
+		<p>On this page, Bilayer-DNA-Bilayer (BDB) and Bilayer-Gel-Bilayer (BGB) are discussed from the perspective of ELSI. ELSI stands for Ethical, Legal, and Social Issues. The development of science and technology brings great benefits to society. On the other hand, the development has at times caused serious problems for both society and the environment. Therefore, when developing new technologies and implementing them in society, it is necessary to consider their impact on society from an ELSI perspective in advance. We have a responsibility to consider a better future by examining new technologies and ELSI with experts in various fields and people in various positions.</p>
+		</section>
+		<section>
+		<h2 id="Ethical">Ethical Issues</h2>
 		<p>BDB (Bilayer-DNA-Bilayer) and BGB (Bilayer-Gel-Bilayer) will be discussed from the perspective of bioethics and dual use.</p>
 		<h3>- Perspective 1: Bioethics</h3>
-		<p>BDB and BGB are synthesized from phospholipids and DNA. Phospholipids and most DNA are chemically synthesized, so there are no ethical issues. While, the scaffold strand in DNA origami used for tubulation is M13mp18, a circular single-stranded DNA derived from M13 phage. Although M13 phage is a virus generally not considered an organism, the M13mp18 was produced by infecting <i>E. coli</i> with M13 phage. Since <i>E. coli</i> is an organism, this point is open to ethical debate. For this reason, this section particularly addresses the ethical considerations of using <i>E. coli</i>.</p>
+		<p>BDB and BGB are constructed by phospholipids and DNA. Phospholipids and most DNA are chemically synthesized, so there are no ethical issues. While, the scaffold strand in DNA origami used for tubulation is M13mp18, a circular single-stranded DNA derived from M13 phage. Although M13 phage is a virus generally not considered an organism, the M13mp18 was produced by infecting <i>E. coli</i> with M13 phage. Since <i>E. coli</i> is an organism, this point is open to ethical debate. For this reason, this section particularly addresses the ethical considerations of using <i>E. coli</i>.</p>
 		<p>In the course of infecting <i>E. coli</i> with M13 phage, the <i>E. coli</i> may die. In other words, it can be said that this intentionally infects a living organism with a virus and causes it to become sick or die to produce the desired DNA. Some people may feel that this is not bioethically appropriate. On the other hand, using many microorganisms keeps the economy going, so some may feel that this is not bioethically problematic or unavoidable.</p>
 		<p>Then, how would the use of <i>E. coli</i> be considered from a utilitarian perspective? In discussions of bioethics such as animal husbandry, the conversation often revolves around the perspective of utilitarianism. Utilitarianism focuses on the greatest happiness for the greatest number, and minimizing suffering is good. <i>E. coli</i> is a single-celled organism and It is commonly believed that it has no pain, suffering, or emotions. Thus, from a utilitarian perspective, using <i>E. coli</i> presents no ethical issue, and its use can be considered acceptable.</p>
 		<p>What about the perspective of land ethics, then? In “The Rights of Nature”, Roderick Nash states that “organisms, ecosystems, and landscapes also have a right to existence,” and that “all life forms are subject to ethical considerations.”. In land ethics, then, <i>E. coli</i> is an ethical consideration, and one might argue that the use of <i>E. coli</i> should be stopped.</p>
 		<p>There are a variety of philosophical values and ideologies that determine the extent to which life is covered by ethics. People from various perspectives must engage in a society-wide dialogue on the relationship between our social system and life.</p>
 		<span style="color: red;font-weight: bold;">（アンケートフォーム）</span>
 		<h3>- Perspective 2: Dual use</h3>
-		<p>The civilian and military uses of science and technology are closely linked and often inextricably linked. As a result, science and technology can be used militarily in ways unintended by the developers, endangering society. Scientific and technological advances have the potential to improve society and to pose new security threats. This ambivalence is referred to as dual use dilemma.</p>
-		<p>At present, BDB and BGB consider the possibility of dual use to be low. This is because BDB and BGB are simply membrane structures and do not function by themselves. However, from various perspectives, BDB and BGB have been proven to have higher stability than conventional liposomes, and have the potential to expand the field of nanorobot activity in the future. The possibility of nanorobot research being diverted to military use cannot be denied. Therefore, we believe that it will be necessary to consider the dangers of dual use of nanorobots using BDB and BGB in the future. Open discussion with the public on the development and use of nanorobots is needed.</p>
+		<p>The civilian and military uses of science and technology are closely linked and often inextricably linked. As a result, science and technology can be used militarily in ways unintended by the developers, endangering society. Scientific and technological advances have the potential to improve society and to pose new security threats. This ambivalence is referred to as the dual use dilemma.</p>
+		<p>At present, BDB and BGB consider the possibility of dual use to be low. This is because BDB and BGB are simply membrane structures and do not function by themselves. However, from various perspectives, BDB and BGB have been confirmed to have higher stability than conventional liposomes, and have the potential to expand the field of nanorobot activity in the future. The possibility of nanorobot research being diverted to military use cannot be denied. Therefore, we believe that it will be necessary to consider the dangers of dual use of nanorobots using BDB and BGB in the future. Open discussion with the public on the development and use of nanorobots is needed.</p>
 		<span style="color: red;font-weight: bold;">（アンケートフォーム）</span>
-	</section>
-	<section id="Legal">
-		<h2>Legal Issues</h2>
+		</section>
+		<section>
+		<h2 id="Legal">Legal Issues</h2>
 		<p>We do not believe that BDB and BGB in this project have room to cause legal problems at this time. However, there are things to consider for the future.</p>
 		<p>No living organisms are used in this project. In addition, BDB and BGB use DNA that does not contain genetic information in its structure.</p>
 		<p>However, the scaffold strand in DNA origami used in the tube is M13mp18, a circular single-stranded DNA derived from M13 phage. This scaffold strand contains the genetic information of the phage; in the DNA origami, M13mp18 was only used as a scaffold to form the structure, so the genetic information is not transcribed or translated. Therefore, this project is completely unrelated to genetic modification or genome editing and is not contrary to the Cartagena Protocol or any other treaties or laws. However, the use of DNA in this DNA origami could be confused with genetic manipulation or genetic modification, which could lead to misunderstandings about safety. Hence, it is important to provide correct information to society and conduct educational activities.</p>
-		<p>In addition, although BDB and BGB have high stability, they can be broken, and it is necessary to clarify where the responsibility lies in the case of damage to products using BDB and BGB. In the unlikely event that the human body is affected, this could lead to liability issues. When implementing the product in society, it is necessary to establish laws and guidelines that will be perceived as reasonable not only by the stakeholders but also by uninvolved people.</p>
+		<p>In addition, if a product using BDB and BGB is damaged, the responsibility for the product must be clarified. For example, if a nanorobot using BDB and BGB is damaged or malfunctions in vivo, it may lead to liability issues. When implementing in society, it is necessary to establish laws and guidelines that are appropriate not only for the stakeholders, but also for those who are not involved.</p>
 		<span style="color: red;font-weight: bold;">（アンケートフォーム）</span>
-	</section>
-	<section id="Social">
-		<h2>Social Issues</h2>
+		</section>
+		<section>
+		<h2 id="Social">Social Issues</h2>
 		<p>There is a certain amount of potential for medical disparities, environmental issues, and problems related to making and accountability when BDBs and BGBs are put into practice in the future.</p>
 		<h3>- Medical Disparities</h3>
 		<p>We are considering the future of in vivo use of BDB and BGB. However, at this time we have not conducted any experiments on the biocompatibility of BDB and BGB. We believe that the biocompatibility of BDB and BGB is relatively low, but cannot be completely ruled out. In particular, it is necessary to seriously consider the extent to which DNA and DNAhydrogel are degraded in vivo and how they are absorbed and excreted.</p>
@@ -109,8 +113,8 @@
 		<p>Also, even if theoretically safe, it may pose a risk depending on the producer or production company. In this project, chloroform is used in the process of making lipid films <span style="color: red;font-weight: bold;">(マテメソへ)</span>. Chloroform is a highly volatile, toxic, and carcinogenic substance. In our fabrication process, chloroform is completely volatilized in a clean room draft, and our BDB and BGB are safe.</p>
 		<p>Also, experimenters should use the least hazardous substances possible with an understanding of their purpose to prevent accidents. In this project, sugars such as glucose and trehalose are used for the inner and outer solutions of liposomes, BDB, and BGB to ensure safety <span style="color: red;font-weight: bold;">(マテメソへ)</span>.</p>
 		<p>However, we cannot guarantee the safety of those prepared by third parties at this stage. We have a responsibility to establish BDB and BGB and liposome preparation materials & methods that are safe for anyone to prepare, and to publish and explain their safety so that the public can understand them.</p>
-	</section>
-		
+		</section>
+	
 	
 	
 

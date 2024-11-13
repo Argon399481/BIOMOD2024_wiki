@@ -1,3 +1,10 @@
+const LogoVideo = document.getElementById("teamLogoVideo");
+const pseudoLogo = document.getElementById("pseudo-logo");
+
+pseudoLogo.addEventListener("mouseover", () => {
+    LogoVideo.play();
+});
+
 //横尾　下から出てくるボタン
 jQuery(function() {
   var appear = false;
@@ -20,10 +27,53 @@ jQuery(function() {
     }
   });
   pagetop.click(function () {
-    $('body, html').animate({ scrollTop: 0 }, 100); //0.1秒かけてトップへ戻る
+    $('body, html').animate({ scrollTop: 0 }, 300); //0.3秒かけてトップへ戻る
     return false;
   });
 });
+
+jQuery(function() {
+  // IntersectionObserverの設定
+  var observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      // 要素が画面内に入ったとき
+      if (entry.isIntersecting) {
+        $(entry.target).addClass('visible'); // visibleクラスを追加
+
+        // 1番目の要素が動いた後、0.5秒後に1番目+2番目にvisibleを追加
+        if ($(entry.target).is(':nth-child(1)')) {
+          setTimeout(function() {
+            $('div.section-panel:nth-child(2)').addClass('visible'); // 2番目にvisibleを追加
+          }, 150);  // 1番目が動いてから0.5秒後
+
+          setTimeout(function() {
+            $('div.section-panel:nth-child(3)').addClass('visible'); // 3番目にvisibleを追加
+          }, 300); // 1番目と2番目が動いた後0.5秒後に3番目を表示
+        }
+         else if ($(entry.target).is(':nth-child(4)')) {
+          setTimeout(function() {
+            $('div.section-panel:nth-child(5)').addClass('visible'); // 2番目にvisibleを追加
+          }, 150);  // 1番目が動いてから0.5秒後
+
+          setTimeout(function() {
+            $('div.section-panel:nth-child(6)').addClass('visible'); // 3番目にvisibleを追加
+          }, 300); // 1番目と2番目が動いた後0.5秒後に3番目を表示
+        }
+
+        // 1度だけ実行するために監視を解除
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.9 // 50%が画面内に入った時点で実行
+  });
+
+  // .section-panelの1番目を監視対象にする
+  $('.observed-panel').each(function() {
+    observer.observe(this); // 1番目だけを監視
+  });
+});
+
 
 // jQueryによるナビゲーションパネルの制御
 $(function() {
@@ -38,20 +88,6 @@ $(function() {
       }
     );
   });
-  
-// ページ遷移の位置調整
-$(function () {
-    var headerHight = 70; //ヘッダーの高さ
-    $('a[href^="#"]').click(function () {
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? "html" : href);
-    var position = target.offset().top - headerHight;
-    $("html, body").animate({
-    scrollTop: position
-    }, 500, "swing");
-    return false;
-    });
-});
 
 // video止めたり流したりする奴
 $(function(){

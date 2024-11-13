@@ -12,11 +12,47 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
   <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
 </head>
+<style>
+	div.section-panel {
+		background-color: #2d2d2ddc;
+		display: inline-block;
+		max-width: 100%;
+		width: 32%;
+		margin: 10px 2px;
+		position: relative;
+	}
+	div.nakami {
+		padding: 10px;
+	}
+	div.nakami p {
+		text-align: left;
+	}
+	.section-panel a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+	}
 
+	.section-panel {
+	border: solid 2px #767474;
+	}
+	.section-panel a:hover{/* マウスオーバー時に色変更*/
+	opacity: 0.1;
+	background-color: #fff;
+	}
+	.section-panel span{
+		color: cornflowerblue;
+	}
+</style>
 <body>
 	<main>
 	<header role="banner">
-		<a href="index.html" style="margin-left: 5%;"><img src="img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;"></a>
+		<div style="margin-left: 5%; position: relative;">
+			<a href="index.html" id="pseudo-logo"></a>
+			<video src="video/logo_animation.webm" poster="img/logo/Logo.png" webkit-playsinline playsinline muted id="teamLogoVideo" alt="Team-logo"></video>
+		</div>
 		<nav class="header">
 			<ul class="menu">
 				<li><a href="html/Project.html" class="big-category">Project</a>
@@ -43,8 +79,6 @@
 					<li><a href="html/Experiment.html#MaterialsMethods">Methods</a></li>
 				</ul>
 				</li>
-				<li><a href="html/Modeling.html" class="big-category">Modeling</a>
-				</li>
 				<li><a href="html/Future.html" class="big-category">Future</a>
 				</li>
 				<li><a href="html/ELSI.html" class="big-category">ELSI</a>
@@ -62,84 +96,237 @@
 			</ul>
 		</nav>
 	</header>
-	<video id="background" poster="img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;"> <!-- あとでposter変える！！ -->
-		<source src="video/lipochan.mp4" type="video/mp4">
+	<video id="background" poster="img/BGBchan.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
+		<source src="video/BGBchan.mp4"  type="video/mp4">
 	</video>
 			
-	<div class="bg">
+	<!-- <div class="bg">
 	<h1 class="TextTyping">Bilayer Gel Bilayer</h1>
-	</div>
+	</div> -->
 			
 	<section>
 		<div class="container">
-          <div class="right" style="width: 50%;">
-            <div class="container-img">
-            <video id="BGB" loop width="100%" muted poster="img/100_honban_BGBwithTube.png">
-							<source src="video/101_reversible_BGBwithTube.webm" type="video/webm">
-							<source src="video/0001-0100.mov" type="video/mov">
-						</video>
-            </div>
-          </div>
-          <div style="width: 40%; margin: 70px 0 0 130px;">
-						<h1 class="title"><span style="color:red;">B</span>ilayer</h1>
-						<h1 class="title"><span style="color:lightgreen;">G</span>el</h1>
-						<h1 class="title"><span style="color:blue;">B</span>ilayer</h1>
-					</div>
+			<div class="right" style="width: 50%;">
+				<div class="container-img">
+					<video id="BGBvideo"  webkit-playsinline playsinline loop width="100%" muted poster="img/100_honban_BGBwithTube.png">
+						<source src="video/101_reversible_BGBwithTube.webm" type="video/webm">
+						<source src="video/0001-0100.mov" type="video/mov">
+					</video>
+				</div>
 			</div>
-		</section>
-	
+			<div style="width: 40%; margin: 70px 0 0 130px;">
+				<h1 class="title"><span style="color:red;">B</span>ilayer</h1>
+				<h1 class="title"><span style="color:lightgreen;">G</span>el</h1>
+				<h1 class="title"><span style="color:blue;">B</span>ilayer</h1>
+			</div>
+		</div>
+	</section>
+	<!-- 
+		まだやっていないことを書くよ
+		Referenceを書いていないよ
+		headerを直してないよ
+		video止めたりするボタンの挙動が奇妙だよ
+		 -->
     <section id="Abstract">
 		<h2>Abstract</h2>
-			<p>Liposomes are expected to be applied as reactors in drug delivery systems and molecular robotics by encapsulating drug molecules or autonomous systems constructed by designed biomolecules. Conventional liposomes are sensitive to external stresses such as pH changes and osmotic shock and collapse easily in such environments. This prevents the application of liposomes in vivo and the natural environment, thus the increase of the strength of the liposome membrane is essential for further applications. Previous research has increased the stability of liposomes by using DNA hydrogel cytoskeleton or PEG-modified lipid. However, DNA hydrogel inside the membrane and PEG modification on the membrane might inhibit molecular transportation through liposome membranes.</p>
-			<p>Here, we developed the “BGB (Bilayer-Gel-Bilayer)” structure to solve this problem. BGB is a capsule-like structure consisting of three layers: inner lipid bilayer layer, DNA hydrogel layer, and outer lipid bilayer layer. The DNA hydrogel is packed by inner and outer bilayers. Our BGB structure increases the stability of liposomes without the interference between the DNA hydrogel and the inner solution. Moreover, DNA origami for the pore-formation is protected by DNA hydrogel, thus the formed pore is expected to be stable in various environments compared with conventional pore-formation systems such as using DNA nanostructures. Our BGB structure will expand the application field of liposomes under more extreme conditions.</p>
+			<p>Liposomes are expected to serve as chassis and reactors in constructing drug delivery systems[1,2,3] and molecular robots[4]by encapsulating drug molecules or various designed biomolecules. Conventional liposomes are sensitive to external stresses such as changes in osmotic pressure[5]and pH.[6]To extend the application field, an increase of the stability of liposomes is required.  Previous research has enhanced the stability of liposomes using DNA hydrogel[7]or PEG-modified lipids[8,9,10]on th membrane. However, these modifications might inhibit molecular transport through liposome membranes, which is essential for future applications in constructing artificial cells and molecular robots. </p>
+			<p>In this project, we developed “BGB (Bilayer-Gel-Bilayer)” structure to solve these problems. BGB is a capsule-like structure consisting of three layers in the following order: an inner lipid bilayer, a DNA hydrogel layer, and an outer lipid bilayer. The BGB structure increases the stability of liposomes without disrupting the inner components. BGBs were prepared with a yield of nearly 100%, and their stability was evaluated to be greater than that of conventional liposomes in various conditions. Furthermore, we propose a method for forming pores in the BGB structures using DNA-origami curls. In a previous study, the tubulation of the vesicle membrane was induced by polymerization of monomer DNA-origami curls attached to the membrane surface of liposomes.[11] Using this strategy, we constructed a theoretical framework to form pores by connecting the inner and outer bilayers of the BGB structure.<!--  {結果が出たら11/13ぐらいまで}  -->Unlike conventional DNA origami nanopores, our pore system is protected by DNA hydrogel. We expect that this protection will make the formed pore more stable in various environments. Our BGB structure will expand the application field of liposomes under more extreme conditions.</p>
     </section>
-		<section id="Project">
-			<h2>Project</h2>
-			<div class="container">
-				<p>Hello! We are Team NoKo!</p>
-				<a href="html/Project.html" style="color:#cccccc;">Read more	→</a>
+	<section id="なんか箱たくさん">
+		<div class="container">
+			<div class="section-panel observed-panel">
+				<div class="nakami">
+					<img src="img/Fig 3. Comparison between 2D and Dimer Rates of 2nd Design Origami.png" class="Fig2">
+					<h3>Project</h3>
+					<p>We want to make liposomes more stable and robust. Inspired by the nuclear membrane, we developed the BGB.</p>
+					<div class="text" aria-hidden="true">
+					  <span class="char" style="--char-index: 0"> R </span>
+				  
+					  <span class="char" style="--char-index: 1"> e </span>
+				  
+					  <span class="char" style="--char-index: 2"> a </span>
+				  
+					  <span class="char" style="--char-index: 3"> d </span>
+				  
+					  <span class="char" style="--char-index: 4">&nbsp;</span>
+				  
+					  <span class="char" style="--char-index: 5"> m </span>
+				  
+					  <span class="char" style="--char-index: 6"> o </span>
+				  
+					  <span class="char" style="--char-index: 7"> r </span>
+				  
+					  <span class="char" style="--char-index: 8"> e </span>
+ 				  
+					  <span class="char" style="--char-index: 9">&nbsp;</span>
+				  
+					  <span class="char" style="--char-index: 10"> → </span>
+					</div>
+					<a href="html/Project.html" style="color:#cccccc;"></a>
+				</div>
 			</div>
-		</section>
-		<section id="Design">
-			<h2>Design</h2>
-			<div class="container">
-				<p>Hello! We are Team NoKo!</p>
-				<a href="html/Design.html" style="color:#cccccc;">Read more	→</a>
+			<div class="section-panel">
+				<div class="nakami">
+					<img src="img/Fig 2. Comparison between 2D and Dimer Rates of 1st Design Origami.png" class="Fig3">
+					<h3>Design</h3>
+					<p>We considered the requirements for the production of BGB and designed DNA hydrogel and DNA origami.</p>
+					<div class="text" aria-hidden="true">
+					  <span class="char" style="--char-index: 0"> R </span>
+				  
+					  <span class="char" style="--char-index: 1"> e </span>
+				  
+					  <span class="char" style="--char-index: 2"> a </span>
+				  
+					  <span class="char" style="--char-index: 3"> d </span>
+				  
+					  <span class="char" style="--char-index: 4">&nbsp;</span>
+				  
+					  <span class="char" style="--char-index: 5"> m </span>
+				  
+					  <span class="char" style="--char-index: 6"> o </span>
+				  
+					  <span class="char" style="--char-index: 7"> r </span>
+				  
+					  <span class="char" style="--char-index: 8"> e </span>
+ 				  
+					  <span class="char" style="--char-index: 9">&nbsp;</span>
+				  
+					  <span class="char" style="--char-index: 10"> → </span>
+					</div>
+					<a href="html/Design.html" style="color:#cccccc;"></a>
+				</div>
 			</div>
-		</section>
-		<section id="Experiment">
-			<h2>Experiment</h2>
-			<div class="container">
-				<p>Hello! We are Team NoKo!</p>
-				<a href="html/Experiment.html" style="color:#cccccc;">Read more	→</a>
+			<div class="section-panel">
+				<div class="nakami">
+					<img src="img/Fig 3. Comparison between 2D and Dimer Rates of 2nd Design Origami.png"class="Fig2">
+					<h3>Experiment</h3>
+					<p>We will show you the experimental results carried out this summer. We are sure you will be amazed.</p>
+					<div class="text" aria-hidden="true">
+					  <span class="char" style="--char-index: 0"> R </span>
+				  
+					  <span class="char" style="--char-index: 1"> e </span>
+				  
+					  <span class="char" style="--char-index: 2"> a </span>
+				  
+					  <span class="char" style="--char-index: 3"> d </span>
+				  
+					  <span class="char" style="--char-index: 4">&nbsp;</span>
+				  
+					  <span class="char" style="--char-index: 5"> m </span>
+				  
+					  <span class="char" style="--char-index: 6"> o </span>
+				  
+					  <span class="char" style="--char-index: 7"> r </span>
+				  
+					  <span class="char" style="--char-index: 8"> e </span>
+ 				  
+					  <span class="char" style="--char-index: 9">&nbsp;</span>
+				  
+					  <span class="char" style="--char-index: 10"> → </span>
+					</div>
+					<a href="html/Experiment.html" style="color:#cccccc;"></a>
+				</div>
 			</div>
-		</section>
-		<section id="Future">
-			<h2>Future</h2>
-			<div class="container">
-				<p>Hello! We are Team NoKo!</p>
-				<a href="html/Future.html" style="color:#cccccc;">Read more	→</a>
+			<div class="section-panel observed-panel">
+				<div class="nakami">
+					<img src="img/Fig 3. Comparison between 2D and Dimer Rates of 2nd Design Origami.png" class="Fig3">
+					<h3>Future</h3>
+					<p> We will introduce the next steps of our experiment and applications of BGB in the future.</p>
+					<div class="text" aria-hidden="true">
+					  <span class="char" style="--char-index: 0"> R </span>
+				  
+					  <span class="char" style="--char-index: 1"> e </span>
+				  
+					  <span class="char" style="--char-index: 2"> a </span>
+				  
+					  <span class="char" style="--char-index: 3"> d </span>
+				  
+					  <span class="char" style="--char-index: 4">&nbsp;</span>
+				  
+					  <span class="char" style="--char-index: 5"> m </span>
+				  
+					  <span class="char" style="--char-index: 6"> o </span>
+				  
+					  <span class="char" style="--char-index: 7"> r </span>
+				  
+					  <span class="char" style="--char-index: 8"> e </span>
+ 				  
+					  <span class="char" style="--char-index: 9">&nbsp;</span>
+				  
+					  <span class="char" style="--char-index: 10"> → </span>
+					</div>
+					<a href="html/Future.html" style="color:#cccccc;"></a>
+				</div>
 			</div>
-		</section>
-		<section id="ELSI">
-			<h2>ELSI</h2>
-			<div class="container">
-				<p>Hello! We are Team NoKo!</p>
-				<a href="html/ELSI.html" style="color:#cccccc;">Read more	→</a>
+			<div class="section-panel">
+				<div class="nakami">
+					<img src="img/Fig 3. Comparison between 2D and Dimer Rates of 2nd Design Origami.png" class="Fig3">
+					<h3>ELSI</h3>
+					<p>BGB structure is innovative, but that is why some things need to be considered from the ELSI perspective.</p>
+					<div class="text" aria-hidden="true">
+					  <span class="char" style="--char-index: 0"> R </span>
+				  
+					  <span class="char" style="--char-index: 1"> e </span>
+				  
+					  <span class="char" style="--char-index: 2"> a </span>
+				  
+					  <span class="char" style="--char-index: 3"> d </span>
+				  
+					  <span class="char" style="--char-index: 4">&nbsp;</span>
+				  
+					  <span class="char" style="--char-index: 5"> m </span>
+				  
+					  <span class="char" style="--char-index: 6"> o </span>
+				  
+					  <span class="char" style="--char-index: 7"> r </span>
+				  
+					  <span class="char" style="--char-index: 8"> e </span>
+ 				  
+					  <span class="char" style="--char-index: 9">&nbsp;</span>
+				  
+					  <span class="char" style="--char-index: 10"> → </span>
+					</div>
+					<a href="html/ELSI.html" style="color:#cccccc;"></a>
+				</div>
 			</div>
-		</section>
-		<section id="Team">
-			<h2>Team</h2>
-			<div class="container">
-				<p>Hello! We are BIOMOD Team NoKo!</p>
-				<img src="img\Team\Team Photo\TeamThumbnail.jpg" style="width: 50%; margin: 0 auto;">
-				<a href="html/Team.html" style="color:#cccccc;">Learn about us	→</a>
+			<div class="section-panel" id="Team-panel">
+				<div class="nakami">
+					<video src="video/Team.mp4" webkit-playsinline playsinline muted id="CardVideo"></video>
+					<h3>Team</h3>
+					<p>We are Team NoKo! Our team consists of eight undergraduates: three juniors, three sophomores, and two freshmen.
+					</p>
+					<div class="text" aria-hidden="true">
+						<span class="char" style="--char-index: 0"> R </span>
+					
+						<span class="char" style="--char-index: 1"> e </span>
+					
+						<span class="char" style="--char-index: 2"> a </span>
+					
+						<span class="char" style="--char-index: 3"> d </span>
+					
+						<span class="char" style="--char-index: 4">&nbsp;</span>
+					
+						<span class="char" style="--char-index: 5"> m </span>
+					
+						<span class="char" style="--char-index: 6"> o </span>
+					
+						<span class="char" style="--char-index: 7"> r </span>
+					
+						<span class="char" style="--char-index: 8"> e </span>
+					 
+						<span class="char" style="--char-index: 9">&nbsp;</span>
+					
+						<span class="char" style="--char-index: 10"> → </span>
+					  </div>
+					<a href="html/Team.html" style="color:#cccccc;"></a>
+				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
 		 
 	<section>
-		<h2>CONCEPT VIDEO</h2>
+		<h2>Youtube Video</h2>
 		<iframe src="https://www.youtube.com/embed/5xA97c6ryLc" class="concept-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</section>
 
@@ -239,11 +426,28 @@ function TypingInit() {
 
 // BGBの動き遅くする奴
 $(window).on('load', function () {
-	var videoElem = document.getElementById('BGB');
+	var videoElem = document.getElementById('BGBvideo');
 	videoElem.playbackRate = 0.3;
 	videoElem.play();
 });
 
+const CardVideo = document.getElementById("CardVideo");
+const Carddiv = document.getElementById("Team-panel");
+// const Cardtext = document.querySelector('.text');
+
+window.addEventListener('load', () => {
+  CardVideo.currentTime = 10.75;
+});
+
+Carddiv.addEventListener("mouseover", () => {
+  CardVideo.currentTime = 0;
+  CardVideo.play();
+  // Cardtext.classList.add('is-active');
+});
+Carddiv.addEventListener("mouseout", () => {
+  CardVideo.pause();
+  CardVideo.currentTime = 10.75;
+});
 </script>
 </body>
 

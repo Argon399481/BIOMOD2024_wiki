@@ -16,7 +16,10 @@
 <body>
 	<main>
 		<header role="banner">
-			<a href="../index.html" style="margin-left: 5%;"><img src="../img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;"></a>
+			<div style="margin-left: 5%; position: relative;">
+				<a href="../index.html" id="pseudo-logo"></a>
+				<video src="../video/logo_animation.webm" poster="../img/logo/Logo.png" webkit-playsinline playsinline muted id="teamLogoVideo" alt="Team-logo"></video>
+			</div>
 			<nav class="header">
 				<ul class="menu">
 					<li><a href="Project.html" class="big-category">Project</a>
@@ -43,8 +46,6 @@
 						<li><a href="Experiment.html#MaterialsMethods">Methods</a></li>
 					</ul>
 					</li>
-					<li><a href="Modeling.html" class="big-category">Modeling</a>
-					</li>
 					<li><a href="Future.html" class="big-category">Future</a>
 					</li>
 					<li><a href="ELSI.html" class="big-category">ELSI</a>
@@ -62,8 +63,8 @@
 				</ul>
 			</nav>
 		</header>
-  <video id="background" poster="img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
-    <source src="video/DNAbackground.mp4" type="video/mp4">
+  <video id="background" poster="../img/BGBchan.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
+    <source src="../video/BGBchan.mp4" type="video/mp4">
   </video>
 
   <section id="area-1">

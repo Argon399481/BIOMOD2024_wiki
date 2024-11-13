@@ -16,7 +16,10 @@
 <body>
 	<main>
 		<header role="banner">
-			<a href="../index.html" style="margin-left: 5%;"><img src="../img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;"></a>
+			<div style="margin-left: 5%; position: relative;">
+				<a href="../index.html" id="pseudo-logo"></a>
+				<video src="../video/logo_animation.webm" poster="../img/logo/Logo.png" webkit-playsinline playsinline muted id="teamLogoVideo" alt="Team-logo"></video>
+			</div>
 			<nav class="header">
 				<ul class="menu">
 					<li><a href="Project.html" class="big-category">Project</a>
@@ -43,8 +46,6 @@
 						<li><a href="Experiment.html#MaterialsMethods">Methods</a></li>
 					</ul>
 					</li>
-					<li><a href="Modeling.html" class="big-category">Modeling</a>
-					</li>
 					<li><a href="Future.html" class="big-category">Future</a>
 					</li>
 					<li><a href="ELSI.html" class="big-category">ELSI</a>
@@ -62,8 +63,7 @@
 				</ul>
 			</nav>
 		</header>
-  <video id="background" poster="img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
-    <source src="video/DNAbackground.mp4" type="video/mp4">
+  <video id="background" poster="../img/BGBchan.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
   </video>
 	
 	<!-- <section class="past-wiki">
@@ -352,8 +352,8 @@
 	</section> -->
 
 	<h1 class="heading">Experiment</h1>
-	<section id="MainResults">
-		<h2>〇Main Results</h2>
+	<section>
+		<h2 id="MainResults">Main Results</h2>
 		<ol>
 			<li>The BDB structure was constructed.</li>
 			<li>The designed DNA hydrogel was confirmed to have formed.</li>
@@ -365,7 +365,68 @@
 		</ol>
 	</section>
 
-	<h1 style="color: red; margin-top: 50px;">～～～～～ここから以前の文章～～～～～</h1>
+	<section>
+		<h2 id="BGB">BGB structure</h2>
+		<p>As described in the design section, BGB structures are expected to enhance the robustness of liposomes. To advance applications for future drug development, we established an experimental system that encompasses the fabrication of a three-layer structure, as well as purification and stability evaluation of the products. In the first half of this section, we introduce and evaluate the products obtained during the preparatory stage for BGB structure formation. In the second half, we validate the formation of the structure and evaluate its stability.Additionally, we report the successful recovery of this structure with a collection rate of over 90%.</p>
+		
+		
+		<h3>〇3重層構造体の形成のための準備物</h3>
+		<h4>- Preparation and evaluation of the DNA hydrogel</h4>
+		<p>→このセクションは横尾君にお願いしてます。</p>
+		<h4>- 正電荷リポソームの開発と、相互作用の確認</h4>
+		<p>The designed three-layer structure is formed by the electrostatic interaction between the membrane and DNA. To induce the interaction, liposomes containing a 30 mol% ratio of DOTAP, a positively charged phospholipid, were prepared. To confirm the electrostatic interaction, FAM-modified single-stranded DNA strands added to the inner solution of liposomes were observed using a confocal microscope. Rhodamine PE (Rhod-PE) was mixed at a concentration of x%, and FAM-DNA (濃度) was encapsulated to observe the lipid membranes and DNA, respectively.  FAM-DNA was observed at the same position as the membrane, while FAM molecules added as control were not.  This indicates the interaction between liposomes and DNA contributed to binding both molecules. （Fig..a,b,）   In contrast, DNA-FAM was observed to spread evenly throughout the inner fluid in membranes without DOTAP. （Fig..c） These results prove the contribution of DOTAP in attaching DNA due to the electrostatic interaction.</p>
+		
+		
+		<figcaption>Fig.
+		(a)DOTAP : POPC= 7 : 3, FAM-DNA
+		(b)DOTAP : POPC= 7 : 3, FAM
+		(c)POPConly, FAM-DNA</figcaption>
+		
+		
+		<h4>- BG structureの作成と、構造の凝集を抑えるためのゲルコーティング</h4>
+		<p>As the next step in obtaining BGB structures, BG structures—a complex composed of liposomes and DNA—need to be prepared. To form the desired three-layer structure, we must consider two phenomena: uneven gel formation on liposomes and aggregation between liposomes due to the sticky ends of DNA hydrogels. Uneven accumulation of the gel can cause irregularities on the membrane surface, interfering with electrostatic interactions. Moreover, liposomes can get trapped by hybridization of sticky ends between gels. The 'gel-coating method' was developed to address these issues during the preparation of BG structures. The detailed procedure is described in the design section. </p>
+		<p>To observe the localization of DNA, AMCA-DNA was added at 100nM in DNA hydrogel.</p>
+		<p>After the annealing process for even gel formation on liposomes, AMCA-DNA was observed aligning neatly along the membrane, indicating reduced aggregation of DNA hydrogel on liposomes. In addition, after applying the gel-coating process with the one-sticky-end Y motif structure, a reduction in liposome aggregation was confirmed (Fig. c).</p>
+		
+		<div class="container">
+			<p>The rates of liposomes with even formed DNA hydrogel were 85% and 87.5% in annealed samples or gel coated samples(N=2)(Fig..d). Compared with the percentage in not annealed BG solution, 6.9%, the annealing process reduced aggregation of DNA hydrogel-bind liposomes approximately twenteen times.</p>
+			<p>The percentage of not-aggregated liposomes in after gel-coated process samples,75%, shows highest rates of three, suggesting the efficiency for preventing aggregation of liposomes. However, in the not annealing samples, the percentage of not aggregated liposomes is 51.7%, while the annealed samples remained 15%. This result indicates that the concentration of liposomes causes the aggregation. Needing detailed verification, the same concentration of each sample must be prepared, though we did not conduct this for focusing on evaluation of stability of BGB structure rather than the effects of methods.</p>
+			<figure>
+				<img src="../img/unnamed.png">
+				<figcaption>Fig.<br>
+				(a)リポソーム溶液に、ネットワーク形成済みのDNA hydrogelが加えられた際のリポソーム-DNA複合体<br>
+				(b)(a)の溶液を90℃ to 25℃ by -1℃/12secのアニーリング処理した時の複合体<br>
+				(c)(b)の溶液に、行き止まり配列であるG1+S2+S2-DNAによって構成されたYmotif構造体によって、ゲルコーティング処理が行われた際の複合体
+				</figcaption>
+			</figure>
+		</div>
+		
+		
+		<h4>- New centrifugal sedimentation for the effective encapsulation of outer membrane</h4>
+		<p>For the efficient encapsulation of the BG structures with the outer membrane, a concentration of 100 mol% DOTAP was used to the inner leaflet of 2nd membrane of BGB to enhance the electrostatic interaction between the lipids for the formation of micelles and  DNA hydrogel of BG. Moreover, to prevent electrostatic interactions between obtained structures due to the positive charge of DOTAP, cholesterol and DOPC were added at a 4:3 mol% ratio for the outer leaflet of 2nd membrane of BGB. After the centrifugating operation, an xx% yield of BGB structures was detected by confocal microscopy. Compared with the yield of BGB structures obtained by conventional centrifugal sedimentation (yy%), an approximately x-fold increase in purification efficiency was confirmed(Fig..b). Detailed characterization and validation of these structures are discussed in the following paragraph.</p>
+		<figcaption>Fig.
+		(a)
+		(b)従来の遠心沈降法によるBGBの精製率と、今回のやつとのグラフ上での比較
+		</figcaption>
+		
+		<h3>〇構造体形成の証明と膜上でのゲルの形成確認</h3>
+		<h4>- 3重層の証明</h4>
+		<p>To confirm and visualize the formation of the designed three-layer structure, NBD-PE, AMCA-DNA, and Rhod-PE, were applied to the inner membrane, gel layer, and outer membrane, respectively. Confocal microscopy observation revealed that the overlapping of three types of fluorescence in the same circles.. The fluorescence signals of AMCA and NBD-PE were weak, requiring stronger laser power and careful observation to observe the inner layers. To obtain more conclusive data, 1 µM calcein was added to the inner solution. This sample showed green fluorescence inside the membrane with the gel layer and outer membrane fluorescence.These results suggest the formation of the three-layer structure. (Fig. a).</p>
+		
+		
+		<h4>- ゲル形成の証明</h4>
+		<p>To evaluate whether the DNA hydrogel is certainly formed between the two membrane layers, we conducted FRAP experiment.  If the DNA hydrogel is formed, the fluidity of the DNA hydrogel layer is expected to be lower than lipid membrane layers. The detailed methods are described in the materials and methods section. Fluorescence recovery was observed in all layers of BDB structures (Fig. b, c).</p>
+		<p>The liquidity of DNA layers is as expected because they do not form the networks, just binding on membranes by electrostatic interactions. In contrast, fluorescence recovery on BGB layers was observed only in two of the membranes, but not in the gel layer. The lower fluidity in the gel layer strongly supports the formation of the DNA hydrogel between the two membranes and successful construction of BGB structures.</p>
+		
+		<figcaption>Fig.
+		(a)3重層のそれぞれの蛍光の観察のやつ
+		(b)BDBのFRAP
+		(c)BGBのFRAP
+		</figcaption>
+	</section>
+
+
+	<!-- <h1 style="color: red; margin-top: 50px;">～～～～～ここから以前の文章～～～～～</h1>
 	<section>
 		<h3>1-1. Structural analysis method using CanDo</h3>
 		<p> CanDo (Computer-Aided Engineering for DNA Origami) is a method for predicting the three-dimensional shape of DNA origami, including its bends and twists, from its design. Each base pair of the double helix is treated as a finite element, and the average position coordinates and RMSF (RMSF) for each base pair are calculated. Position coordinates and RMSF (Root-Mean-Square Fluctuation) values for each base pair. The following six states of triangular DNA origami were subject to structural analysis to verify the correlation between the shape of triangular DNA origami and the dimer formation rate.</p>
@@ -553,7 +614,7 @@
 			<p style="padding-top: 20px;">Based on these analytical results, it was suggested that designing the outermost helix of the triangular DNA origami so that it has a convex shape when a linker is added to only one side of the three sides could suppress the decrease in dimer formation rate. Consequently, modified triangular DNA origamis were designed with this insight. Additionally, considering the significant impact of the outermost helix shape on dimer formation rate according to CanDo analysis, linkers inserting six bases as spacers were designed for the central part bridging triangular DNA origamis. Dimerization experiments utilizing these designs demonstrated the validity of the hypothesis that the shape of the outermost helix is a dominant factor in dimer formation rate.</p>
 		</div>
 	</section>
-	<h1 style="color: red; margin-top: 50px;">～～～～～ここまで以前の文章～～～～～</h1>
+	<h1 style="color: red; margin-top: 50px;">～～～～～ここまで以前の文章～～～～～</h1> -->
 	<section>
 		<h2 id="MaterialsMethods">〇Materials and Methods</h2>
 		<h3>- Materials and Reagents</h3>

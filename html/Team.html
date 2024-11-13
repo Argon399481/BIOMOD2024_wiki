@@ -69,6 +69,9 @@
 		div.container-img {
 			width: 90%;
 		}
+		body{
+			font:20px "Times New Roman","游明朝";
+		}
 	</style>
 	
 </head>
@@ -76,7 +79,10 @@
 <body>
 	<main>
 		<header role="banner">
-			<a href="../index.html" style="margin-left: 5%;"><img src="../img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;"></a>
+			<div style="margin-left: 5%; position: relative;">
+				<a href="../index.html" id="pseudo-logo"></a>
+				<video src="../video/logo_animation.webm" poster="../img/logo/Logo.png" webkit-playsinline playsinline muted id="teamLogoVideo" alt="Team-logo"></video>
+			</div>
 			<nav class="header">
 				<ul class="menu">
 					<li><a href="Project.html" class="big-category">Project</a>
@@ -103,8 +109,6 @@
 						<li><a href="Experiment.html#MaterialsMethods">Methods</a></li>
 					</ul>
 					</li>
-					<li><a href="Modeling.html" class="big-category">Modeling</a>
-					</li>
 					<li><a href="Future.html" class="big-category">Future</a>
 					</li>
 					<li><a href="ELSI.html" class="big-category">ELSI</a>
@@ -122,101 +126,101 @@
 				</ul>
 			</nav>
 		</header>
-	<video id="background" poster="../img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;"> <!-- あとでposter変える！！ -->
-		<source src="../video/レコーディング 2024-10-21 090427.mp4" type="video/mp4">
+	<video id="background" poster="../img/BGBchan.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;"> <!-- あとでposter変える！！ -->
+		<source src="../video/BGBchan.mp4" type="video/mp4">
 	</video>
 
+	<h1 class="heading">Team</h1>
 	<section id="area-1">
-		<h1 class="heading">Team</h1>
 		<h2>Member</h2>
 			<div class="container">
 					<img src="../img/Team/Kengo Kurematsu.png" class="l_member">
 					<ul class="left">
 						<li class="name">Kengo Kurematsu</li>
-						<li>Role：Team leader, <span class="MVP" title="MVP!!!">Experimenter</span>, <span class="MVP" title="MVP!!!">Origami designer</span>, Wiki writer, Presenter</li>
-						<li>Grade：Junior</li>
-						<li>MBTI：ENFJ</li>
-						<li>My Favorite：Kickboxing, basketball, and DNA origami design. I feel like eating DNA origami.</li>
+						<li>Role: Team leader, <span class="MVP" title="MVP!!!">Experimenter</span>, <span class="MVP" title="MVP!!!">Origami designer</span>, Wiki writer, Presenter</li>
+						<li>Grade: Junior</li>
+						<li>MBTI: ENFJ</li>
+						<li>My Favorite: Kickboxing, basketball, and DNA origami design. I feel like eating DNA origami.</li>
 					</ul>
 			</div>
 			<div class="container" style="width: 100%; position: relative;">
 					<img src="../img/Team/Kazuya Yokoo.png" class="r_member">
 					<ul class="right">
 						<li class="name">Kazuya Yokoo</li>
-						<li>Role：Wiki editor, Wiki writer, Experimenter</li>
-						<li>Grade：Junior</li>
-						<li>MBTI：INFJ</li>
-						<li>My Favorite：Weekend with strawberry ice cream</li>
+						<li>Role: Team subleader,Wiki editor, Wiki writer, Experimenter</li>
+						<li>Grade: Junior</li>
+						<li>MBTI: INFJ</li>
+						<li>My Favorite: Weekend with strawberry ice cream</li>
 					</ul>
 			</div>
 			<div class="container">
 					<img src="../img/Team/Yamato Misawa.png" class="l_member">
 					<ul class="left">
 						<li class="name">Yamato Misawa</li>
-						<li>Role：Wiki writer</li>
-						<li>Grade：Junior</li>
-						<li>MBTI：ENTP</li>
-						<li>My Favorite：Kamen Rider</li>
+						<li>Role: Wiki writer</li>
+						<li>Grade: Junior</li>
+						<li>MBTI: ENTP</li>
+						<li>My Favorite: Kamen Rider</li>
 					</ul>
 			</div>
 			<div class="container" style="width: 100%; position: relative;">
 					<img src="../img/Team/Karen Kawaguchi.png" class="r_member">
 					<ul class="right">
 						<li class="name">Karen Kawaguchi</li>
-						<li>Role：<span class="MVP" title="MVP!!!">Wiki editor</span>, Wiki writer, 3D animator, Experimenter</li>
-						<li>Grade：Sophomore</li>
-						<li>MBTI：INTP</li>
-						<li>My Favorite：Curiosity and Excitement</li>
+						<li>Role: <span class="MVP" title="MVP!!!">Wiki editor</span>, Wiki writer, 3D animator, Experimenter</li>
+						<li>Grade: Sophomore</li>
+						<li>MBTI: INTP</li>
+						<li>My Favorite: Curiosity and Excitement</li>
 					</ul>
 			</div>
 			<div class="container">
 					<img src="../img/Team/Miri Saito.png" class="l_member">
 					<ul class="left">
 						<li class="name">Miri Saito</li>
-						<li>Role：<span class="MVP" title="MVP!!!">Youtube illustlater/editor</span>, Slide design supervisor, Experimenter</li>
-						<li>Grade：Sophomore</li>
-						<li>MBTI：ENFJ</li>
-						<li>My Favorite：Badminton, guitar, illustration, creation, Eve</li>
+						<li>Role: <span class="MVP" title="MVP!!!">Youtube illustlater/editor</span>, Wiki writer, Slide design supervisor, Experimenter</li>
+						<li>Grade: Sophomore</li>
+						<li>MBTI: ENFJ</li>
+						<li>My Favorite: Badminton, guitar, illustration, creation, Eve</li>
 					</ul>
 			</div>
 			<div class="container" style="width: 100%; position: relative;">
 					<img src="../img/Team/Rena Shiomitsu.png" class="r_member">
 					<ul class="right">
 						<li class="name">Rena Shiomitsu</li>
-						<li>Role：Wiki writer, Experimenter</li>
-						<li>Grade：Sophomore</li>
-						<li>MBTI：INTP</li>
-						<li>My Favorite：Congratulations on completing My Hero Academia! Dear Mr. Kohei Horikoshi</li>
+						<li>Role: Wiki writer, Experimenter</li>
+						<li>Grade: Sophomore</li>
+						<li>MBTI: INTP</li>
+						<li>My Favorite: Congratulations on completing My Hero Academia! Dear Mr. Kohei Horikoshi</li>
 					</ul>
 			</div>
 			<div class="container">
 					<img src="../img/Team/Wakana Aso.png" class="l_member">
 					<ul class="left">
 						<li class="name">Wakana Aso</li>
-						<li>Role：<span class="MVP" title="MVP!!!">Slide and other materials designer</span>, OP&ED creator, Experimenter</li>
-						<li>Grade：Freshman</li>
-						<li>MBTI：INFP</li>
-						<li>My Favorite：Playing the piano, photography, calligraphy</li>
+						<li>Role: <span class="MVP" title="MVP!!!">Slide and other materials designer</span>, OP & ED creator, Experimenter</li>
+						<li>Grade: Freshman</li>
+						<li>MBTI: INFP</li>
+						<li>My Favorite: Playing the piano, photography, calligraphy</li>
 					</ul>
 			</div>
 			<div class="container" style="width: 100%; position: relative;">
 					<img src="../img/Team/Norito Muramatsu.png" class="r_member">
 					<ul class="right">
 						<li class="name">Norito Muramatsu</li>
-						<li>Role：<span class="MVP" title="MVP!!!">3D animator</span>, Wiki writer, Experimenter, Origami designer</li>
-						<li>Grade：Freshman</li>
-						<li>MBTI：ENTJ</li>
-						<li>My Favorite：Matcha flavored sweets</li>
+						<li>Role: <span class="MVP" title="MVP!!!">3D animator</span>, Wiki writer, Experimenter, Origami designer</li>
+						<li>Grade: Freshman</li>
+						<li>MBTI: ENTJ</li>
+						<li>My Favorite: Matcha flavored sweets</li>
 					</ul>
 			</div>
 			<div class="container">
 				<img src="../img/Team/Mr.hacker.png" class="l_member">
 				<ul class="left">
 					<li class="name">Mr. Biohacker</li>
-					<li>Role：Biohacker, Architect, Video main character</li>
-					<li>Grade：</li>
-					<li>MBTI：</li>
-					<li>My Favorite：</li>
+					<li>Role: Biohacker, Architect, Video main character</li>
+					<li>Grade: 繝翫う繧ｷ繝ｧ</li>
+					<li>MBTI: ISTP</li>
+					<li>My Favorite: </li>
 				</ul>
 		</div>
 	</section>

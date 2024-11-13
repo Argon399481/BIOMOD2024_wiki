@@ -16,7 +16,10 @@
 <body>
 	<main>
 		<header role="banner">
-			<a href="../index.html" style="margin-left: 5%;"><img src="../img/logo/Logo.png" class="Logo" alt="Team-logo" style="margin-left: 2%;"></a>
+			<div style="margin-left: 5%; position: relative;">
+				<a href="../index.html" id="pseudo-logo"></a>
+				<video src="../video/logo_animation.webm" poster="../img/logo/Logo.png" webkit-playsinline playsinline muted id="teamLogoVideo" alt="Team-logo"></video>
+			</div>
 			<nav class="header">
 				<ul class="menu">
 					<li><a href="Project.html" class="big-category">Project</a>
@@ -43,8 +46,6 @@
 						<li><a href="Experiment.html#MaterialsMethods">Methods</a></li>
 					</ul>
 					</li>
-					<li><a href="Modeling.html" class="big-category">Modeling</a>
-					</li>
 					<li><a href="Future.html" class="big-category">Future</a>
 					</li>
 					<li><a href="ELSI.html" class="big-category">ELSI</a>
@@ -62,21 +63,61 @@
 				</ul>
 			</nav>
 		</header>
-	<video id="background" poster="img/DNAbackground.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
-		<source src="video/DNAbackground.mp4" type="video/mp4">
-	</video>
-      
-  <section id="area-1">
-      <div class="inner">
-        <h1 class="heading">Design</h1>
-        <p>DNA nanotechnology has provided us with a wide variety of structures, far exceeding what nature has built with DNA, ranging from arbitrary architectures made of DNA motifs, DNA origami, and DNA bricks to logic circuits, reaction networks, and self-organization on lipid surfaces, duplicating some of the functional complexity of biological systems. Identifying the factors affecting the dimerisation of DNA origami by the linker will enable the design of DNA origami with more stable dimerisation. This provides the basis for developing more stable nanostructures. The influential factor on dimerizing of triangular DNA origami that we found is useful for the realization of large scale 2D-array of DNA origami which can be widely applicable to various applications.</p>
-      </div>
+		<video id="background" poster="../img/BGBchan.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
+			<source src="../video/BGBchan.mp4" type="video/mp4">
+		</video>
+		
+		<h1 class="heading">Design</h1>
+		<section>
 			<a href="../chrome_dinosaur.json.zip" download="テスト.zip">zipファイルはこちらからダウンロード</a>
-    </section>
-  <!--/area1-->
+			<h2>BGB構造体とは</h2>
+			<p>In this project, we introduce the 'BGB structure' as a new concept for multilayered liposomal vesicles. BGB structures are three-layered vesicles composed of Giant Unilamellar Vesicles (GUVs), large synthetic vesicles used in biomedical applications, and DNA hydrogel. The three layers consist of a lipid membrane, DNA hydrogel, and another lipid membrane from the innermost to the outermost layer. The acronym 'BGB' is derived from the initials of each biomolecule in sequence from the inner layer. The structure in which DNA hydrogel is embedded between two lipid membranes is called the Bilayer-Gel-Bilayer (BGB) structure. When DNA strands are used instead of DNA hydrogel, it is termed the Bilayer-DNA-Bilayer (BDB) structure. For three-layer formation, each layer must be bound through interactions between the DNA hydrogel and lipid membranes. A detailed explanation of the methods for efficient BGB structure formation is provided in the following section.</p>
+		</section>
+		<section>
+			<h2>BGB作成のために</h2>
+			<p>BGB structures are formed as a three-layer structure in the order of Bilayer-DNA hydrogel-Bilayer from the innermost to the outermost layer through electrostatic interactions between liposomes and DNA, and by repeating the centrifugal sedimentation method. <br>To achieve the formation, we must consider the following three aspects:</p><br>
+			<ol>
+				<li> sufficient interaction between liposomes and DNA</li>
+				<li> methods to confirm gel formation on liposomes</li>
+				<li> the positioning of fluorescent molecules for validation of the BGB structure</li>
+			</ol><br>
+			<p>The following sections detail the considerations for BGB structure formation in this order.</p>
 
+			<h3>1. Sufficient interaction of liposomes with DNA</h3>
+			<h4>静電相互作用について</h4>
+			<p>To bind liposomes and DNA through electrostatic interaction, DOTAP:Cholesterol were mixed at a 4:3:3 molar ratio to form the lipid membrane. Additionally, the ionic concentrations in the inner and outer solutions were adjusted to 50 mM KCl and 15 mM MgCl2 to enhance the electrostatic interaction. In the experiment to observe DNA localization on the lipid membrane, Rhodamine-PE (Rhod-PE) and AMCA-DNA were added to the lipid membrane and outer solution, respectively, allowing for the observation of the membrane and DNA positions.</p>
+			
+			<h4>より相互作用を強化するために</h4>
+			<p>To enhance the interaction between the membrane and DNA, centrifugal sedimentation was optimized for the formation of the outermost membrane. This method consists of two elements: micelle formation using 100 mol% DOTAP and formation of the outer leaflet of the second membrane using subsequently added phospholipids. As the first step, 15 µl of BG solution is added to 100 mol% DOTAP (4.5 mM in mineral oil) and vortexed to form an emulsion. This step maximizes the interaction between the DNA hydrogel and the outer membrane. After the emulsion, lipids with a 4:3 molar ratio of DOPC (13.5 mM) are added to the emulsion to form the outer leaflet of the second membrane. This process contributes to stabilizing the outer membrane and prevents aggregation by reducing the charge of the outer leaflet.</p>
 
-  
+			
+			<h3>2. Methods to confirm gel formation on liposomes</h3>
+			<p>To form a DNA hydrogel network on liposomes, DNA Y-motifs with three sticky ends were designed. To design the structure, a conventional study on lining lipid membranes with DNA hydrogel for liposome stabilization was used as a reference (ref). The sequence of the sticky ends in the designed structure is a single-stranded palindromic sequence consisting of eight bases, facilitating binding between DNA Y-motif structures. DNA strands in the Y-motif are categorized based on the presence or absence of sticky ends: G1, G2, and G3 possess sticky ends on their 5' ends, while S1, S2, and S3 do not. DNA strands with the same numbers have identical sequences except for the sticky ends (Fig. a). Additionally, the sequence of FAM-modified DNA strands (FAM-DNA) is designed to replace G3 DNA. FAM-DNA is added at a 1:100 ratio relative to G3 DNA strands.</p>
+			<p>We can control the shape of DNA hydrogel networks by changing the combination of DNA strands. For instance, G1, G2, and G3 structures form DNA hydrogel networks by annealing from 90℃ to 25℃ at a rate of 1℃ per 12 sec, while G1, G2, and S3 structures pair to form dimer structures (Fig. a). DNA hydrogel structures were designed using Cadnano, and their stability was evaluated using oxDNA (ref) (Fig. b, c). The hybridization simulation was performed using NUPACK software (Ref) (Fig. d).</p>
+			
+			<figcaption>Fig.
+			(a)ゲルの配列と、2量体、ネットワーキング構造の図
+			(b)caDNAnoの設計図
+			(c)oxdnaのシミュレーション図
+			(d)NUPACKのシミュレーション図
+			</figcaption>
+			
+			<h4>リポソーム膜上で均一にゲルを形成させるために</h4>
+			<p>To form a uniform gel network on liposomes, there are several considerations different from gel formation in tubes. One concern is that uneven gel formation can inhibit electrostatic interactions with the membrane. Additionally, exposure of sticky ends on the outer side of the BG structure can lead to the aggregation of BG structures due to hybridization between exposed sticky ends (Fig). To address these issues, we developed a 'Gel-Coating Method.'
+			In the first step of this method, a DNA hydrogel composed of G1, G2, and G3 (G1-G2-G3 Y-motif) was added to the liposome solution at a final concentration of 10 µM, and annealed from 50℃ to 25℃ at a rate of -1℃ per 12 sec. This process promotes rehybridization of the DNA hydrogel on the liposomes, allowing for uniform formation.
+			After this process, the Y-motif structure composed of G1, G2, and S3 DNA strands (G1-G2-S3 Y-motif) was added to the annealed solution at a concentration of 1 µM. This induces a rearrangement from the G1-G2-G3 Y-motif to the G1-G2-S3 Y-motif on the surface of the BG structure, preventing the aggregation of liposomes by reducing hybridization between exposed sticky ends.</p>
+			
+			
+			<figcaption>Fig
+			(a)最初にベターと膜上に不均一についちゃってる絵と、アニーリングにより一回ばらけて、そのあときれいにくっついてる絵
+			(b)向き出たゲル同士の結合の絵。と、コーティングの絵。
+			</figcaption>
+			
+			<h4>FRAP によるGel形成の証明</h4>
+			<p>To validate the gel formation on lipid membrane, FRAP experiment is designed. In this experiment, 100% intensity of 405 nm laser, 25% of 488 nm laser, and 100% of 561 nm laser are irradiated at 10000ms stimulation time to the BGB layers. Inactivating fluorescent molecules, we observe the recovery of fluorescence intensity at each layer. In the desired BGB structure, the gel layer is only expected to be non recovery of the fluorescence intensity.</p>
+			<h3>3. The positioning of fluorescent molecules for validation of the BGB structure</h3>
+			<p>To observe the BGB structure, NBD-PE, AMCA-DNA, and Rhod-PE were added in inner membrane layer, DNA hydrogel layer, and outer membrane layer, respectively. all of the fluorescence is expected to overlap in desired structures.</p>
+		</section>
 
   </main><!--/main-->
 
