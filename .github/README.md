@@ -5,8 +5,13 @@ https://argon399481.github.io/BIOMOD2024_wiki/
 https://www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja
   
 ## Update!
+2024/11/13
+ModelingをAppendixに統合しました。  
+indexが8割完成しました。  
+ロゴが動くようにしました。  
+  
 2024/11/5  
-ELSIが8割方完成しました。  
+ELSIが8割完成しました。  
   
 2024/11/3  
 AppendixとModelingのページを追加しました。  
