@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="BIOMOD Team Noko">
+	<title>BIOMOD Team Noko 2024</title>
+	<link rel="stylesheet" type="text/css" media="all" href="../css/biomod.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+	<link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+
+<body>
+	<main>
+		<header role="banner">
+			<div style="margin-left: 5%; position: relative;">
+				<a href="../index.html" id="pseudo-logo"></a>
+				<video src="../video/logo_animation.webm" poster="../img/logo/Logo.png" webkit-playsinline playsinline muted id="teamLogoVideo" alt="Team-logo"></video>
+			</div>
+			<nav class="header">
+				<ul class="menu">
+					<li><a href="Project.html" class="big-category">Project</a>
+						<ul class="menuSub">
+							<li><a href="Project.html#Background">Background</a></li>
+							<li><a href="Project.html#Problem">Problem</a></li>
+							<li><a href="Project.html#Solution">Solution</a></li>
+							<li><a href="Project.html#Goals">Goals</a></li>
+						</ul>
+					</li>
+					<li><a href="Design.html" class="big-category">Design</a>
+						<ul class="menuSub">
+							<li><a href="Design.html#Liposome">liposome</a></li>
+							<li><a href="Design.html#Hydrogel">hydrogel</a></li>
+							<li><a href="Design.html#Origami">origami</a></li>
+						</ul>
+					</li>
+					<li><a href="Experiment.html" class="big-category">Experiment</a>
+					<ul class="menuSub">
+						<li><a href="Experiment.html#MainResults">Main Results</a></li>
+						<li><a href="Experiment.html#BDB">BDB</a></li>
+						<li><a href="Experiment.html#BGB">BGB</a></li>
+						<li><a href="Experiment.html#Tubulation">Tubulation</a></li>
+						<li><a href="Experiment.html#MaterialsMethods">Methods</a></li>
+					</ul>
+					</li>
+					<li><a href="Future.html" class="big-category">Future</a>
+					</li>
+					<li><a href="ELSI.html" class="big-category">ELSI</a>
+						<ul class="menuSub">
+							<li><a href="ELSI.html#Introduction">Introduction</a></li>
+							<li><a href="ELSI.html#Ethical">Ethical</a></li>
+							<li><a href="ELSI.html#Legal">Legal</a></li>
+							<li><a href="ELSI.html#Social">Social</a></li>
+						</ul>
+						</li>
+					<li><a href="Team.html" class="big-category">Team</a>
+					</li>
+					<li><a href="Appendix.html" class="big-category">Appendix</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+  <video id="background" poster="../img/BGBchan.png" width="100%" webkit-playsinline playsinline muted autoplay loop style="display: flex; position: fixed; top:0; z-index:-10;">
+  </video>
+	
+	<!-- <section class="past-wiki">
+		<h1 class="midori">Experiments</h1>
+			<h2>Optimization and confirmation of DNA origami assembling</h2>
+			Firstly, we optimized the annealing condition (in terms of annealing speed, salt
+			concentr
+			ation) of DNA origami nanostructures. As annealing condition candidate, -1°C / min (#1-1
+			), -6°C / hour (#2-1), and -1°C / hour (#3-1) was adopted.
+			<br>
+			As MgCl2 concentration candidates, 0, 5, 10, 12.5, and 15 mM were chosen. Figure 1 shows
+			th
+			e result of agarose gel electrophoresis of DNA origami nanostructures annealed in
+			various ann
+			ealing conditions.
+			<figure>
+					<img src="AGE-1-2.png">
+					<figcaption>Fig. 1 Agarose gel electrophoresis analysis of DNA nanostructures
+							assembled w
+							ith various annealing conditions and salt concentrations.</figcaption>
+			</figure>
+			Compared to the band of scaffold (M13), bands of the samples annealed in the protocol
+			#2-1 with 1
+			5mM MgCl2 and #3-1 with 12.5 and15mM moved more downwards in the gel, suggesting some
+			structure wa
+			s formed in these conditions.
+			As generally longer annealing time is required for 3D DNA origami nanostructures, it was
+			as we expected that the structural bands d
+			id not appear in the samples annealed in #1-1 protocol.
+			<br>
+			<br>
+			Next, we evaluated the samples annealed by #2-1 and #3-1 protocols with higher MgCl2
+			concentration (Figure 2). The bands of the sample assembled in the higher MgCl2
+			concentration kept the same place as 15 mM MgCl2, suggesting that 12.5 mM or 15 mM MgCl2
+			is required for proper assembly.
+			<figure>
+					<img src="AGE-2-1.png">
+					<figcaption>Fig. 2 Agarose gel electrophoresis analysis of DNA nanostructures
+							annealed by #2-1 or #3-1 with higher MgCl2 concentrations.</figcaption>
+			</figure>
+			Since our project goal is to fold DNA origami nanostructures in liposomes, potential
+			damage to liposomes such as high temperature is better to be avoided. For this reason,
+			modified annealing conditions without a hot process of 85°C were investigated. The
+			modified annealing process is defined as protocol #2-2 and #3-2, respectively. Figure 3
+			shows the electrophoresis result of the DNA origami assembled by #2-1, #2-2, #3-1, or
+			#3-2 protocols.
+			<figure>
+					<img src="AGE-3-2.png">
+					<figcaption>Fig. 3 Agarose gel electrophoresis analysis of DNA nanostructures
+							annealed by #2-1, #2-2, #3-1, or #3-2 protocols.</figcaption>
+			</figure>
+			The certain formation of the DNA origami nanostructures was evaluated by AFM
+			observation. Rectangular shapes were observed in both samples annealed by #2-2 and #3-2,
+			supporting the successful formation of the designed DNA origami nanostructures.
+			<figure>
+					<img src="AFM_observation.png">
+					<figcaption>Fig. 4 Representative AFM observation images of the DNA origami
+							nanostructures. The MgCl2 concentration was 15 mM in both annealing conditions.
+					</figcaption>
+			</figure>
+			As a result of these experiments, the optimal annealing condition in the liposomes was
+			set to be #2-2 and the optimal salt concentration was determined as 15mM. The DNA
+			origami assembly in the liposomes described above was carried out by this protocol.
+			<br>
+			<br>
+			<h2> Formation of DNA origami inside liposome</h2>
+			<h3>1. Preparing heat resistant liposome</h3>
+			In order to fold DNA origami structure in liposomes, preparing heat resistant liposomes
+			that can retain the structure during the annealing process was required. To achieve
+			this, we prepared liposomes with the certain composition of several lipids and compared
+			them in terms of forming rate and heat resistance at 60℃ to investigate the optimal
+			lipid composition of heat-resistant liposomes. Anionic lipid POPG, as well as
+			cholesterol and POPC was used to prepare heat-resistant liposomes. According to the
+			research, adding POPG is effective for creating stable GVs at high temperatures. figure
+			5 and 6 shows liposomes with different lipid composition after the annealing process
+			observed
+			with confocal laser scanning microscopy. While liposomes made only with cholesterol and
+			POPC were aggregated after the annealing process, liposomes with POPG were not. This
+			result suggests that POPG is effective in preparing heat resistant liposomes.
+			<figure>
+					<img src="img/Experiments/5.png">
+					<figcaption>Fig. 5 Liposomes with POPG observed by confocal microscopy
+					</figcaption>
+			</figure>
+			<figure>
+					<img src="img/Experiments/6.png">
+					<figcaption>Fig. 6 Liposomes without POPG observed by confocal microscopy
+					</figcaption>
+			</figure>
+			<h3>2. Folding DNA origami nanostructures in heat resistant liposomes </h3>
+			By using heat-resistant liposomes, the DNA origami assembly in the liposomes was carried
+			out. M13 scaffold and staple DNA strands were added to the inner solution of liposomes,
+			and the DNA-containing liposome solution was annealed the same as DNA origami assembly
+			in a PCR tube. After the annealing process, the liposome membrane was destructed by
+			vortex process and the samples were evaluated by agarose gel electrophoresis.
+			<br>
+			<br>
+			First, we investigated whether the DNA origami in the liposome can be observed in the
+			agarose gel electrophoresis (Fig. 7). As a positive control, the liposome solution
+			including pre-annealed DNA origami was prepared and observed with the membrane
+			destruction. Moreover, TritonTMX-100 (TX-100) was used for certain membrane destruction.
+			<figure>
+					<img src="AGE-lipo1-1.png">
+					<figcaption>Fig. 7 The agarose electrophoresis analysis of the liposome solution
+							destructed by various conditions. “Annealing in Lipo” means the DNA origami was
+							annealed in the liposome. “Annealing in Bulk” means the DNA origami was annealed
+							in bulk solution, then included inside the liposome. The two images are obtained
+							from the same gel at different exposure times.
+					</figcaption>
+			</figure>
+			The bands are observed in the liposome solution samples. Even in the liposome solution
+			sample without vortex process, the band was observed. It may be because the addition of
+			a loading buffer or voltage application might have destructed liposome membranes.
+			However, neither of the bands of the liposome samples containing DNA origami annealed in
+			a solution nor in the liposome did not match the bands of DNA origami annealed in bulk.
+			<br>
+			<br>
+			We considered that the fragments of liposome membranes, addition of KCl or remaining
+			TX-100 may have affected the observed result of electrophoresis. To avoid these factors,
+			a purification process using centrifugal filters (Amicon Ultra) was performed. Fig. 8
+			shows the electrophoresis result of the samples with the purification process.
+			<figure>
+					<img src="AGE-lipo2-1.png">
+					<figcaption>Fig. 8 The agarose electrophoresis analysis of the DNA origami collected
+							from various conditions. In the caption of the annealing column, “None” means
+							that the liposome contained M13 and staple strands but was not annealed. “Pre”
+							means the DNA origami was annealed in bulk solution, then included inside the
+							liposome. “In lipo” means the DNA origami was annealed in the liposome.
+					</figcaption>
+			</figure>
+			The Amicon filters successfully removed the excess DNA strands. In the KCl added
+			samples, the bands moved slightly to the top. It might be because the total charge of
+			the DNA nanostructure has changed by the addition of monovalent cation. It was also
+			suggested that Triton-X 100 doesn’t affect the electrophoresis bands.
+			<br>
+			<br>
+			As an important point, the band place of the pre-annealed DNA origami nanostructures
+			collected from the liposome (lane of “Pre”) matched with the nanostructures assembled in
+			the bulk solution. From this point, the band of DNA origami assembled in the liposome is
+			expected to appear in the same position when the origami is folded as designed.
+			However, the band of the DNA origami annealed in the liposome did not appear to the same
+			place of the band of the origami annealed in a bulk solution. Rather, it matched with
+			the one with just a mixture of scaffold and staple strands that was not annealed.
+			<br>
+			<br>
+			As the final experiments in this BIOMOD term, we changed some experiment conditions as
+			follows and tried the assembly of DNA origami again;
+			<br>
+			<br>
+			(i) Anneal the inner solution to investigate the effect of sucrose on DNA origami
+			folding.<br>
+			(ii) Increase staple ratio to enhance the possibility of correct DNA origami assembly.<br>
+			(iii) Reduce the scaffold and staple concentration to avoid a risk of “overcrowded”
+			situation in liposomes that might affect the folding.<br>
+			(iv) Add twice amount lipids in liposome preparation to increase the reaction field for
+			DNA origami folding.
+			<figure>
+					<img src="AGE-lipo3-1.png">
+					<figcaption>
+							Fig. 9 The agarose electrophoresis analysis of the DNA origami annealed in
+							various conditions. In the caption of the annealing column, “in bulk” means the
+							DNA origami was annealed in bulk solution, while “In lipo” means the DNA origami
+							was annealed in the liposome. When the DNA origami was annealed with sucrose,
+							the concentration was 300 mM. The two images are obtained from the same gel at
+							different exposure times.
+
+					</figcaption>
+			</figure>
+			The band place of DNA origami annealed with 300 mM sucrose did not match the band of DNA
+			origami annealed in normal bulk solution. Rather, the band place is the same as the
+			sample of the mixture of scaffold and staple that was not annealed. The position of the
+			bands did not change under conditions where sucrose was removed by purification. These
+			results suggest that DNA origami is not folded as designed under the condition with
+			sucrose.
+			<br>
+			<br>
+			Further investigation and experimentation will be required to fold DNA origami in
+			liposomes, such as investigating the effect of sucrose on folding and preparing
+			liposomes by the hydration method.
+
+
+			<h2>Materials and methods</h2>
+			<h3>Materials and reagents</h3>
+			All staple strands and FAM-modified DNA strands were purchased from Eurofins Genomics
+			Tokyo (Tokyo, Japan). Single-stranded M13mp18 viral DNA was purchased from Tilibit
+			Nanosystems (Garching, Germany) via Eurofins. MgCl2, glucose, and sucrose, were
+			purchased from Kishida Chemical (Osaka, Japan). TAE was purchased from Sigma-Aldrich
+			Japan (Tokyo, Japan). EDTA was purchased from Kanto Chemical (Tokyo, Japan) KCl and
+			CaCl2 were purchased from Nakalai Tesque (Kyoto, Japan). POPC was purchased from NOF
+			Corporation (Tokyo, Japan). POPG was purchased from Avanti Polar Lipids (AL, USA).
+			Cholesterol and boric acid were purchased from FujiFilm Wako Pure Chemical Corporation
+			(Osaka, Japan). Triton-X100 was purchased from Alfa Aesar (MA, USA, Cat. No: A16046).
+			Streptolysin O was purchased from BioAcademia (Osaka, Japan). Ultrapure water
+			(resistivity 18.2 MΩ cm) was supplied by Direct-Q UV3 (Merck Millipore).
+			<h3>Design and assembly of DNA origami nanostructures</h3>
+			DNA origami nanostructures are designed and simulated by using cadnano software and
+			canDo simulator, respectively. The raw json data and sequence list is available from
+			this link. Before the structural formation, the concentration of each staple DNA strand
+			was measured by using Nanodrop 2000c (Thermo Fisher Scientific). The formation of the
+			DNA nanostructures was carried out by mixing 10 nM of scaffold DNA (m13mp18 ssDNA) with
+			50 nM of staple strands in the folding buffer containing 1x TAE (40 mM Tris, 1 mM EDTA
+			(pH 8.3)) and various concentrations of MgCl2 (and 100 mM KCl, if described). The
+			mixture was annealed by one of the annealing conditions as follows:
+			<br>
+			<br>
+			#1-1: Heated to 85°C for 20 sec, then cooled from 60°C to 25 °C by -1°C / min<br>
+			#2-1: Heated to 85°C for 20 sec, then cooled from 60°C to 25 °C by -6°C / hour (-0.1°C /
+			min)<br>
+			#3-1: Heated to 85°C for 20 sec, then cooled from 60°C to 25 °C by -1°C / hour (-0.1°C /
+			6 min)<br>
+			#2-2: Heated to 60°C, then cooled from 60°C to 25 °C by -6°C / hour (-0.1°C / min)<br>
+			#3-2: Heated to 60°C, then cooled from 60°C to 25 °C by -1°C / hour(-0.1°C / 6min)<br>
+			<br>
+			<br>
+			After annealing, the samples were stored in a temperature-controlled room at 25 °C.
+			<h3>Agarose gel electrophoresis</h3>
+			The 1% agarose gel was prepared by dissolving an agarose tablet (Cat. No: AG13, Nippon
+			Gene, Tokyo, Japan) by running buffer. The electrophoresis running buffer contained x0.5
+			TBE (50 mM Tris, 50 mM borate and 5 mM EDTA) and 5 mM MgCl2. The electrophoresis sample
+			was prepared by mixing a loading buffer (Takara Bio, Shiga, Japan, Cat. No: 9156).
+			Electrophoresis was performed at 50 V for 90 min in a temperature-controlled room at
+			25 °C. After electrophoresis, the gel was stained with SYBR Gold for 5 min and washed
+			with ultrapure water for 3 min. Images were obtained using a gel imager (LuminoGraph I,
+			ATTO, Tokyo, Japan).
+			<h3>AFM observation
+			</h3>AFM observation was carried out on the freshly cleaved mica surface under dry
+			conditions. To fix the DNA origami nanostructures on the mica surface, 5 µL of DNA
+			origami solution was dropped onto the mica, followed by the addition of 10 µL of folding
+			buffer (1xTAE, 15 mM MgCl2) and incubated for 5 min. After incubation, the mica surfaces
+			were rinsed with a total volume of 150 µL ultrapure water and finally well-dried by
+			gentle air blowing. AFM measurement was performed using Multimode 8 (Bruker, MA, USA)
+			with SCANASYST-AIR probe (Bruker).
+
+			<h3>Preparation of the liposome (giant unilamellar vesicle)
+			</h3>A lipid mixture in chloroform was prepared by mixing POPC, POPG and cholesterol in
+			the described components. A lipid firm was prepared on a glass tube by evaporating a 30
+			μL lipid mixture solution in a nitrogen gas atmosphere and then left to stand for at
+			least one night. Afterwards, an aliquot of mineral oil (Sigma-Aldrich, Cat. No:
+			330760-1L (heavy)) was mixed with the lipid film mentioned above, and the lipid was
+			dissolved in mineral oil by sonication for 60 min at 50 °C. Then, 20 μL of the liposome
+			internal buffer LI (1x TAE, 15 mM MgCl2, 300 mM glucose, (and 100 mM KCl, if described))
+			was added to the mixture and vortexed for 1 min to prepare W/O emulsion. The emulsion
+			was added upon 300 μL of the liposome external buffer LO (1x TAE, 15 mM MgCl2, 300 mM
+			glucose (and 100 mM KCl, if described)) kept in a tube and centrifuged at 10,000 x g for
+			10 min. The precipitated liposomes were carefully collected by inserting the pipet chip
+			from top of the tube. The liposomes were observed and evaluated by using a confocal
+			microscope (Nikon AX, Nikon solutions, Tokyo, Japan)
+			<h3>Assembly of DNA origami inside the liposome
+			</h3>A lipid mixture was prepared by POPC, POPG and cholesterol at a molecular ratio of
+			3:1:6 and a lipid firm was prepared by the same method described above. To assemble DNA
+			origami nanostructures inside liposomes, 10 nM of M13 scaffold, 50 nM of staple strands,
+			and 100 mM KCl was added to the buffer LI, while 100 mM KCl was added to the buffer LO.
+			The liposome containing scaffolds and staples is prepared by the same method as the
+			previous section. A total of 50 μL liposome solution was dispensed into a PCR tube, then
+			the sample was annealed with the protocol of #2-2 described above.
+
+			<h3>Liposome destruction and structural evaluation
+			</h3>Before the electrophoresis, the annealed liposome was destructed by the vortex
+			operation for each 3 min. ​​For more certain disruption of liposome membranes, some
+			samples were vortexed with TritonTMX-100 (TX-100). When TX-100 was mixed to the liposome
+			solution, a total of 5 μL of TX-100 solution (containing 40 mM TX-100, 1x TAE, 15 mM
+			MgCl2) was mixed to the 25 μL liposome solution before the vortex operation. The final
+			TX-100 concentration was ≈ 6.7 mM. The membrane destructed liposome solution was applied
+			with loading buffer and electrophoresis was performed as same methods described above.
+			<h3>Filter purification
+			</h3>A part of samples including DNA origami nanostructure and destructed liposome was
+			purified with a 100 kDa MWCO (molecular weight cut-off) centrifuge filter (Amicon Ultra,
+			Merck Millipore) to remove excess staple strands and lipid membrane fragments. First, 20
+			μL DNA origami solution or 30 μL liposome solution was injected to the filter unit with
+			a total of 450 μL purification buffer (1x TAE, 10 mM MgCl2). The filter units were
+			centrifuged at 10000 x g for 5 min. After discarding the solution on the lower side of
+			the filter unit, a total of 450 µL of buffer was added to the filter unit and
+			centrifuged again. The filtered solution was collected by reversing the filter and
+			centrifugation at 1000 x g for 2 min. After purification, the MgCl2 concentration was
+			immediately recovered by adding a buffer (1xTAE, 200 mM MgCl2)
+
+			<h3>Streptolysin O (SLO) pore formation assay
+			</h3>A total of 3μL liposome solutions containing 10 nM scaffold (M13mp18) attached with
+			AMCA-modified DNA strands (Sangon Biotech, Shanghai, China), 2μL of outer buffer
+			containing 1 μM FAM-modified DNA strand, 2μL of SLO diluted in outer solution and 3 μL
+			outer solution of liposomes were gently mixed in a PCR tube. The final SLO concentration
+			was 0.1 mg / mL. After mixing each solution, the sample was incubated for >1 hour to
+			form pores on the lipid membrane of liposomes. Pore formation was evaluated by observing
+			the fluorescence of each DNA strand by a confocal microscopy.
+		<p class="and">「This is the end of this page」</p>
+	</section> -->
+
+	<h1 class="heading">Experiment</h1>
+	<section>
+		<h2 id="MainResults">Main Results</h2>
+		<ol>
+			<li>The BDB structure was constructed.</li>
+			<li>The designed DNA hydrogel was confirmed to have formed.</li>
+			<li>The BGB structure was successfully constructed.</li>
+			<li>It was demonstrated that the BGB structure is stronger than liposomes.</li>
+			<li>The annealing of the tubular DNA origami was confirmed.</li>
+			<li>Tubulation was achieved in the BG structure.</li>
+			<li>Pores were successfully opened in the BGB structure.</li>
+		</ol>
+	</section>
+
+	<section>
+		<h2 id="BGB">BGB structure</h2>
+		<p>As described in the design section, BGB structures are expected to enhance the robustness of liposomes. To advance applications for future drug development, we established an experimental system that encompasses the fabrication of a three-layer structure, as well as purification and stability evaluation of the products. In the first half of this section, we introduce and evaluate the products obtained during the preparatory stage for BGB structure formation. In the second half, we validate the formation of the structure and evaluate its stability.Additionally, we report the successful recovery of this structure with a collection rate of over 90%.</p>
+		
+		
+		<h3>〇3重層構造体の形成のための準備物</h3>
+		<h4>- Preparation and evaluation of the DNA hydrogel</h4>
+		<p>We evaluated the ability of designed Y motifs to form DNA dimers and DNA hydrogels in tubes. First, the formation of DNA monomers, DNA dimers, and DNA hydrogels under a general buffer condition (1xTAE, 15 mM MgCl2) was evaluated using 10% polyacrylamide gel electrophoresis (PAGE). The result showed that all structural bands shifted upward compared to the single component stand, and the stack in the gel well was observed in the gel sample. This result indicates that DNA monomer, DNA dimer structures and the hydrogel formed as we expected (Fig. 1). The band of the dimer is smeared, probably because the length of the sticky end is 8 bases, thus the binding and dissociation of the DNA dimer were repeated during the electrophoresis.</p>
+		<div style="text-align: center;"><img src="../img/Result_Erectro_Fig/1.png"  style="width: 60%;height: 60%;"></div>
+		<div style="text-align: center;">Fig1. Verification of structure formation of DNA monomers, DNA dimers, and DNA hydrogels under general buffer conditions by 10% PAGE.</div>
+		<p>Next, we evaluated the formation of DNA dimers and DNA hydrogels under aqueous phase conditions between BGB bilayers (1×TAE, 15 mM MgCl2, 50 mM KCl, 300 mM glucose). The PAGE results showed that the band of DNA dimers and DNA hydrogels prepared in both buffer conditions appeared in the same position. However, the formation of DNA dimers and DNA hydrogels may not be correctly confirmed because the bands were snare, probably due to the affection of KCl and glucose (Fig. 2A). To avoid this, the samples were evaluated in agarose gel electrophoresis. Agarose gel electrophoresis provided non-snare bands of each sample. Moreover, the DNA dimer lane showed bands at 100-200 bp , and the DNA hydrogel samples stacked in the wells, which were the same as PAGE results. This result indicates that DNA dimers and DNA hydrogels are also constructed under aqueous phase conditions between BGB bilayers (Fig. 2B). </p>
+		<div style="text-align: center;"><img src="../img/Result_Erectro_Fig/2A.png"  style="width: 40%;height: 40%;"><img src="../img/Result_Erectro_Fig/2B.png"  style="width: 30%;height:30%;"></div>
+		<div style="text-align: center;">Fig2. Verification of DNA dimer and DNA hydrogel structure formation by electrophoresis under (1) general buffer conditions and (2) aqueous phase conditions between BGB bilayers. (a) Verification by 6% PAGE. (b) Verification by agarose gel electrophoresis.</div>
+		<p>As described in the design section, the process of re-hybridization is necessary to prevent aggregation of BGB structures by the exposure of sticky ends of DNA hydrogel. To The demonstration of the re-hybridization with DNA dimers and DNA hydrogels was evaluated by PAGE. PAGE results showed that as the highest temperature during annealing increased, the band brightness of the DNA hydrogel around the wells decreased and new bands formed around the dimers, 200 bp to 500 bp. This result suggests that the re-hybridization of the DNA dimer with the DNA hydrogel forms a new multimer that does not have sticky ends, and the ratio of DNA hydrogel is reduced (Fig. 3A). The agarose gel electrophoresis was also conducted for these samples. The agarose gel electrophoresis results showed an increase in the brightness of the bands at the bottom of the 50°C and 60°C lanes compared to the 40°C lane. This result suggests that re-hybridization of the DNA dimer with the DNA hydrogel occurred as we expected. (Fig. 3B). Based on these results, we determined the highest temperature for re-hybridization in the BGB to be 50 °C.</p>
+		<div style="text-align: center;"><img src="../img/Result_Erectro_Fig/3A.png"  style="width: 37%;height: 37%;"><img src="../img/Result_Erectro_Fig/3B.png"  style="width: 30%;height:30%;"></div>
+		<div style="text-align: center;">Fig3.  Verification of re-hybridization by electrophoresis. During initial annealing, DNA dimers and DNA hydrogels were annealed separately; during reannealing, DNA dimers and DNA hydrogels were mixed before annealing. (A) Verification by 6% PAGE. (B) Validation results of agarose gel electrophoresis.</div>
+		<h4>- 正電荷リポソームの開発と、相互作用の確認</h4>
+		<p>The designed three-layer structure is formed by the electrostatic interaction between the membrane and DNA. To induce the interaction, liposomes containing a 30 mol% ratio of DOTAP, a positively charged phospholipid, were prepared. To confirm the electrostatic interaction, FAM-modified single-stranded DNA strands added to the inner solution of liposomes were observed using a confocal microscope. Rhodamine PE (Rhod-PE) was mixed at a concentration of x%, and FAM-DNA (濃度) was encapsulated to observe the lipid membranes and DNA, respectively.  FAM-DNA was observed at the same position as the membrane, while FAM molecules added as control were not.  This indicates the interaction between liposomes and DNA contributed to binding both molecules. （Fig..a,b,）   In contrast, DNA-FAM was observed to spread evenly throughout the inner fluid in membranes without DOTAP. （Fig..c） These results prove the contribution of DOTAP in attaching DNA due to the electrostatic interaction.</p>
+		
+		
+		<figcaption>Fig.
+		(a)DOTAP : POPC= 7 : 3, FAM-DNA
+		(b)DOTAP : POPC= 7 : 3, FAM
+		(c)POPConly, FAM-DNA</figcaption>
+		
+		
+		<h4>- BG structureの作成と、構造の凝集を抑えるためのゲルコーティング</h4>
+		<p>As the next step in obtaining BGB structures, BG structures—a complex composed of liposomes and DNA—need to be prepared. To form the desired three-layer structure, we must consider two phenomena: uneven gel formation on liposomes and aggregation between liposomes due to the sticky ends of DNA hydrogels. Uneven accumulation of the gel can cause irregularities on the membrane surface, interfering with electrostatic interactions. Moreover, liposomes can get trapped by hybridization of sticky ends between gels. The 'gel-coating method' was developed to address these issues during the preparation of BG structures. The detailed procedure is described in the design section. </p>
+		<p>To observe the localization of DNA, AMCA-DNA was added at 100nM in DNA hydrogel.</p>
+		<p>After the annealing process for even gel formation on liposomes, AMCA-DNA was observed aligning neatly along the membrane, indicating reduced aggregation of DNA hydrogel on liposomes. In addition, after applying the gel-coating process with the one-sticky-end Y motif structure, a reduction in liposome aggregation was confirmed (Fig. c).</p>
+		
+		<div class="container">
+			<p>The rates of liposomes with even formed DNA hydrogel were 85% and 87.5% in annealed samples or gel coated samples(N=2)(Fig..d). Compared with the percentage in not annealed BG solution, 6.9%, the annealing process reduced aggregation of DNA hydrogel-bind liposomes approximately twenteen times.</p>
+			<p>The percentage of not-aggregated liposomes in after gel-coated process samples,75%, shows highest rates of three, suggesting the efficiency for preventing aggregation of liposomes. However, in the not annealing samples, the percentage of not aggregated liposomes is 51.7%, while the annealed samples remained 15%. This result indicates that the concentration of liposomes causes the aggregation. Needing detailed verification, the same concentration of each sample must be prepared, though we did not conduct this for focusing on evaluation of stability of BGB structure rather than the effects of methods.</p>
+			<figure>
+				<img src="../img/unnamed.png">
+				<figcaption>Fig.<br>
+				(a)リポソーム溶液に、ネットワーク形成済みのDNA hydrogelが加えられた際のリポソーム-DNA複合体<br>
+				(b)(a)の溶液を90℃ to 25℃ by -1℃/12secのアニーリング処理した時の複合体<br>
+				(c)(b)の溶液に、行き止まり配列であるG1+S2+S2-DNAによって構成されたYmotif構造体によって、ゲルコーティング処理が行われた際の複合体
+				</figcaption>
+			</figure>
+		</div>
+		
+		
+		<h4>- New centrifugal sedimentation for the effective encapsulation of outer membrane</h4>
+		<p>For the efficient encapsulation of the BG structures with the outer membrane, a concentration of 100 mol% DOTAP was used to the inner leaflet of 2nd membrane of BGB to enhance the electrostatic interaction between the lipids for the formation of micelles and  DNA hydrogel of BG. Moreover, to prevent electrostatic interactions between obtained structures due to the positive charge of DOTAP, cholesterol and DOPC were added at a 4:3 mol% ratio for the outer leaflet of 2nd membrane of BGB. After the centrifugating operation, an xx% yield of BGB structures was detected by confocal microscopy. Compared with the yield of BGB structures obtained by conventional centrifugal sedimentation (yy%), an approximately x-fold increase in purification efficiency was confirmed(Fig..b). Detailed characterization and validation of these structures are discussed in the following paragraph.</p>
+		<figcaption>Fig.
+		(a)
+		(b)従来の遠心沈降法によるBGBの精製率と、今回のやつとのグラフ上での比較
+		</figcaption>
+		
+		<h3>〇構造体形成の証明と膜上でのゲルの形成確認</h3>
+		<h4>- 3重層の証明</h4>
+		<p>To confirm and visualize the formation of the designed three-layer structure, NBD-PE, AMCA-DNA, and Rhod-PE, were applied to the inner membrane, gel layer, and outer membrane, respectively. Confocal microscopy observation revealed that the overlapping of three types of fluorescence in the same circles.. The fluorescence signals of AMCA and NBD-PE were weak, requiring stronger laser power and careful observation to observe the inner layers. To obtain more conclusive data, 1 µM calcein was added to the inner solution. This sample showed green fluorescence inside the membrane with the gel layer and outer membrane fluorescence.These results suggest the formation of the three-layer structure. (Fig. a).</p>
+		
+		
+		<h4>- ゲル形成の証明</h4>
+		<p>To evaluate whether the DNA hydrogel is certainly formed between the two membrane layers, we conducted FRAP experiment.  If the DNA hydrogel is formed, the fluidity of the DNA hydrogel layer is expected to be lower than lipid membrane layers. The detailed methods are described in the materials and methods section. Fluorescence recovery was observed in all layers of BDB structures (Fig. b, c).</p>
+		<p>The liquidity of DNA layers is as expected because they do not form the networks, just binding on membranes by electrostatic interactions. In contrast, fluorescence recovery on BGB layers was observed only in two of the membranes, but not in the gel layer. The lower fluidity in the gel layer strongly supports the formation of the DNA hydrogel between the two membranes and successful construction of BGB structures.</p>
+		
+		<figcaption>Fig.
+		(a)3重層のそれぞれの蛍光の観察のやつ
+		(b)BDBのFRAP
+		(c)BGBのFRAP
+		</figcaption>
+	</section>
+
+
+	<!-- <h1 style="color: red; margin-top: 50px;">～～～～～ここから以前の文章～～～～～</h1>
+	<section>
+		<h3>1-1. Structural analysis method using CanDo</h3>
+		<p> CanDo (Computer-Aided Engineering for DNA Origami) is a method for predicting the three-dimensional shape of DNA origami, including its bends and twists, from its design. Each base pair of the double helix is treated as a finite element, and the average position coordinates and RMSF (RMSF) for each base pair are calculated. Position coordinates and RMSF (Root-Mean-Square Fluctuation) values for each base pair. The following six states of triangular DNA origami were subject to structural analysis to verify the correlation between the shape of triangular DNA origami and the dimer formation rate.</p>
+		<ul style="margin: 10px 0;">
+			<li><span class="emphasize">State 1</span> <br> one of the three sides contains a linker.</li>
+			<li><span class="emphasize">State 2</span> <br> Containing linkers on only two of the four linkers on any one of the three sides, either the inner or outer two.</li>
+		</ul>
+		<p>State 1 is the analysis to verify the correlation between the state of the triangular DNA origami at the time of dimer formation and the dimer formation rate. This was done for the first and second design origami. State 2 is the analysis of the correlation between the dimer formation experiment of the second design origami by selective linker (which will be described in Section 4) and the dimer formation rate.</p>
+		<h3>1-2. Methods for the preparation of triangular DNA origami</h3>
+		<div class="container">
+			<p>The method for the preparation of triangular DNA origami is described. After mixing the solutions according to Table 1, a thermal cycler (Program Temp Control System PC-350, ASTEC) was used to anneal it at a constant rate (-1°C/min) from 90°C to 20°C for 70 min. After annealing, the solution was stored at 4°C.</p>
+			<figure>
+				<figcaption class="table center">Table 1. Mixing Ratio for Triangular DNA Origami</figcaption>
+				<img src="../img/Table 1. Mixing Ratio for Triangular DNA Origami.png" class="Fig1" style="width: 60%;">
+			</figure>
+		</div>
+		<h3>1-3. Dimer preparation method</h3>
+		<p>This section describes the dimer preparation method for triangular DNA origami. The method of dimer production of triangular DNA oligomers is described. Four linkers corresponding to each side were mixed in equal quantities, then diluted further 100-fold with ultrapure water to prepare a linker solution for each side. The linker solution corresponding to the side to be bound was added to the triangular DNA origami solution (concentration of M13mp18): (concentration of each linker) = 1:4. The solution was then annealed in a thermal cycler from 60°C to 20°C at a constant rate (-0.02°C/min) for 2000 min. After annealing, the solution was stored at 4°C.</p>
+		<h3>1-4. Methods for dimer formation by selective linker</h3>
+		<p>In order to verify the contribution of edge deformation and linker binding position to the dimer formation rate, the dimer formation was carried out by two linkers out of four on each side. Two of the four linkers were selected, as shown in Fig. 3. The red and blue linkers are used for the outer side, and the green and black linkers are used for the inner side. The mixing and annealing were the same as for the case with four linkers.</p>
+		<h3>1-5.  Evaluation of dimer formation</h3>
+		<p>Triangular DNA origami and its dimer formation were assessed by atomic force microscopy (AFM) observation. The AFM procedure is described below.</p>
+		<ol style="margin: 10px 0;">
+			<li>Mix 10 X TAE buffer (0.4 M Tris-HCl buffer, 0.4 M acetic acid, and 0.01 M EDTA) and MgCl<sub>2</sub> solution to concentrations of 1X and 25 mM, respectively.</li>
+			<li>Drop 30 µL of the solution of step (1) onto the cleaved mica, followed by 10 µL of the sample solution, and wait for 10 minutes.</li>
+			<li>Remove the solution from the mica using a micropipette and wash the sample with ultra-pure water. The sample is washed by dropping 30 µL of ultrapure water onto the micropipette, waiting for 10 seconds, and then removing the solution. Repeat this 3 times.</li>
+			<li>Dry the sample for 2 minutes using an N<sub>2</sub> gun.</li>
+			<li>Observe the sample with an AFM (MultiMode 8, BRUKER).</li>
+		</ol>
+		<p style="padding-top: 20px;">The BRUKER is equipped with a cantilever (Tap300AI-G, Budget Sensors) with a resonance frequency of 300 kHz. The dimer formation rate (unit: %) was calculated according to formula (1) below.</p>
+		<figure style="margin: 20px 0;">
+			<img src="../img/Fomula1.png" class="Fomula1" alt="Fomula1" style="width: 80%;">
+		</figure>
+	</div>
+	</section>
+	<section>
+		<h1 class="heading">Experiment</h1>
+		<h2>1. Analysis and Experimental Methods</h2>
+		<h3>1-1. Structural analysis method using CanDo</h3>
+		<p> CanDo (Computer-Aided Engineering for DNA Origami) is a method for predicting the three-dimensional shape of DNA origami, including its bends and twists, from its design. Each base pair of the double helix is treated as a finite element, and the average position coordinates and RMSF (RMSF) for each base pair are calculated. Position coordinates and RMSF (Root-Mean-Square Fluctuation) values for each base pair. The following six states of triangular DNA origami were subject to structural analysis to verify the correlation between the shape of triangular DNA origami and the dimer formation rate.</p>
+		<ul style="margin: 10px 0;">
+			<li><span class="emphasize">State 1</span> <br> one of the three sides contains a linker.</li>
+			<li><span class="emphasize">State 2</span> <br> Containing linkers on only two of the four linkers on any one of the three sides, either the inner or outer two.</li>
+		</ul>
+		<p>State 1 is the analysis to verify the correlation between the state of the triangular DNA origami at the time of dimer formation and the dimer formation rate. This was done for the first and second design origami. State 2 is the analysis of the correlation between the dimer formation experiment of the second design origami by selective linker (which will be described in Section 4) and the dimer formation rate.</p>
+		<h3>1-2. Methods for the preparation of triangular DNA origami</h3>
+		<div class="container">
+			<p>The method for the preparation of triangular DNA origami is described. After mixing the solutions according to Table 1, a thermal cycler (Program Temp Control System PC-350, ASTEC) was used to anneal it at a constant rate (-1°C/min) from 90°C to 20°C for 70 min. After annealing, the solution was stored at 4°C.</p>
+			<figure>
+				<figcaption class="table center">Table 1. Mixing Ratio for Triangular DNA Origami</figcaption>
+				<img src="../img/Table 1. Mixing Ratio for Triangular DNA Origami.png" class="Fig1" style="width: 60%;">
+			</figure>
+		</div>
+		<h3>1-3. Dimer preparation method</h3>
+		<p>This section describes the dimer preparation method for triangular DNA origami. The method of dimer production of triangular DNA oligomers is described. Four linkers corresponding to each side were mixed in equal quantities, then diluted further 100-fold with ultrapure water to prepare a linker solution for each side. The linker solution corresponding to the side to be bound was added to the triangular DNA origami solution (concentration of M13mp18): (concentration of each linker) = 1:4. The solution was then annealed in a thermal cycler from 60°C to 20°C at a constant rate (-0.02°C/min) for 2000 min. After annealing, the solution was stored at 4°C.</p>
+		<h3>1-4. Methods for dimer formation by selective linker</h3>
+		<p>In order to verify the contribution of edge deformation and linker binding position to the dimer formation rate, the dimer formation was carried out by two linkers out of four on each side. Two of the four linkers were selected, as shown in Fig. 3. The red and blue linkers are used for the outer side, and the green and black linkers are used for the inner side. The mixing and annealing were the same as for the case with four linkers.</p>
+		<h3>1-5.  Evaluation of dimer formation</h3>
+		<p>Triangular DNA origami and its dimer formation were assessed by atomic force microscopy (AFM) observation. The AFM procedure is described below.</p>
+		<ol style="margin: 10px 0;">
+			<li>Mix 10 X TAE buffer (0.4 M Tris-HCl buffer, 0.4 M acetic acid, and 0.01 M EDTA) and MgCl<sub>2</sub> solution to concentrations of 1X and 25 mM, respectively.</li>
+			<li>Drop 30 µL of the solution of step (1) onto the cleaved mica, followed by 10 µL of the sample solution, and wait for 10 minutes.</li>
+			<li>Remove the solution from the mica using a micropipette and wash the sample with ultra-pure water. The sample is washed by dropping 30 µL of ultrapure water onto the micropipette, waiting for 10 seconds, and then removing the solution. Repeat this 3 times.</li>
+			<li>Dry the sample for 2 minutes using an N<sub>2</sub> gun.</li>
+			<li>Observe the sample with an AFM (MultiMode 8, BRUKER).</li>
+		</ol>
+		<p style="padding-top: 20px;">The BRUKER is equipped with a cantilever (Tap300AI-G, Budget Sensors) with a resonance frequency of 300 kHz. The dimer formation rate (unit: %) was calculated according to formula (1) below.</p>
+		<figure style="margin: 20px 0;">
+			<img src="../img/Fomula1.png" class="Fomula1" alt="Fomula1" style="width: 80%;">
+		</figure>
+	</div>
+	</section>
+	<section>
+		<h2>2. Results and Correlation</h2>
+		<h3>2-1. Correlation between analysis results and dimer formation rate</h3>
+		<p>The correlation between the results of the structural analysis by CanDo and the dimer formation rate is described below.The correlation between the results of the structural analysis by CanDo and the dimer formation rate is described below. The graphs in Figures 2 to 5 (a) to (c) show the outermost double helix (hereafter referred to as the outermost helix) of the triangular DNA origami.The horizontal axis indicated the 336 base pairs belonging to the double helix, and the vertical axis indicated the two-dimensional distance in the graph. The 2D distance was calculated using only the coordinates parallel to the plane containing the triangular DNA origami, which were the average position coordinates of the base pairs outputted by CanDo.The distance between the base pairs at the two ends of the outermost helix and the average positional coordinates of the base pairs. The deformation toward the inside of the triangular DNA origami is negative (concave), while the deformation toward the outside is positive (concave) (Fig 1).</p>
+		<figure>
+			<img src="../img/Fig 1. Schematic of Deformation of Triangular DNA Origami.png" class="Fig1" style="width: 60%;">
+			<figcaption class="center">Fig 1. Schematic of Deformation of Triangular DNA Origami</figcaption>
+		</figure>
+			<p>Below are the analytical results and the dimer formation rate.(State 1) For the first designed origami, the outermost helix of the B edge was convex (Fig 2(b)).The outermost helix was concave when the linker on side A or C was included (Fig 2(a), (c)). For the second origami design, the outermost helix of the A or B edge was convex when the linker of the A or B edge was included (Fig 2(a), (c)). On the other hand, the outermost helix of the C edge was concave in the state containing the C edge linker (Fig 3(c)).Comparing this analysis with the dimer formation rates (Fig 2(d) and 3(d)), the dimer formation rate at the edge where the outermost helix is convex with the linker is higher than that at the edge where the outermost helix is convex with the linker.</p>
+		<div class="container">
+			<div class="container-img" style="width: 49.5%; margin-right:auto; margin-left:auto;">
+				<figure class="left">
+					<img src="../img/Fig 2. Comparison between 2D and Dimer Rates of 1st Design Origami.png"class="Fig2">
+					<figcaption>Fig 2. Comparison between 2D and Dimer Rates of 1st Design Origami</figcaption>
+				</figure>
+			</div>
+			<div class="container-img" style="width: 49.5%; margin-right:auto; margin-left:auto;">
+				<figure class="right">
+					<img src="../img/Fig 3. Comparison between 2D and Dimer Rates of 2nd Design Origami.png" class="Fig3">
+					<figcaption>Fig 3. Comparison between 2D and Dimer Rates of 2nd Design Origami</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="container">
+			<p>(State 2) In the state containing the Outside linker on any one of the three edges, the outermost helix was convex as for the A and B edges, and the helix was concave as for the C edge (Fig 4(a), 4(b), and 4(c)). Based on the correlation between the unevenness of the outermost helix and the dimer formation rateAs described in State 1, it was predicted that the dimer formation rate by the Outside linker would be higher on the A or B edge and lower on the C edge. The experimental results were in agreement with this prediction (Fig 4(d)). The double helix was convex between the Outside linker positions on side A or B, while the Inside linker position is concave on all sides (Fig 5 (a), (b)).On the other hand, edge C was almost straight (Fig 5 (c)). In the dimer formation experiment, the dimer formation rate was relatively high for the A and B edges and low for the C edge (Fig 5 (d)). From these results, it can be inferred that the dominant factor in dimer formation is not the concave shape of the outermost helix as a whole but rather the partial shape of the linker at the position where the linker of the inside joins. The dimer formation rate was higher for the partially convex A and B edges and lower for the partially non-convex C edge on the linear chain.</p>
+			<div class="container">
+				<div class="container-img" style="width: 49.5%; margin-right:auto; margin-left:auto;">
+					<figure class="left">
+						<img src="../img/Fig 4. Comparison between 2D and Dimer Rates of Outside.png"class="Fig4">
+					<figcaption>Fig 4. Comparison between 2D and Dimer Rates of Outside</figcaption>
+					</figure>
+					</div>
+					<div class="container-img" style="width: 49.5%; margin-right:auto; margin-left:auto; ">
+					<figure class="right">
+						<img src="../img/Fig 5. Comparison between 2D and Dimer Rates of Inside.png" class="Fig5">
+						<figcaption>Fig 5. Comparison between 2D and Dimer Rates of Inside</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+		<h3>2-2. Inferences from results on dimer formation experiments with selective linkers</h3>
+		<div class="container">
+			<div class="right" style="width: 40%;">
+				<div class="container-img">
+				<figure class="right">
+					<img src="../img/Fig 6. AFM Images of Dimers on Side A.png"class="Fig6">
+					<figcaption>Fig 6. AFM Images of Dimers on Side A</figcaption>
+				</figure>
+				</div>
+				<div class="container-img">
+				<figure class="right">
+					<img src="../img/Fig 7. Schematic of Bonding on Outside or Inside.png" class="Fig7">
+					<figcaption>Fig 7. Schematic of Bonding on Outside/Inside</figcaption>
+				</figure>
+				</div>
+			</div>
+			<div class="p_dayo" style="width: 60%;">
+			<p>The following is what can be inferred from the results of dimer formation experiments on the Outside and Inside. In contrast to the usual method, in which eight linkers of four different linkers are used to combine the triangular DNA folds, this experimental method uses four linkers of two different linkers. The dimer formation rate was lower than when four species were used, but the rate was higher when Inside linkers were used compared with Outside linkers, as shown in Figures 4(d) and 5(d). In other words, the linker at the inside position was more dominant than the dimer formation rate. If the outermost helix is convex, the binding of Outside and Inside would be shown in the upper graph of Fig 7, and this tendency was also confirmed in the AFM images (Fig 6) for each binding method on the A side. Therefore, the convex shape of the outermost helix is thought to facilitate bonding in the Inside linker. The proximity of the bonding positions of the two Inside linkers might also be a factor that facilitates bonding even with a convex shape. Therefore, as in the B edge of the first design origami and the A and B edges of the second design origami, if the convex shape of the outermost helix could be maintained on all sides of the triangular DNA origami, the dimer formation rate would be improved.Another factor is the length of the linker. The linkers are all 22 bases long, as shown in Figure 3, and the linker length between the three double helix is (9 bases + 6 bases) + 7 bases. This 7-base portion is only 2.4 nm, so it is affected by even the slightest in the situation shown in Fig 7 Outside in the upper row or in the lower row, where the outermost helix has a concave shape.</p>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section>
+			<h2>3. Verification of Assumptions</h2>
+			<h3>3-1. Triangle DNA origami redesign considering deformation </h3>
+			<p>Based on the above results and correlations, we assumed that the shape of the outermost helix was the dominant factor in dimer formation and redesigned the second DNA design origami, considering deformation. This is referred to as the redesigned origami. In this redesign, we aimed to satisfy the following 3 conditions:</p>
+			<ul style="margin: 10px 0;">
+				<li><span class="emphasize">Condition 1</span> <br> The 7-base side of the linker should be longer.</li>
+				<li><span class="emphasize">Condition 2</span> <br> The origami should be flat when all sides of the linker are included, and the outermost helix should be convex and closer to a straight line.</li>
+				<li><span class="emphasize">Condition 3</span> <br> When only one of the three sides contains a linker and the outermost helix on that side is convex and closer to a straight line.</li>
+			</ul>
+			<p style="padding-top: 20px;">The following is a description of the two main changes from the second design origami.</p>
+			<ul style="margin: 10px 0;">
+					<li><span class="emphasize">Change I</span> <br> The 7-base side of all 12 linkers is extended from 7 to 13 bases. The length of the adjacent staple was shortened by 6 bases.</li>
+					<li><span class="emphasize">Change II</span> <br> The staple of the second double helix from the outside of each of the three trapezoids was shortened by one base per trapezoid.</li>
+			</ul>
+			<p style="padding-top: 20px;">The reason for the design of Change I is that by lengthening the linker, the presence of a slight irregularity in the outermost helix can be minimized. Change II is a new design method introduced this time, which is designed to make the outermost helix convex and the shape of the linker bonding position closer to a straight line. It is possible to modify only the staple and linker in the relevant section.The design can be modified by changing only the staple or linker in the relevant section.A more detailed explanation of Modification Point II is provided below. In the triangular DNA origami used in this study, the distance between the crossovers is mainly 31 bp (base pair) or 32 bp. In the new design, the distance was intentionally shortened by 1 base pair (bp) or 2 bp to induce deformation in the two adjacent double helixes that were combined by a crossover<sup class="reference"><a href="#Reference_1" title="H. Dietz, S. M. Douglas, and W. M. Shih : “Folding DNA into Twisted and Curved Nanoscale Shapes”, Science, Vol.325, No.5941, pp.725-730 (2009)">&#91;1&#93;</a></sup>.  This design prevents significant deformation of the linker binding position. The crossover, which shortens the spacing, should be as close as possible to the top of the triangle to avoid significant deformation of the linker bonding position by this design. Fig 8 shows the results of the CanDo structural analysis of the redesigned origami with linkers on only one of the three sides and deformation of the corners. Although the corners are significantly deformed due to the special design, conditions 2 and 3 were achieved.During this redesign, four other staples were changed to correct areas that were different from the design intent in the second design origami.However, this did not significantly affect the rate of dimer formation. </p>
+			<figure>
+				<img src="../img/Fig 8. Analysis Results of Redesign Origami.png"class="Fig8" style="width: 80%;">
+				<figcaption class="center">Fig 8. Analysis Results of Redesign Origami</figcaption>
+			</figure>
+			<h3>3-2. Dimer formation experiment using redesigned origami</h3>
+			<p>A redesigned origami was created and used to conduct an experimental study on dimerization at edge C. The dimer formation rate was 41.9%, showing an improvement compared to the dimerization results at edge C using the second origami design. In this design, the formation rate of the monomer of the triangular DNA origami decreased. The formation rate was 65.8%, lower than the 85.7% of the modified second-design origami. This decrease was contributed to the three factors. Reducing the stiffness of the outermost helix of the triangular DNA origami by extending the linker from 7 bases to 13 bases. Folding edges within a single DNA origami. The shortened staples in the modified design did not efficiently form a double helix to induce deformation. </p>
+			<h3>3-3. Design of linkers concluded spacer and dimer formation experiment</h3>
+			<div class="container">
+				<div class="right" style="width: 40%;">
+					<div class="container-img">
+					<figure class="right">
+						<img src="../img/Fig 9. Schematic of Linkers including 6T-spacer.png"class="Fig9">
+						<figcaption>Fig 9. Schematic of Linkers including 6T-spacer</figcaption>
+					</figure>
+					</div>
+					<div class="container-img">
+					<figure class="right">
+						<img src="../img/Fig 10. Dimer Rates with 6T-spacer.png" class="Fig10">
+						<figcaption>Fig 10. Dimer Rates with 6T-spacer</figcaption>
+					</figure>
+					</div>
+				</div>
+				<div class="p_dayo" style="width: 60%;">
+					<p>Considering the significant impact of spacer-introduced linkers on dimer formation revealed by CanDo analysis, a linker with a thymine T spacer inserted with 6 bases was designed to bridge triangular DNA origamis at the center, as shown in Fig 9. The dimer formation experiment using this modified second-design origami with the spacer-inserted linker is shown in Fig 10. Compared to the results of dimer formation using the linker without a spacer in the second design origami, there was an improvement in dimer formation rate at side C. While similar dimer formation rates were observed at sides A and B, it is inferred that inducing a spacer does not affect the linker length when the outermost helix is convex like sides A and B, but it has a significant effect when the outermost helix is concave like side C. Therefore, lengthening the linker is believed to significantly improve the dimer formation rate at side C. It is considered that the main factor contributing to the improved dimer formation rate at side C in the redesigned origami is the elongation of the linker.Furthermore, an observed increase in the dimer formation rate was accompanied by gaps formed between the triangular DNA origamis. These gaps may not be suitable for high-precision two-dimensional arrays, yet they verified the assumption that the shape of the outermost helix is the dominant factor in dimer formation.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+			<h2>Conclusion</h2>
+			<p>To investigate the dominant factors affecting dimer formation rate in the assembly of dimer formation experiments by combining triangular DNA origami with linkers, structural analysis using CanDo and dimerization experiments under various conditions were conducted in this study. A comparison between the structural analysis by CanDo and the dimerization experiment results revealed the following two points:</p>
+			<ol style="margin: 10px 0;">
+				<li>When a linker was added to only one side of the three sides, if the outermost helix of the triangular DNA origami had a convex shape on the plane containing the origami, the dimer formation rate on that side tended to be higher. Conversely, if it had a concave shape, the dimer formation rate was lower.</li>
+				<li>Comparing the shapes of the outermost helix when linkers were added to the inner two crossover points connecting triangular DNA origamis versus when added to the outer two points, the former showed a convex center shape in the outermost helix, resulting in a higher dimer formation rate in the dimerization experiment.</li>
+			</ol>
+			<p style="padding-top: 20px;">Based on these analytical results, it was suggested that designing the outermost helix of the triangular DNA origami so that it has a convex shape when a linker is added to only one side of the three sides could suppress the decrease in dimer formation rate. Consequently, modified triangular DNA origamis were designed with this insight. Additionally, considering the significant impact of the outermost helix shape on dimer formation rate according to CanDo analysis, linkers inserting six bases as spacers were designed for the central part bridging triangular DNA origamis. Dimerization experiments utilizing these designs demonstrated the validity of the hypothesis that the shape of the outermost helix is a dominant factor in dimer formation rate.</p>
+		</div>
+	</section>
+	<h1 style="color: red; margin-top: 50px;">～～～～～ここまで以前の文章～～～～～</h1> -->
+	<section>
+		<h2 id="MaterialsMethods">〇Materials and Methods</h2>
+		<h3>- Materials and Reagents</h3>
+		<p>All staple strands and linker-DNA strands were purchased from Integrated DNA Technologies (IDT, Iowa, USA). FAM-modified DNA strands were purchased from Eurofins Genomics (Ebersberg, Germany). Single-stranded M13mp18 viral DNA was purchased from Tilibit Nanosystems (Garching, Germany) via Eurofins. MgCl₂, glucose, sorbitol, and trehalose were purchased from Kishida Chemical (Osaka, Japan). FAM, Rhod PE, TAE, BSA,  and Heavy mineral oil were purchased from Sigma-Aldrich (Merck, Massachusetts, USA). NBD-PE and SYBR Gold were purchased from Thermo Fisher Scientific (California, USA). EDTA was purchased from Kanto Chemical (Tokyo, Japan), and KCl was purchased from Nakalai Tesque (Kyoto, Japan).</p>
+		<p>POPC was purchased from NOF Corporation (Tokyo, Japan), while POPG and DOTAP were purchased from Avanti Polar Lipids (Alabama, USA). Cholesterol was purchased from Fujifilm Wako Pure Chemical Corporation (Osaka, Japan). Ultrapure water (resistivity 18.2 MΩ·cm) was supplied from Direct-Q UV3 (Merck Millipore, Massachusetts, USA). AMCA-modified DNA was purchased from Sangon Biotech (Shanghai, China) to prepare BDB and Generay Biotech (Shanghai, China) to prepare BGB.</p>
+		<p><span style="color: red;">これいる？→　</span>Agarose S was purchased from Nippon Gene (Tokyo, Japan), and the loading buffer was purchased from Takara Bio (Shiga, Japan).</p>
+		<br>
+		<a href="../MaterialsSheet.pdf" target="_blank" style="color: #cccccc;">Click here to view the materials list→</a>
+	</section>
+
+	  
+		<section id="Reference">
+			<h2>Reference</h2>
+			<ol>
+			<li id="Reference_1"> H. Dietz, S. M. Douglas, and W. M. Shih : “Folding DNA into Twisted and Curved Nanoscale Shapes”, Science, Vol.325, No.5941, pp.725-730 (2009)</li>
+			</ol>
+		  </div>
+		</section>
+	
+	  </main><!--/main-->
+
+	  <footer>
+		<section class="footer">
+			<div class="footer-info">
+				<ul style="margin-left: 50%;">
+					<li class="footer-link"><a href="https://github.com/Argon399481/BIOMOD2024_wiki" target="_blank"><img class="under_li" src="../img/icon/github.png"></a></li>
+					<li class="footer-link"><a href="https://x.com/BiomodTeamNoKo" target="_blank"><img class="under_li" src="../img/icon/twitterx.png"></a></li>
+					<li class="footer-link"><a href="https://www.instagram.com/biomod_teamNoKo/" target="_blank"><img class="under_li" src="../img/icon/instagram.png"></a></li>
+				</ul>
+				<ul class="SpecialThanks">
+					<li class="Thanks"><a href="https://www.tuat.ac.jp/en/" target="_blank"><img class="under_li" style="padding-top: 25%;" src="../img/logo/Logo_TUAT_English.png"></a></li>
+					<li class="Thanks"><a href="https://web.tuat.ac.jp/~rjkawano/index_en.html" target="_blank"><img class="under_li" src="../img/logo/logo_kawano_lab.png"></a></li>
+					<li class="Thanks"><a href="https://www.mext.go.jp/a_menu/shinkou/hojyo/main5_a5.htm" target="_blank"><img class="under_li" style="padding-top: 21%;" src="../img/logo/KAKENHIlogoM_v2.jpg"></a></li>
+					<li class="Thanks" style="width: 50%;"><a href="https://bottomup-biotech.elsi.jp/en/" target="_blank"><img class="under_li" style="padding-top: 10.5%;" src="../img/logo/Logo_gakuhen.png"></a></li>
+				</ul>
+			</div>
+			<small>&copy;BIOMOD Team NoKo 2024</a></small>
+		</section>
+	</footer>
+   
+<button id="scrollToTopBtn">Top</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="../js/biomod.js"></script>
+
+</body>
+
+</html>
