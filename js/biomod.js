@@ -89,30 +89,18 @@ $(function() {
 });
 
 // video止めたり流したりする
-$(function() {
-  $('.movie-button-pause').show();
-  $('.movie-button-play').hide();
-  $("#movie-button").click(function () {
-    $('.movie-button').toggleClass('show');
-    const video = $('video')[0];
-    if (video) {
-      if (video.paused) {
-        video.play();
-        $(this).addClass('current');
-      } else {
-        video.pause();
-        $(this).removeClass('current');
-      }
-    }
-    if ($('.movie-button').hasClass('show')) {
-      $('.movie-button-pause').hide();
-      $('.movie-button-play').show();
+const video = document.getElementById("background");
+const videoToggle = document.getElementById("video_play_pause");
+
+if (video && videoToggle) {
+  videoToggle.addEventListener("change", function() {
+    if (video.paused) {
+      video.play();  // ビデオが停止中の場合、再生する
     } else {
-      $('.movie-button-pause').show();
-      $('.movie-button-play').hide();
+      video.pause(); // ビデオが再生中の場合、停止する
     }
   });
-});
+}
 
 // Teamの画像スライダー
 $(document).on('ready', function() {

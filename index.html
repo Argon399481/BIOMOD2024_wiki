@@ -111,7 +111,7 @@
 				<div class="container-img">
 					<video id="BGBvideo"  webkit-playsinline playsinline loop width="100%" muted poster="img/100_honban_BGBwithTube.png">
 						<source src="video/101_reversible_BGBwithTube.webm" type="video/webm">
-						<source src="video/0001-0100.mov" type="video/mov">
+						<!-- <source src="video/0001-0100.mov" type="video/mov"> -->
 					</video>
 				</div>
 			</div>
@@ -122,10 +122,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- 
-		まだやっていないことを書くよ
-		video止めたりするボタンの挙動が奇妙だよ
-		 -->
     <section id="Abstract">
 		<h2>Abstract</h2>
 			<p>Liposomes are expected to serve as chassis and reactors in constructing drug delivery systems<sup class="reference"><a href="#Reference_1" class="refLink">&#91;1&#93;</a></sup><sup class="reference"><a href="#Reference_2" class="refLink">&#91;2&#93;</a></sup><sup class="reference"><a href="#Reference_3" class="refLink">&#91;3&#93;</a></sup> and molecular robots<sup class="reference"><a href="#Reference_4" class="refLink">&#91;4&#93;</a></sup> by encapsulating drug molecules or various designed biomolecules. Conventional liposomes are sensitive to external stresses such as changes in osmotic pressure<sup class="reference"><a href="#Reference_5" class="refLink">&#91;5&#93;</a></sup> and pH<sup class="reference"><a href="#Reference_6" class="refLink">&#91;6&#93;</a></sup>. To extend the application field, an increase in the stability of liposomes is required.  Previous research has enhanced the stability of liposomes using DNA hydrogel<sup class="reference"><a href="#Reference_7" class="refLink">&#91;7&#93;</a></sup> or PEG-modified lipids<sup class="reference"><a href="#Reference_8" class="refLink">&#91;8&#93;</a></sup><sup class="reference"><a href="#Reference_9" class="refLink">&#91;9&#93;</a></sup><sup class="reference"><a href="#Reference_10" class="refLink">&#91;10&#93;</a></sup> on the membrane. However, these modifications might inhibit molecular transport through liposome membranes, which is essential for future applications in constructing artificial cells and molecular robots. </p>
@@ -195,9 +191,9 @@
 					<a href="html/Design.html" style="color:#cccccc;"></a>
 				</div>
 			</div>
-			<div class="section-panel">
+			<div class="section-panel" id="Section-panel3">
 				<div class="nakami">
-					<img src="img/FutureFig2.png"class="Fig2">
+					<video src="video/lipochan2.mp4" webkit-playsinline playsinline muted id="CardVideo3"></video>
 					<h3>Experiment</h3>
 					<p>We will show you the experimental results carried out this summer. We are sure you will be amazed.</p>
 					<div class="text" aria-hidden="true">
@@ -288,9 +284,9 @@
 					<a href="html/ELSI.html" style="color:#cccccc;"></a>
 				</div>
 			</div>
-			<div class="section-panel" id="Team-panel">
+			<div class="section-panel" id="Section-panel6">
 				<div class="nakami">
-					<video src="video/Team.mp4" webkit-playsinline playsinline muted id="CardVideo"></video>
+					<video src="video/Team.mp4" webkit-playsinline playsinline muted id="CardVideo6"></video>
 					<h3>Team</h3>
 					<p>We are Team NoKo! Our team consists of eight undergraduates: three juniors, three sophomores, and two freshmen.
 					</p>
@@ -343,20 +339,16 @@
 			<li id="Reference_10"><a target="_blank" href="https://doi.org/10.1073/pnas.88.24.11460"> D Papahadjopoulos, T M Allen, A Gabizon, E Mayhew, K Matthay, S K Huang, K D Lee, M C Woodle, D D Lasic and C Redemann, <i>PNAS</i>, 1991, <b>88(24)</b>, 11460-11464.</a></li>
 			<li id="Reference_11"><a target="_blank" href="https://doi.org/10.1002/anie.201800141"> Michael W. Grome, Dr. Zhao Zhang, Dr. Frédéric Pincet, Prof. Chenxiang Lin, <i>Angew. Chem. Int. Ed.</i>, 2018, <b>Volume 57, Issue 19</b>, 5330-5334.</a></li>		  
 		</ol>
-	  </section>	
+	  </section>
 	</article>
 	
 	<div class="sidebar">
-		<label class="video_play_pause">
+		<label id="video_play_pause">
 			<input type="checkbox">
 			<span></span>
 		</label>
-    <ul class="list">
-        <li class="toc" scrollTo="content1">AAAA</li>
-        <li class="toc" scrollTo="content2">BBBB</li>
-        <li class="toc" scrollTo="content3">CCCC</li>
-        <li class="toc" scrollTo="content4">DDDD</li>
-	</ul>
+		<button id="scrollToTopBtn">Top</button>
+	</div>
 
 </main>
 
@@ -380,18 +372,6 @@
 			<small>&copy;BIOMOD Team NoKo 2024</a></small>
 		</section>
 	</footer>
-   
-
-	<div id="movie">		
-		<div id="movie-button">
-		 <div class="movie-button">
-		  <span class="movie-button-pause"><i class="fas fa-pause-circle"></i>▢</span><!--停止ボタン-->
-		  <span class="movie-button-play"><i class="fas fa-play-circle"></i>▷</span><!--再生ボタン-->
-		 </div>
-		</div>
-	   </div>
-
-<button id="scrollToTopBtn">Top</button>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
 <script src="js/biomod.js"></script>
@@ -458,23 +438,25 @@ $(window).on('load', function () {
 	videoElem.play();
 });
 
-const CardVideo = document.getElementById("CardVideo");
-const Carddiv = document.getElementById("Team-panel");
-// const Cardtext = document.querySelector('.text');
 
-window.addEventListener('load', () => {
-  CardVideo.currentTime = 10.75;
-});
+for (let i = 1; i <= 6; i++) {
+  const CardVideo = document.getElementById(`CardVideo${i}`);
+  const Carddiv = document.getElementById(`Section-panel${i}`);
+  
+  window.addEventListener('load', () => {
+    CardVideo.currentTime = 10.75;
+  });
 
-Carddiv.addEventListener("mouseover", () => {
-  CardVideo.currentTime = 0;
-  CardVideo.play();
-  // Cardtext.classList.add('is-active');
-});
-Carddiv.addEventListener("mouseout", () => {
-  CardVideo.pause();
-  CardVideo.currentTime = 10.75;
-});
+  Carddiv.addEventListener("mouseover", () => {
+    CardVideo.currentTime = 0;
+    CardVideo.play();
+  });
+
+  Carddiv.addEventListener("mouseout", () => {
+    CardVideo.pause();
+    CardVideo.currentTime = 10.75;
+  });
+}
 </script>
 </body>
 

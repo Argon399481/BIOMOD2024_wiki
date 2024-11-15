@@ -509,10 +509,11 @@ position: relative;
 
 
 #scrollToTopBtn {
+  font: 18px "Times New Roman";
   position: fixed;
   bottom: -100px; /* 画面下からの距離 */
   right: 40px; /* 画面右からの距離 */
-  background-color: #11086c; /* 背景色 */
+  background-color: #0c0c0c; /* 背景色 */
   color: #cccccc; /* テキストの色 */
   border: none; /* ボーダーなし */
   border-radius: 50% 50% 0 0; /* 円形のボタンにする */
@@ -524,7 +525,8 @@ position: relative;
 }
 
 #scrollToTopBtn:hover {
-  background-color: #0c0650; /* ホバー時の背景色 */
+  background-color: #cccccc; /* 背景色 */
+  color: #0c0c0c; /* テキストの色 */
   cursor: pointer; /* ホバー時にポインターを変更 */
 }
 
@@ -535,7 +537,6 @@ position: relative;
   right: 0vw;
   width: 200px;
   height: 100%;
-  border: 5px solid #12d4ee;
 }
 
 .list {
@@ -544,12 +545,11 @@ position: relative;
   border: 5px solid #ff00f2;
 }
 
-.video_play_pause {
-  display: flex;
-  position: sticky;
-  top: 50vh;
-  width: 0.25em;
-  height: 0.25em;
+#video_play_pause {
+  position: fixed;
+  top: 85vh;
+  width: 0.4em;
+  height: 0.4em;
   border: 5px solid currentColor;
   border-radius: 50%;
   color: #cccccc;
@@ -557,39 +557,39 @@ position: relative;
 }
 
 
-.video_play_pause > input {
+#video_play_pause > input {
   display: none;
 }
 
-.video_play_pause > input:not(:checked) + span::before {
+#video_play_pause > input:checked + span::after {
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 35%;
   transform: translateY(-50%);
   width: 0px;
   height: 0px;
-  border: 0.06em solid transparent;
-  border-left: 0.1em solid currentColor;
+  border: 0.09em solid transparent;
+  border-left: 0.15em solid currentColor;
   box-sizing: border-box;
   content: "";
 }
 
-.video_play_pause > input:checked + span::before,
-.video_play_pause > input:checked + span::after {
+#video_play_pause > input:not(:checked) + span::before,
+#video_play_pause > input:not(:checked) + span::after {
   position: absolute;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 0.1em;
-  height: 0.5em;
+  width: 0.06em;
+  height: 0.15em;
   box-sizing: border-box;
   background-color: currentColor;
   content: "";
 }
-.video_play_pause > input:checked + span::before {
-  left: 40%;
+#video_play_pause > input:not(:checked) + span::after {
+  left: 35%;
 }
-.video_play_pause > input:checked + span::after {
-  left: 60%;
+#video_play_pause > input:not(:checked) + span::before {
+  left: 65%;
 }
 
 /* Projectのページ内タブ */
