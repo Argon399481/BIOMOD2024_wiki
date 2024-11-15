@@ -38,15 +38,19 @@
 						</ul>
 					</li>
 					<li><a href="Experiment.html" class="big-category">Experiment</a>
-					<ul class="menuSub">
-						<li><a href="Experiment.html#MainResults">Main Results</a></li>
-						<li><a href="Experiment.html#BDB">BDB</a></li>
-						<li><a href="Experiment.html#BGB">BGB</a></li>
-						<li><a href="Experiment.html#Tubulation">Tubulation</a></li>
-						<li><a href="Experiment.html#MaterialsMethods">Methods</a></li>
-					</ul>
+						<ul class="menuSub">
+							<li><a href="Experiment.html#MainResults">Main Results</a></li>
+							<li><a href="Experiment.html#BDB">BDB</a></li>
+							<li><a href="Experiment.html#BGB">BGB</a></li>
+							<li><a href="Experiment.html#Tubulation">Tubulation</a></li>
+							<li><a href="Experiment.html#MaterialsMethods">Methods</a></li>
+						</ul>
 					</li>
 					<li><a href="Future.html" class="big-category">Future</a>
+						<ul class="menuSub">
+							<li><a href="Future.html#NextSteps">Next Steps</a></li>
+							<li><a href="Future.html#Application">Application</a></li>
+						</ul>
 					</li>
 					<li><a href="ELSI.html" class="big-category">ELSI</a>
 						<ul class="menuSub">
@@ -67,15 +71,49 @@
     <source src="../video/BGBchan.mp4" type="video/mp4">
   </video>
 
-  <section id="area-1">
-      <div class="inner">
-        <h1 class="heading">Future</h1>
-        <p>DNA nanotechnology has provided us with a wide variety of structures, far exceeding what nature has built with DNA, ranging from arbitrary architectures made of DNA motifs, DNA origami, and DNA bricks to logic circuits, reaction networks, and self-organization on lipid surfaces, duplicating some of the functional complexity of biological systems. Identifying the factors affecting the dimerisation of DNA origami by the linker will enable the design of DNA origami with more stable dimerisation. This provides the basis for developing more stable nanostructures. The influential factor on dimerizing of triangular DNA origami that we found is useful for the realization of large scale 2D-array of DNA origami which can be widely applicable to various applications.</p>
-      </div>
-    </section>
-  <!--/area1-->
+  <article>
+	<h1 class="heading">Future</h1>
+	<section>
+		<h2 id="NextSteps">Next steps of our project</h2>
+		<p>In this project, we developed and succeeded in constructing BDB and BGB. However, in forming nuclear pore-like structures on BGB membranes, we may encounter some difficulties unless we modify the current design. For instance, if we attempt to form tubes after creating the three-layer structure of BGB, the gel will consist of a multilayered structure formed from regular hexagons with sides of 14.28 nm, whereas the tube width is 116 ± 50 nm. As a result, tubes originating from the inner liposomal membrane may not penetrate the gel network and reach the outer liposomal membrane. Conversely, if we prepare the gel after forming the tubes, the process of heating to 40°C for gel re-hybridization may damage the origami structures that constitute the tubes. To avoid such issues, we are exploring several countermeasures.</p><br>
+		<p>One method is using photo-responsive DNA. First, liposomes are prepared by a centrifugation method. Then, DNA origami monomers for tubelation and photo-responsive DNA which has azobenzene modification are localized on the liposome surface to form BDB. Afterward, tubulation via origami allows membrane fusion between inner and outer membranes, resulting in the formation of pores. In this process, since the DNA layer was NOT gel, we can potentially avoid the issue of tubes being obstructed by the gel. Finally, by irradiating with visible light, the DNA strands between the two liposomal layers forms cross-linking structures, resulting in gel formation and transforming BDB into BGB. As this gelation step is considered not to require annealing, we can avoid the damage to the tubes caused by the heat (Fig1).</p><br>
+		<p>Another approach is to decrease the re-hybridization temperature by adjusting the sequence and length of the DNA hydrogel. Current motifs in this project have 8 bp sticky ends, and it is expected that shortening this length or changing the GC ratio will reduce the required re-hybridization temperature. By lowering the annealing temperature, we could prevent damage to the origami structures forming the tubes.</p>
+		<figure id="Fig1">
+		<img src="../img/FutureFig1.png">
+		<figcaption>Fig1. A schematic of the method using photoresponsive DNA</figcaption>
+		</figure>
+	</section>
+		
+	<section>
+		<h2 id="Application">Application of our project</h2>		
+		<p>BGB features a structure with a DNA hydrogel sandwiched between inner and outer lipid bilayer membranes, exhibiting a durability to withstand conditions such as low pH and high salt concentrations without special modifications to the membrane layers. This characteristic could advance molecular robotics research in the fields of medicine and natural environments. Conventional liposomes containing sodium glycocholate (SGC)<sup class="reference"><a href="#Reference_1" class="refLink">&#91;1&#93;</a></sup>, can deliver substances within the gastrointestinal tract environment, and addition of polyethylene glycol (PEG) modifications, help surviving in seawater for extended periods<sup class="reference"><a href="#Reference_2" class="refLink">&#91;2&#93;</a></sup>. In contrast, our BGB does not require modifications with molecules such as SGC or PEG, making it more robust while allowing functionalization on the membrane surface. There are two major research benefits to producing BGB.</p>
+		<br>
+		<ol>
+		<li><p><b>As an Oral Drug Delivery System (Fig2A)</b>: Conventional oral drugs, such as capsules and tablets, are challenging for those with impaired swallowing function, such as the elderly, highlighting the need for easy-to-swallow oral drugs. By encapsulating drugs within BGB as an oral solution, we can potentially address the difficulties associated with conventional oral drugs. Since BGB consists of lipids and DNA, it is expected to have minimal biological affection. Additionally, standard liposome formulations often require intravenous administration<sup class="reference"><a href="#Reference_3" class="refLink">&#91;3&#93;</a></sup> or storage at 2–8°C<sup class="reference"><a href="#Reference_4" class="refLink">&#91;4&#93;</a></sup>, making them challenging to use in areas with limited medical infrastructure. BGB, with its strong resistance to pH and osmotic pressure, could replace these formulations as oral drugs, contributing to advancements in the medical field.</p><a href="ELSI.html#MedicalDisparities" style="float: right;">Go to ELSI →</a></li>
+		<br><br>
+		<li><p><b>Artificial Cell Research in Extreme Environments (Fig2B)</b>: One of the challenges in current artificial cell research is stabilizing cells and preventing leakage of component molecules in extreme environments like deep-sea conditions. Although a small number of artificial cells can survive in extreme environments, many of the survived artificial cells do not synthesize protein<sup class="reference"><a href="#Reference_5" class="refLink">&#91;5&#93;</a></sup>. However, BGB, with its higher resistance to osmotic pressure and high salt concentrations compared to conventional liposomes, could retain functionality as artificial cells in high osmotic pressure and high-salt extreme environments like the deep sea. Such environments, including deep-sea hydrothermal vents and geysers, are hypothesized to be the origins of life. BGB may facilitate research in these environments, such as gene expression, providing insights into the origins of life.</p><a href="ELSI.html#EnvironmentalIssues" style="float: right;">Go to ELSI →</a></li>
+		<br><br>
+		</ol>
+		<figure>
+			<img src="../img/FutureFig2.png">
+			<figcaption>Fig2. Rendering images of our project. (A)Medical application as the oral drug delivery system. (B)Application of artificial cell research in extreme environments</figcaption>
+		</figure>
+	</section>
 
-  </main><!--/main-->
+<section id="Reference">
+	<h2>Reference</h2>
+	<ol class="reference_ol">
+		<li id="Reference_1"><a target="_blank" href="https://doi.org/10.1016/j.ijpharm.2012.10.025"> Shunwen Hu, Mengmeng Niu, Fuqiang Hu, Yi Lu, Jianping Qi, Zongning Yin and Wei Wu, <i>International Journal of Pharmaceutics</i>, 2013, <b>Volume 441, Issues 1–2</b>, 693-700.</a></li>
+		<li id="Reference_2"><a target="_blank" href="https://doi.org/10.1021/acsomega.3c10346"> Kayano Izumi, Jiajue Ji, Keiichiro Koiwai and Ryuji Kawano, <i>ASC OMEGA</i>, 2024, <b>9, 9</b>, 10958-10966.</a></li>
+		<li id="Reference_3"><a target="_blank" href="https://doi.org/10.1007/s13346-024-01671-1"> M. Juliana Gomez-Garcia, Mahmoud Abdelkarim, David T. Cramb, Sarah J. Childs, Kristina D. Rinker and Hagar I. Labouta, <i> Drug Delivery and Translational Research</i>, 2024, <b>Volume 14</b>, 3608–3620.</a></li>
+		<li id="Reference_4"><a target="_blank"href="https://doi.org/10.3109/10717544.2014.999960"> Ravi Gandhi, Nirav Khatri, Dipesh Baradia, Imran Vhora and Ambikanandan Misra, <i>Drug Delivery</i>, 2016, <b>23(4)</b>, 1152–1162.</a></li>
+		<li id="Reference_5"><a target="_blank" href="https://doi.org/10.1021/acssynbio.4c00441"> Yutetsu Kuruma, Hidetaka Nomaki, Noriyuki Isobe, Daisuke Matsuoka and Yasuhiro Shimane,<i>ACS Synth. Biol.</i>, 2024, <b>13, 10</b>, 3144-3149.</a></li>	  
+	</ol>
+	</section>	
+  </article>
+		
+
+  </main>
 
   <footer>
 	<section class="footer">

@@ -57,12 +57,21 @@
     padding:0;
     font-size:100%;
     vertical-align:baseline;
+    color: #aaaaaa;
   }
+section a:hover {
+  color: #fff;
+}
   
   .reference a {
     text-decoration:none;
     font:18px "Times New Roman";
+    color: #aaaaaa;
   }
+  .reference a:hover, .reference a:hover *{
+    color: #fff;
+  }
+
   .reference_ol {
     font:18px "Times New Roman";
   }
@@ -105,7 +114,6 @@
 /*========= ここまでリセットCSS ===============*/
 
 
-/*========= 上部固定させるためのCSS ===============*/
 header {
   height: 14vh;/*高さ指定*/
   width:100%;/*横幅指定*/
@@ -125,10 +133,11 @@ header {
     , 0 10px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
-/*========= レイアウトのためのCSS ===============*/
 
 main {
   background-color:rgba(0, 0, 0, 0.2); 
+    justify-content: space-between;
+    position: relative;
 }
 
 body {
@@ -199,8 +208,8 @@ h2 {
 }
 h3 {
   font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: -11vh 0 5px 0;
+  padding-top: 14vh;
 }
 h4 {
   margin-top: 15px;
@@ -208,6 +217,9 @@ h4 {
 }
 p {
   text-align: justify;
+}
+p, li {
+  line-height: 1.25;
 }
 sup {
   vertical-align: super;
@@ -233,6 +245,21 @@ sub {
 ol li { 
   list-style-position: outside;
   margin-left: 20px;
+}
+section li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.reference_ol li {
+    margin: -14vh 0 5px 20px;
+    padding-top: 14vh;
+}
+.reference_ol li a{
+  text-decoration: none;
+  color: #cccccc;
+}
+.reference_ol li a:hover, .reference_ol li a:hover *{
+  text-decoration: underline;
 }
 ul {
   list-style-type: none;
@@ -278,27 +305,12 @@ section ul, section ol {
   height: 400px;
   object-fit: cover;
 }
-
-/*========= 川口が入れたやつ ===============*/
-#scrollToTopBtn {
-  position: fixed;
-  bottom: -100px; /* 画面下からの距離 */
-  right: 40px; /* 画面右からの距離 */
-  background-color: #11086c; /* 背景色 */
-  color: #cccccc; /* テキストの色 */
-  border: none; /* ボーダーなし */
-  border-radius: 50% 50% 0 0; /* 円形のボタンにする */
-  width: 70px; /* ボタンの幅 */
-  height: 100px; /* ボタンの高さ */
-  font-size: 20px; /* テキストのサイズ */
-  line-height: 50px; /* テキストの垂直方向の中央揃え */
-  text-align: center; /* テキストの水平方向の中央揃え */
+#Goals-hacker {
+  width: 90%;
+  margin: -85px 0 -120px 7%;
 }
 
-#scrollToTopBtn:hover {
-  background-color: #0c0650; /* ホバー時の背景色 */
-  cursor: pointer; /* ホバー時にポインターを変更 */
-}
+
 
 
 header h1{
@@ -360,7 +372,8 @@ header a{
 }
 figure {
   margin-top: 20px;
-  width: 100%;
+  margin-left: 50px;
+  width: 90%;
   display: inline-block;
   text-align: center;
 }
@@ -387,7 +400,9 @@ figcaption {
   overflow-wrap: break-word; /* 長い単語を折り返す */
   margin-top: 2px;
   margin-bottom: 8px;
+  margin-left: 20px;
   font: italic sans-serif;
+  font-weight: bold;
 }
 
 /* 表には適宜以下のclassを付与する */
@@ -492,37 +507,96 @@ position: relative;
   transform: scale(1, 1);/*X方向にスケール拡大*/
 }
 
-/*再生停止ボタン*/
-#movie-button {
-  background-image: url(../img/favicon.png);
+
+#scrollToTopBtn {
   position: fixed;
-  bottom: 120px; /* 画面下からの距離 */
+  bottom: -100px; /* 画面下からの距離 */
   right: 40px; /* 画面右からの距離 */
   background-color: #11086c; /* 背景色 */
   color: #cccccc; /* テキストの色 */
   border: none; /* ボーダーなし */
-  border-radius: 50%; /* 円形のボタンにする */
+  border-radius: 50% 50% 0 0; /* 円形のボタンにする */
   width: 70px; /* ボタンの幅 */
-  height: 70px; /* ボタンの高さ */
+  height: 100px; /* ボタンの高さ */
   font-size: 20px; /* テキストのサイズ */
   line-height: 50px; /* テキストの垂直方向の中央揃え */
   text-align: center; /* テキストの水平方向の中央揃え */
-  cursor:pointer;/*カーソルを指に変更*/
-  z-index:1;
 }
 
-.movie-button span {
-  color:#cccccc;
+#scrollToTopBtn:hover {
+  background-color: #0c0650; /* ホバー時の背景色 */
+  cursor: pointer; /* ホバー時にポインターを変更 */
 }
-.movie-button span i {
-  font-size:4vw;/*アイコンの大きさを指定*/
+
+
+.sidebar {
+  position: absolute;
+  top: 0vh;
+  right: 0vw;
+  width: 200px;
+  height: 100%;
+  border: 5px solid #12d4ee;
+}
+
+.list {
+  position: sticky;
+  top: 15vh;
+  border: 5px solid #ff00f2;
+}
+
+.video_play_pause {
+  display: flex;
+  position: sticky;
+  top: 50vh;
+  width: 0.25em;
+  height: 0.25em;
+  border: 5px solid currentColor;
+  border-radius: 50%;
+  color: #cccccc;
+  font-size: 200px;
+}
+
+
+.video_play_pause > input {
+  display: none;
+}
+
+.video_play_pause > input:not(:checked) + span::before {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-50%);
+  width: 0px;
+  height: 0px;
+  border: 0.06em solid transparent;
+  border-left: 0.1em solid currentColor;
+  box-sizing: border-box;
+  content: "";
+}
+
+.video_play_pause > input:checked + span::before,
+.video_play_pause > input:checked + span::after {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 0.1em;
+  height: 0.5em;
+  box-sizing: border-box;
+  background-color: currentColor;
+  content: "";
+}
+.video_play_pause > input:checked + span::before {
+  left: 40%;
+}
+.video_play_pause > input:checked + span::after {
+  left: 60%;
 }
 
 /* Projectのページ内タブ */
-.tab_wrap{width:900px; margin:10px auto;}
+.tab_wrap{width:900px; margin:10px auto; position: relative; z-index: 10;}
 input[type="radio"]{display:none;}
-.tab_area{font-size:0; margin:0 10px;}
-.tab_area label.tab{width:150px; margin:0 5px; display:inline-block; padding:12px 0; color:#000; text-align:center; font-size:18px; cursor:pointer; transition:ease 0.2s opacity;}
+.tab_area{font-size:0; margin:0 40px;}
+.tab_area label.tab{width:130px; margin:0 3px; display:inline-block; padding:12px 0; color:#000; text-align:center; font-size:18px; cursor:pointer; transition:ease 0.2s opacity;}
 .tab_area label.tab:hover{opacity:0.5;}
 .panel_area{background:#2d2d2ddc;}
 .tab_panel{width:100%; padding:10px 0; display:none;}
@@ -696,19 +770,6 @@ input[type='checkbox'] + label.in-view > span:before{
   animation: typinganime .5s linear forwards;
 }
 
-/* h1.TextTyping:nth-child(1) {
-  left: 20vw;
-  animation: typinganime .5s linear forwards;
-}
-h1.TextTyping:nth-child(2) {
-  left: 40vw;
-  animation: typinganime .5s linear 1s forwards;
-}
-h1.TextTyping:nth-child(3) {
-  left: 60vw;
-  animation: typinganime .5s linear 2s forwards;
-} */
-
 .TextTyping span {
 	display: none;
 }
@@ -770,78 +831,6 @@ h1.TextTyping:nth-child(3) {
     visibility: hidden;
   }
 }
-
-
-/* ここからオープニングアニメーションのCSS*/
-/* 
-
-.text span {
-  display: inline-block;
-}
-
-.TextTyping span:nth-child(1) {
-  animation: textAnime2 .6s ease-in-out .5s forwards;
-}
-
-.TextTyping span:nth-child(2) {
-  animation: textAnime2 .6s ease-in-out .6s forwards;
-}
-
-.text span:nth-child(3) {
-  animation: textAnime2 .6s ease-in-out .7s forwards;
-}
-
-.text span:nth-child(4) {
-  animation: textAnime2 .6s ease-in-out .8s forwards;
-} */
-
-/*keyframe*/
-/* @keyframes textAnime1 {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes textAnime2 {
-  0% {
-    transform: translateY(0);
-  }
-
-  25% {
-    transform: translateY(-30%);
-  }
-
-  75% {
-    transform: translateY(30%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes bgAnime {
-  0% {
-    opacity: 1;
-  }
-
-  99% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-} */
-
-/*  ここまでオープニングアニメーションのCSS*/
-
-
 
 /*====================================================================
 slick
@@ -907,6 +896,8 @@ html, body {
   color: #fff;
 }
 
+
+/* Read more → の部分*/
 .text {
   display: flex;
   justify-content: right;
@@ -915,7 +906,6 @@ html, body {
 .char {
   border-bottom: 2px solid cornflowerblue;
 }
-/* Read more → の部分*/
 .section-panel:hover .char {
   opacity: 1;
   animation: fadeToggle 2s ease-in-out infinite;
@@ -958,4 +948,44 @@ html, body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.sidebar li {
+  border-left: solid 1px silver;
+  padding-left: 1rem;
+  position: relative;
+  box-sizing: border-box;
+}
+.toc {
+  cursor: pointer;
+  width: 100px;
+}
+.toc:hover {
+  background: whitesmoke;
+  color: royalblue;
+}
+.toc:hover:not(.active)::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  left: -3px;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background: silver;
+}
+.toc.active:before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  left: -3px;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background: skyblue;
+}
+.wrapper {
+  width: 400px;
+  height: 300px;
+  overflow: auto;
 }

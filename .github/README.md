@@ -5,7 +5,13 @@ https://argon399481.github.io/BIOMOD2024_wiki/
 https://www.jstage.jst.go.jp/article/ieejsmas/138/5/138_171/_pdf/-char/ja
   
 ## Update!
-2024/11/13
+2024/11/15  
+Futureを実装しました。  
+  
+2024/11/14  
+微調整を行いました。  
+  
+2024/11/13  
 ModelingをAppendixに統合しました。  
 indexが8割完成しました。  
 ロゴが動くようにしました。  
