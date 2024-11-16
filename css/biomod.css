@@ -142,7 +142,7 @@ main {
 
 body {
   font:20px "Times New Roman","MS PGothic","Sans-Serif";
-  /* background-color: #0C0C0C; */
+  background-color: #0C0C0C;
 }
 /* コマンドプロンプトの背景色と文字色を採用 */
 
@@ -511,8 +511,8 @@ position: relative;
 #scrollToTopBtn {
   font: 18px "Times New Roman";
   position: fixed;
-  bottom: -100px; /* 画面下からの距離 */
-  right: 40px; /* 画面右からの距離 */
+  bottom: 0vh; /* 画面下からの距離 */
+  right: 2vw; /* 画面右からの距離 */
   background-color: #0c0c0c; /* 背景色 */
   color: #cccccc; /* テキストの色 */
   border: none; /* ボーダーなし */
@@ -547,7 +547,8 @@ position: relative;
 
 #video_play_pause {
   position: fixed;
-  top: 85vh;
+  bottom: 20vh;
+  right: 2vw;
   width: 0.4em;
   height: 0.4em;
   border: 5px solid currentColor;
